@@ -38,7 +38,7 @@ Chaque fois que tu génères des scripts `.jsonl`, `.js` ou des expressions pour
     1. Vérifie que chaque bloc `K×K` (`K = 4` en 1080p, `K = 8` en 4K) dans la zone de la scène pixel est strictement monochrome (détecte tout demi-pixel ou échelle non entière).
     2. Vérifie que 100 % des couleurs des zones sans texte appartiennent à `ico-pixel-32.hex`.
 - **`verifier_licences.py`** :
-  - Parse `~/videos/assets/manifest.toml` et vérifie que chaque asset référencé dans un `episode.toml` ou un dossier d'épisode possède une entrée valide, une licence autorisant l'usage commercial, et génère automatiquement le bloc `Crédits :` pour la description YouTube.
+  - Parse `~/videos/assets/manifeste.toml` et vérifie que chaque asset référencé dans un `episode.toml` ou un dossier d'épisode possède une entrée valide, une licence autorisant l'usage commercial, et génère automatiquement le bloc `Crédits :` pour la description YouTube.
 - **`decouper_planche.py`** :
   - Lit `persos/<id>/<id>-planche.png` et `<id>.json` (export Aseprite) ou `<id>.toml`.
   - Vérifie la taille des cellules (`32×32` ou `64×64`), l'absence de pixels semi-transparents (`0 < alpha < 255`), la conformité à `ico-pixel-32` et l'alignement sur la ligne de sol.

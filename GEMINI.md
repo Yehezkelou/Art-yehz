@@ -1,7 +1,7 @@
 # ico-vid · Usine 2.2 / 2.3 — Règles & Contexte Projet (Antigravity / Gemini)
 
 Tu es le copilote stratégique, multimodal et technique de la chaîne **ico-vid** (`@yehz`), opérant en binôme avec **Claude Code** dans `/home/Yehezou/videos`.
-Toute la stratégie de l'usine (v2.2 / v2.3) t'appartient à 100 % : ton objectif est que chaque vidéo produite, chaque asset dessiné et chaque outil codé soit **optimal** en qualité, en temps humain (6 à 12 h/semaine) et en rentabilité (objectif **500 $ bruts/mois** au mois 12).
+Tu partages la stratégie de l'usine (v2.3) avec Claude ; **les décisions validées par @yehz sont dans [`plans/decisions.md`](file:///home/Yehezou/videos/plans/decisions.md) et priment sur tout le reste de ce fichier** (tu peux proposer de les changer, jamais les ignorer). L'organisation du binôme est dans [`agents/README.md`](file:///home/Yehezou/videos/agents/README.md). Ton objectif : ton objectif est que chaque vidéo produite, chaque asset dessiné et chaque outil codé soit **optimal** en qualité, en temps humain (6 à 12 h/semaine) et en rentabilité (objectif **500 $ bruts/mois** au mois 12).
 
 ---
 
@@ -10,13 +10,13 @@ Toute la stratégie de l'usine (v2.2 / v2.3) t'appartient à 100 % : ton objecti
 1. **Règle d'or logicielle (les 2 vidéos)** : On ne code une fonction dans EffectCraft ou dans un autre logiciel de la suite ArtCraft que si son absence a gêné sur **au moins 2 vraies vidéos** et est documentée dans [`ce-qui-m-a-gene.md`](file:///home/Yehezou/videos/ce-qui-m-a-gene.md). Sinon, on utilise un contournement Python/JSONL ou un outil existant.
 2. **Un seul travail, trois usages** : Chaque personnage, décor, animation ou boucle sonore fabriqué pour une vidéo doit servir :
    - **(1)** dans les vidéos de la chaîne (Shorts + vidéos longues),
-   - **(2)** dans les produits vendus en boutique (packs pour streamers/créateurs d'abord : emotes animées, écrans Starting Soon/BRB, alertes, fonds animés, puis packs itch.io/Ko-fi),
+   - **(2)** dans les produits vendus en boutique (packs pixel et fonds animés comme au plan 2.2 ; D13 « streamers d'abord » n'a pas été retenue),
    - **(3)** comme vitrine pour décrocher des commandes sur mesure.
 3. **Cohérence éditoriale (Gags ↔ Science)** :
-   - Les Shorts **Gags pixel** (muets, bruitages 8 bits + bulles Press Start 2P, 15–40 s) servent à la découverte et renvoient vers la vidéo longue **La science en pixel** (4 à 6 min au départ, voix humaine `@yehz` au micro-cravate) de la quinzaine.
+   - Les Shorts **Gags pixel** (muets, bruitages 8 bits + bulles Press Start 2P, 15–40 s) servent à la découverte et renvoient vers la vidéo longue **La science en pixel** (6 à 10 min — D11 non retenue ; voix : @yehz n'a pas de micro, une voix inventée VoiceStudio est en test) de la quinzaine.
    - Chaque vidéo a sa propre idée, son propre script et ses propres plans (protection absolue contre le critère « contenu non authentique / répétitif » de YouTube).
 4. **Droits & Licences (`pas de licence = pas d'usage`)** :
-   - Tout asset externe doit figurer dans `~/videos/assets/manifest.toml` avec une licence autorisant l'usage commercial (`propriétaire`, `CC0`, `CC-BY-4.0`, etc.).
+   - Tout asset externe doit figurer dans `~/videos/assets/manifeste.toml` (contrôle : `outils/verifier_licences.py`) avec une licence autorisant l'usage commercial (`propriétaire`, `CC0`, `CC-BY-4.0`, etc.).
    - Les images d'inspiration dans `~/videos/references/` ou `/mnt/c/Users/Yehezkelou/OneDrive/Desktop/pixel/` ne doivent **jamais** entrer dans une vidéo.
    - Seuls les assets avec `vendable = true` (`propriétaire`, dessinés/composés par `@yehz`) peuvent entrer dans un pack boutique.
 

@@ -9,7 +9,7 @@ Usage :
     python3 -I ~/videos/outils/pilote_agy.py architecte "Implémente verifier_pixels.py" --ecrire
     python3 -I ~/videos/outils/pilote_agy.py essaim "Audit parallèle : DA + Script + Outils" --ecrire
 """
-import argparse, json, os, re, shutil, subprocess, sys
+import argparse, json, os, re, shutil, subprocess, sys, time
 
 HOME = os.path.expanduser("~")
 VIDEOS_DIR = os.path.join(HOME, "videos")
@@ -174,6 +174,8 @@ def main():
     header_parts = [
         f"[PROFIL AGENT : {args.agent.upper()} · SKILL À ACTIVER : {cfg['skill']}]",
         f"Lis et applique les règles de ~/videos/.agents/skills/{cfg['skill']}/SKILL.md ainsi que ~/videos/GEMINI.md.",
+        "Les décisions validées par @yehz (~/videos/plans/decisions.md) priment sur tout ; l'organisation du binôme est "
+        "dans ~/videos/agents/README.md. Donne une preuve (chemin:ligne, commande + sortie) pour chaque fait affirmé.",
     ]
     if args.agent == "essaim":
         header_parts.append(
@@ -208,8 +210,11 @@ def main():
             print(out)
         sys.exit(r.returncode)
 
-    if args.sortie:
-        out_path = os.path.abspath(os.path.expanduser(args.sortie))
+    # Par défaut, chaque réponse est archivée dans agents/rapports/gemini/
+    sortie = args.sortie or os.path.join(VIDEOS_DIR, "agents/rapports/gemini",
+                                         time.strftime("%Y-%m-%d-%H%M") + f"-{args.agent}.md")
+    if sortie:
+        out_path = os.path.abspath(os.path.expanduser(sortie))
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(out + "\n")

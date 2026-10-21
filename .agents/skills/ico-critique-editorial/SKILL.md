@@ -23,7 +23,7 @@ Pour chaque idée ou fichier `episode.toml` (v1 ou v2), vérifie systématiqueme
 3. **Mécanique Comique (Gags Pixel)** :
    - Structure obligatoire : **Situation lisible sans le son (0–3 s) → Escalade → Pause/Silence comique franc (0,5 à 1,0 s) → Chute visuelle + sonore**.
    - Bulles et sous-titres en **Press Start 2P MAJUSCULES** : **≤ 2 lignes de 12 caractères** (≤ 20 caractères au total par bulle).
-4. **Rigueur & Rythme (Science en Pixel — 4 à 6 min)** :
+4. **Rigueur & Rythme (Science en Pixel — 6 à 10 min, voir plans/decisions.md)** :
    - Au moins **2 sources scientifiques vérifiables** citées.
    - Relance narrative (« Mais il y a un problème… ») toutes les **60 à 90 secondes**.
    - Un changement de plan ou mouvement de caméra (`travelling`, `suivi`, `zoom` par palier, `secousse`) toutes les **3 à 4 secondes** sans dépasser une charge de dessin réaliste (réutilisation intelligente des plans de décor et des actions de Tim).
