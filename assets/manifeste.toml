@@ -1,0 +1,72 @@
+# Manifeste des licences ico-vid (plan 2.3, § 5.2). Une entrée par fichier de assets/.
+# Contrôle : python3 -I ~/videos/outils/verifier_licences.py
+
+[[asset]]
+fichier  = "persos/tim/tim-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = true
+credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim.aseprite"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = true
+credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim.json"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = true
+credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = true
+credit   = ""
+
+[[asset]]
+fichier  = "portraits/chat/chat.aseprite"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = false                    # étude de style d'après @tofupixels (references/) : jamais en pack
+credit   = ""
+
+[[asset]]
+fichier  = "portraits/chat/chat.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = false                    # étude de style d'après @tofupixels (references/) : jamais en pack
+credit   = ""
+
+[[asset]]
+fichier  = "portraits/chat/chat.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-21
+vendable = false                    # étude de style d'après @tofupixels (references/) : jamais en pack
+credit   = ""

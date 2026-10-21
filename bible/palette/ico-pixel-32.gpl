@@ -1,0 +1,36 @@
+GIMP Palette
+Name: ico-pixel-32
+Columns: 4
+#
+ 14  13  24	nuits-1
+ 29  27  46	nuits-2
+ 47  44  69	nuits-3
+ 74  70  99	nuits-4
+110 106 128	neutres-1
+154 150 166	neutres-2
+201 196 200	neutres-3
+242 237 228	neutres-4
+ 31  46  92	bleus-1
+ 62  91 169	bleus-2
+ 94 143 214	bleus-3
+156 199 240	bleus-4
+ 30  77  58	verts-1
+ 46 125  79	verts-2
+ 63 181 107	verts-3
+143 219 134	verts-4
+122  78  30	ors-1
+185 128  43	ors-2
+244 197  66	ors-3
+251 229 140	ors-4
+ 90  30  43	rouges-1
+158  47  51	rouges-2
+229  83  61	rouges-3
+245 154 122	rouges-4
+ 59  42  34	terres-1
+107  74  53	terres-2
+156 116  81	terres-3
+201 165 122	terres-4
+ 61  37  80	violets-1
+107  63 135	violets-2
+160 102 184	violets-3
+224 166 217	violets-4
