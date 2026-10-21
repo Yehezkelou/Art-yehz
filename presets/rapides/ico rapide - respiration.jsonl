@@ -1,0 +1,3 @@
+// ico-vid rapide : Respiration en boucle. S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/scale", "expression": "var A = 1.2;   // amplitude en %\nvar s = Math.sin(time * 2.1) * A / 100;\nvar v = value.slice(); v[0] *= 1 - s * 0.5; v[1] *= 1 + s; v;"}}

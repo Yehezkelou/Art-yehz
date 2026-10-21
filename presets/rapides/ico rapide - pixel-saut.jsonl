@@ -1,0 +1,3 @@
+// ico-vid rapide : Pixel : saut avec arc à chaque marqueur (pixels entiers). S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/position", "expression": "var t0 = -1; for (var i = 1; i <= marker.numKeys; i++) { if (marker.key(i).time <= time) t0 = marker.key(i).time; }\nvar d = t0 < 0 ? -1 : time - t0;\nvar H = 40, L = 0.5;   // hauteur (px), durée (s)\nvar h = 0;\nif (d >= 0 && d < L) { var u = d / L; h = Math.round(4 * H * u * (1 - u)); }\nvar v = value.slice(); v[0] = Math.round(v[0]); v[1] = Math.round(v[1]) - h; v;"}}

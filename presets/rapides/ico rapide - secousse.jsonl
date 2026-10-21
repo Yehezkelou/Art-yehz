@@ -1,0 +1,3 @@
+// ico-vid rapide : Secousse comique à chaque marqueur. S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/position", "expression": "var t0 = -1; for (var i = 1; i <= marker.numKeys; i++) { if (marker.key(i).time <= time) t0 = marker.key(i).time; }\nvar d = t0 < 0 ? -1 : time - t0;\nvar F = 30, L = 0.6;   // force (px), durée (s)\nvar o = [0, 0];\nif (d >= 0 && d < L) { var k = 1 - d / L; o = [Math.sin(time * 86) * F * k, Math.cos(time * 71) * F * 0.66 * k]; }\nvalue + o;"}}

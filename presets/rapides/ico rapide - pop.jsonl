@@ -1,0 +1,4 @@
+// ico-vid rapide : Pop d'apparition au point d'entrée. S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/scale", "expression": "var d = time - inPoint, k = 1;\nif (d < 0.15) k = 1.1 * d / 0.15;\nelse if (d < 0.27) k = 1.1 - 0.1 * (d - 0.15) / 0.12;\nvar v = value.slice(); v[0] *= k; v[1] *= k; v;"}}
+{"command": "prop.setExpression", "params": {"path": "transform/opacity", "expression": "value * Math.max(0, Math.min(1, (time - inPoint) / 0.08));"}}

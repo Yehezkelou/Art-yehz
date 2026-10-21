@@ -1,0 +1,4 @@
+// ico-vid rapide : Pixel : scintillement de pièce. S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/opacity", "expression": "Math.floor(time * 4) % 2 ? value : value * 0.55;"}}
+{"command": "prop.setExpression", "params": {"path": "transform/position", "expression": "var v = value.slice(); v[0] = Math.round(v[0]); v[1] = Math.round(v[1]) + (Math.floor(time * 3) % 2 ? 0 : -2); v;"}}

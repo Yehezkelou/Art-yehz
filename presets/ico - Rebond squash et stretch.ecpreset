@@ -1,0 +1,442 @@
+{
+ "effectcraftAnimationPreset": 1,
+ "name": "ico - Rebond squash et stretch",
+ "properties": [],
+ "effects": [
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 300.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Hauteur rebond (px)",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 1.6
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Rebonds par seconde",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.5
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Amortissement",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Pivot vers le bas (px)",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "anchor",
+     "name": "Anchor Point",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": true,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Point"
+     },
+     "uid": 106,
+     "value": {
+      "t": "Vec2",
+      "v": [
+       540.0,
+       960.0
+      ]
+     },
+     "expr": {
+      "enabled": true,
+      "text": "[thisLayer.width / 2, thisLayer.height / 2] + [0, effect(\"Pivot vers le bas (px)\")(\"Slider\")]"
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "position",
+     "name": "Position",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": true,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Point"
+     },
+     "uid": 107,
+     "value": {
+      "t": "Vec2",
+      "v": [
+       540.0,
+       960.0
+      ]
+     },
+     "expr": {
+      "enabled": true,
+      "text": "var h = effect(\"Hauteur rebond (px)\")(\"Slider\"), f = effect(\"Rebonds par seconde\")(\"Slider\"), am = effect(\"Amortissement\")(\"Slider\");\nvar d = Math.max(0, time - inPoint), a = Math.abs(Math.sin(Math.PI * d * f)), dec = Math.exp(-am * d);\nvar c = Math.max(0, 1 - a / 0.2) * dec;\n[thisLayer.width / 2, thisLayer.height / 2] + [0, effect(\"Pivot vers le bas (px)\")(\"Slider\")] + [0, -h * a * dec];"
+     }
+    },
+    {
+     "hold_only": true,
+     "match": "uniform",
+     "name": "Uniform Scale",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Checkbox"
+     },
+     "uid": 108,
+     "value": {
+      "t": "Bool",
+      "v": false
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "scaleHeight",
+     "name": "Scale Height",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 10000.0,
+      "min": -10000.0,
+      "slider_max": 600.0,
+      "slider_min": 0.0
+     },
+     "uid": 109,
+     "value": {
+      "t": "Scalar",
+      "v": 100.0
+     },
+     "expr": {
+      "enabled": true,
+      "text": "var h = effect(\"Hauteur rebond (px)\")(\"Slider\"), f = effect(\"Rebonds par seconde\")(\"Slider\"), am = effect(\"Amortissement\")(\"Slider\");\nvar d = Math.max(0, time - inPoint), a = Math.abs(Math.sin(Math.PI * d * f)), dec = Math.exp(-am * d);\nvar c = Math.max(0, 1 - a / 0.2) * dec;\n100 - 25 * c;"
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "scaleWidth",
+     "name": "Scale Width",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 10000.0,
+      "min": -10000.0,
+      "slider_max": 600.0,
+      "slider_min": 0.0
+     },
+     "uid": 110,
+     "value": {
+      "t": "Scalar",
+      "v": 100.0
+     },
+     "expr": {
+      "enabled": true,
+      "text": "var h = effect(\"Hauteur rebond (px)\")(\"Slider\"), f = effect(\"Rebonds par seconde\")(\"Slider\"), am = effect(\"Amortissement\")(\"Slider\");\nvar d = Math.max(0, time - inPoint), a = Math.abs(Math.sin(Math.PI * d * f)), dec = Math.exp(-am * d);\nvar c = Math.max(0, 1 - a / 0.2) * dec;\n100 + 25 * c;"
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "skew",
+     "name": "Skew",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 70.0,
+      "min": -70.0,
+      "slider_max": 70.0,
+      "slider_min": -70.0
+     },
+     "uid": 111,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "skewAxis",
+     "name": "Skew Axis",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Angle"
+     },
+     "uid": 112,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "rotation",
+     "name": "Rotation",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Angle"
+     },
+     "uid": 113,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "opacity",
+     "name": "Opacity",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 100.0,
+      "min": 0.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 114,
+     "value": {
+      "t": "Scalar",
+      "v": 100.0
+     }
+    },
+    {
+     "hold_only": true,
+     "match": "useCompositionShutterAngle",
+     "name": "Use Composition's Shutter Angle",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Checkbox"
+     },
+     "uid": 115,
+     "value": {
+      "t": "Bool",
+      "v": true
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "shutterAngle",
+     "name": "Shutter Angle",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 720.0,
+      "min": 0.0,
+      "slider_max": 360.0,
+      "slider_min": 0.0
+     },
+     "uid": 116,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    },
+    {
+     "hold_only": true,
+     "match": "sampling",
+     "name": "Sampling",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Popup",
+      "options": [
+       "Bilinear",
+       "Bicubic"
+      ]
+     },
+     "uid": 117,
+     "value": {
+      "t": "Enum",
+      "v": 0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.distort.transform",
+    "kind": "Effect"
+   },
+   "match": "ec.distort.transform",
+   "name": "ico Rebond",
+   "uid": 105
+  }
+ ]
+}

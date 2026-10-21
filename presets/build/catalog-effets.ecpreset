@@ -1,0 +1,569 @@
+{
+  "effectcraftAnimationPreset": 1,
+  "effects": [
+    {
+      "children": [
+        {
+          "hold_only": false,
+          "match": "anchor",
+          "name": "Anchor Point",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": true,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Point"
+          },
+          "uid": 106,
+          "value": {
+            "t": "Vec2",
+            "v": [
+              540.0,
+              960.0
+            ]
+          }
+        },
+        {
+          "expr": {
+            "enabled": true,
+            "text": "EXPR_TEST"
+          },
+          "hold_only": false,
+          "match": "position",
+          "name": "Position",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": true,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Point"
+          },
+          "uid": 107,
+          "value": {
+            "t": "Vec2",
+            "v": [
+              540.0,
+              960.0
+            ]
+          }
+        },
+        {
+          "hold_only": true,
+          "match": "uniform",
+          "name": "Uniform Scale",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Checkbox"
+          },
+          "uid": 108,
+          "value": {
+            "t": "Bool",
+            "v": true
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "scaleHeight",
+          "name": "Scale Height",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 10000.0,
+            "min": -10000.0,
+            "slider_max": 600.0,
+            "slider_min": 0.0
+          },
+          "uid": 109,
+          "value": {
+            "t": "Scalar",
+            "v": 100.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "scaleWidth",
+          "name": "Scale Width",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 10000.0,
+            "min": -10000.0,
+            "slider_max": 600.0,
+            "slider_min": 0.0
+          },
+          "uid": 110,
+          "value": {
+            "t": "Scalar",
+            "v": 100.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "skew",
+          "name": "Skew",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 70.0,
+            "min": -70.0,
+            "slider_max": 70.0,
+            "slider_min": -70.0
+          },
+          "uid": 111,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "skewAxis",
+          "name": "Skew Axis",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Angle"
+          },
+          "uid": 112,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "rotation",
+          "name": "Rotation",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Angle"
+          },
+          "uid": 113,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "opacity",
+          "name": "Opacity",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 100.0,
+            "min": 0.0,
+            "slider_max": 100.0,
+            "slider_min": 0.0
+          },
+          "uid": 114,
+          "value": {
+            "t": "Scalar",
+            "v": 100.0
+          }
+        },
+        {
+          "hold_only": true,
+          "match": "useCompositionShutterAngle",
+          "name": "Use Composition's Shutter Angle",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Checkbox"
+          },
+          "uid": 115,
+          "value": {
+            "t": "Bool",
+            "v": true
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "shutterAngle",
+          "name": "Shutter Angle",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 720.0,
+            "min": 0.0,
+            "slider_max": 360.0,
+            "slider_min": 0.0
+          },
+          "uid": 116,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": true,
+          "match": "sampling",
+          "name": "Sampling",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Popup",
+            "options": [
+              "Bilinear",
+              "Bicubic"
+            ]
+          },
+          "uid": 117,
+          "value": {
+            "t": "Enum",
+            "v": 0
+          }
+        }
+      ],
+      "enabled": true,
+      "kind": {
+        "effect": "ec.distort.transform",
+        "kind": "Effect"
+      },
+      "match": "ec.distort.transform",
+      "name": "Transform",
+      "uid": 105
+    },
+    {
+      "children": [
+        {
+          "hold_only": false,
+          "match": "slider",
+          "name": "Slider",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 2,
+            "kind": "Slider",
+            "max": 1000000.0,
+            "min": -1000000.0,
+            "slider_max": 100.0,
+            "slider_min": 0.0
+          },
+          "uid": 119,
+          "value": {
+            "t": "Scalar",
+            "v": 30.0
+          }
+        }
+      ],
+      "enabled": true,
+      "kind": {
+        "effect": "ec.control.slider",
+        "kind": "Effect"
+      },
+      "match": "ec.control.slider",
+      "name": "Slider Control",
+      "uid": 118
+    },
+    {
+      "children": [
+        {
+          "hold_only": false,
+          "match": "completion",
+          "name": "Transition Completion",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 0,
+            "kind": "Slider",
+            "max": 100.0,
+            "min": 0.0,
+            "slider_max": 100.0,
+            "slider_min": 0.0
+          },
+          "uid": 121,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "angle",
+          "name": "Wipe Angle",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Angle"
+          },
+          "uid": 122,
+          "value": {
+            "t": "Scalar",
+            "v": 90.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "feather",
+          "name": "Feather",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 32000.0,
+            "min": 0.0,
+            "slider_max": 500.0,
+            "slider_min": 0.0
+          },
+          "uid": 123,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        }
+      ],
+      "enabled": true,
+      "kind": {
+        "effect": "ec.transition.linearwipe",
+        "kind": "Effect"
+      },
+      "match": "ec.transition.linearwipe",
+      "name": "Linear Wipe",
+      "uid": 120
+    },
+    {
+      "children": [
+        {
+          "hold_only": false,
+          "match": "center",
+          "name": "Iris Center",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": true,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Point"
+          },
+          "uid": 125,
+          "value": {
+            "t": "Vec2",
+            "v": [
+              540.0,
+              960.0
+            ]
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "points",
+          "name": "Iris Points",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 0,
+            "kind": "Slider",
+            "max": 32.0,
+            "min": 6.0,
+            "slider_max": 32.0,
+            "slider_min": 6.0
+          },
+          "uid": 126,
+          "value": {
+            "t": "Scalar",
+            "v": 6.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "outerRadius",
+          "name": "Outer Radius",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 32000.0,
+            "min": 0.0,
+            "slider_max": 2000.0,
+            "slider_min": 0.0
+          },
+          "uid": 127,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": true,
+          "match": "useInnerRadius",
+          "name": "Use Inner Radius",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Checkbox"
+          },
+          "uid": 128,
+          "value": {
+            "t": "Bool",
+            "v": false
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "innerRadius",
+          "name": "Inner Radius",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 32000.0,
+            "min": 0.0,
+            "slider_max": 2000.0,
+            "slider_min": 0.0
+          },
+          "uid": 129,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "rotation",
+          "name": "Rotation",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "kind": "Angle"
+          },
+          "uid": 130,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        },
+        {
+          "hold_only": false,
+          "match": "feather",
+          "name": "Feather",
+          "node": "Prop",
+          "shown_dims": 0,
+          "spatial": false,
+          "static_only": false,
+          "three_d_only": false,
+          "two_d_only": false,
+          "ui": {
+            "decimals": 1,
+            "kind": "Slider",
+            "max": 1000.0,
+            "min": 0.0,
+            "slider_max": 100.0,
+            "slider_min": 0.0
+          },
+          "uid": 131,
+          "value": {
+            "t": "Scalar",
+            "v": 0.0
+          }
+        }
+      ],
+      "enabled": true,
+      "kind": {
+        "effect": "ec.transition.iriswipe",
+        "kind": "Effect"
+      },
+      "match": "ec.transition.iriswipe",
+      "name": "Iris Wipe",
+      "uid": 124
+    }
+  ],
+  "name": "catalog",
+  "properties": []
+}

@@ -1,0 +1,83 @@
+{"command": "file.newProject", "params": {}}
+{"command": "file.importProject", "params": {"path": "/home/Yehezou/videos/bible/bible.ecproj"}}
+{"command": "comp.new", "params": {"name": "SKETCH - a remplir", "width": 1080, "height": 1920, "frameRate": 24, "duration": 30, "background": "#1B2340", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Fond", "color": "#1B2340", "width": 1080, "height": 1920}}
+{"command": "effect.apply", "params": {"layer": "Fond", "effect": "Gradient Ramp"}}
+{"command": "prop.set", "params": {"layer": "Fond", "path": "effects/#1/start", "value": [540, 760]}}
+{"command": "prop.set", "params": {"layer": "Fond", "path": "effects/#1/end", "value": [540, 2100]}}
+{"command": "prop.set", "params": {"layer": "Fond", "path": "effects/#1/shape", "value": 1}}
+{"command": "prop.setExpression", "params": {"layer": "Fond", "path": "effects/#1/startColor", "expression": "var c = thisComp.layer(\"Controles\").effect(2)(1); [Math.min(1, c[0]*1.9+0.05), Math.min(1, c[1]*1.9+0.05), Math.min(1, c[2]*1.9+0.08), 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Fond", "path": "effects/#1/endColor", "expression": "var c = thisComp.layer(\"Controles\").effect(2)(1); [c[0]*0.45, c[1]*0.45, c[2]*0.45, 1]"}}
+{"command": "layer.newShape", "params": {"name": "Tete", "kind": "ellipse", "size": [520, 520], "position": [540, 760], "fill": "#FFD24A", "stroke": "#141826", "strokeWidth": 14}}
+{"command": "layer.newShape", "params": {"name": "Oeil G", "kind": "ellipse", "size": [120, 140], "position": [455, 715], "fill": "#FFFFFF", "stroke": "#141826", "strokeWidth": 8}}
+{"command": "layer.newShape", "params": {"name": "Oeil D", "kind": "ellipse", "size": [120, 140], "position": [625, 715], "fill": "#FFFFFF", "stroke": "#141826", "strokeWidth": 8}}
+{"command": "layer.newShape", "params": {"name": "Pupille G", "kind": "ellipse", "size": [48, 48], "position": [465, 732], "fill": "#141826"}}
+{"command": "layer.newShape", "params": {"name": "Pupille D", "kind": "ellipse", "size": [48, 48], "position": [635, 732], "fill": "#141826"}}
+{"command": "layer.newShape", "params": {"name": "Bouche", "kind": "ellipse", "size": [160, 70], "position": [540, 895], "fill": "#141826"}}
+{"command": "prop.setExpression", "params": {"layer": "Tete", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(1)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Tete", "path": "contents/group/contents/stroke/color", "expression": "thisComp.layer(\"Controles\").effect(3)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Oeil G", "path": "contents/group/contents/stroke/color", "expression": "thisComp.layer(\"Controles\").effect(3)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Oeil D", "path": "contents/group/contents/stroke/color", "expression": "thisComp.layer(\"Controles\").effect(3)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Pupille G", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(3)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Pupille D", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(3)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Bouche", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(3)(1)"}}
+{"command": "layer.setParent", "params": {"layers": ["Pupille G"], "parent": "Oeil G"}}
+{"command": "layer.setParent", "params": {"layers": ["Pupille D"], "parent": "Oeil D"}}
+{"command": "layer.setParent", "params": {"layers": ["Oeil G", "Oeil D", "Bouche"], "parent": "Tete"}}
+{"command": "prop.setExpression", "params": {"layer": "Tete", "path": "transform/scale", "expression": "var tc = thisComp.layer(\"Controles\").effect(5)(1);\nvar base = 126, s = base;\nif (time < 0.42) {\n  var u = time / 0.42;\n  s = u < 0.6 ? base * 1.14 * (u / 0.6) : base * 1.14 - base * 0.14 * ((u - 0.6) / 0.4);\n}\nvar d = time - tc;\nif (d >= 0 && d < 0.15) s = base + 26 * (d / 0.15);\nelse if (d >= 0.15 && d < 0.4) s = base + 26 - 18 * ((d - 0.15) / 0.25);\nelse if (d >= 0.4) s = base + 8;\n[s, s, 100];"}}
+{"command": "prop.setExpression", "params": {"layer": "Tete", "path": "transform/position", "expression": "var tc = thisComp.layer(\"Controles\").effect(5)(1), f = thisComp.layer(\"Controles\").effect(6)(1);\nvar bx = 540 + Math.sin(time * 1.4) * 5, by = 760 + Math.sin(time * 2.2) * 8;\nvar d = time - tc;\nif (d >= 0 && d < 0.75) {\n  var k = 1 - d / 0.75;\n  bx += Math.sin(time * 86) * f * k; by += Math.cos(time * 71) * f * 0.66 * k;\n}\n[bx, by, 0];"}}
+{"command": "prop.setExpression", "params": {"layer": "Oeil G", "path": "transform/scale", "expression": "var tc = thisComp.layer(\"Controles\").effect(5)(1);\nvar x = 100, y = 100;\nvar p = 3.3, dd = (time + 0.7) % p;\nif (dd < 0.14) y = 100 - 92 * Math.sin(Math.PI * dd / 0.14);\nvar d = time - tc;\nif (d >= 0 && d < 0.9) { x = 120; y = Math.max(y, 130); }\n[x, y, 100];"}}
+{"command": "prop.setExpression", "params": {"layer": "Oeil D", "path": "transform/scale", "expression": "var tc = thisComp.layer(\"Controles\").effect(5)(1);\nvar x = 100, y = 100;\nvar p = 3.3, dd = (time + 0.7) % p;\nif (dd < 0.14) y = 100 - 92 * Math.sin(Math.PI * dd / 0.14);\nvar d = time - tc;\nif (d >= 0 && d < 0.9) { x = 120; y = Math.max(y, 130); }\n[x, y, 100];"}}
+{"command": "prop.setExpression", "params": {"layer": "Bouche", "path": "transform/scale", "expression": "var tc = thisComp.layer(\"Controles\").effect(5)(1);\nvar a = 0;\ntry { a = thisComp.layer(\"Audio Amplitude\").effect(3)(1); } catch (e) { a = 0; }\nvar x = 100, y = Math.min(170, 28 + a * 9);\nvar d = time - tc;\nif (d >= 0 && d < 0.8) { x = 128; y = 165; }\n[x, y, 100];"}}
+{"command": "layer.newText", "params": {"name": "Nom du perso", "text": "Nom du perso", "position": [540, 1180], "font": "Lilita One", "style": "Regular", "size": 56, "fill": "#F6F1E7", "justify": "center", "applyFill": true, "stroke": "#141826", "applyStroke": true, "strokeWidth": 10, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Nom du perso", "path": "transform/scale", "time": 0.3, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom du perso", "path": "transform/scale", "time": 0.42, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom du perso", "path": "transform/scale", "time": 0.52, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom du perso", "path": "transform/opacity", "time": 0.3, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Nom du perso", "path": "transform/opacity", "time": 0.38, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Accroche", "text": "ACCROCHE EN 2 S", "position": [540, 300], "font": "Lilita One", "style": "Regular", "size": 84, "fill": "#FFD24A", "justify": "center", "applyFill": true, "stroke": "#141826", "applyStroke": true, "strokeWidth": 12, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Accroche", "path": "transform/scale", "time": 0, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Accroche", "path": "transform/scale", "time": 0.12, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Accroche", "path": "transform/scale", "time": 0.22, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Accroche", "path": "transform/opacity", "time": 0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Accroche", "path": "transform/opacity", "time": 0.08, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "ST 01", "text": "Sous-titre : 20 car.\nmax, 2 lignes max", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "justify": "center", "applyFill": true, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false, "leading": 86}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 0.8, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 0.92, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 1.02, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/opacity", "time": 0.8, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/opacity", "time": 0.88, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "ST chute", "text": "La chute ici.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFD24A", "justify": "center", "applyFill": true, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false, "leading": 86}}
+{"command": "prop.addKey", "params": {"layer": "ST chute", "path": "transform/scale", "time": 20.0, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST chute", "path": "transform/scale", "time": 20.12, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST chute", "path": "transform/scale", "time": 20.22, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST chute", "path": "transform/opacity", "time": 20.0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "ST chute", "path": "transform/opacity", "time": 20.08, "timeBase": "comp", "value": 100}}
+{"command": "layer.newNull", "params": {}}
+{"command": "layer.rename", "params": {"layer": "#1", "name": "Controles"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#1/color", "value": "#FFD24A"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#2/color", "value": "#1B2340"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#3/color", "value": "#141826"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#4/color", "value": "#FF5A4E"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Slider Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#5/slider", "value": 20}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Slider Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#6/slider", "value": 30}}
+{"command": "comp.open", "params": {"comp": "Signature"}}
+{"command": "layer.setText", "params": {"layer": "Nom chaine", "fill": "#FFD24A"}}
+{"command": "comp.open", "params": {"comp": "SKETCH - a remplir"}}
+{"command": "layer.addItem", "params": {"item": "Signature", "time": 29, "index": 1}}
+{"command": "layer.addItem", "params": {"item": "Guide zones 9:16", "time": 0, "index": 1}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "guide", "value": true}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "lock", "value": true}}
+{"command": "essential.addProperty", "params": {"comp": "SKETCH - a remplir", "layer": "Accroche", "path": "text/sourceText", "name": "Accroche (2 premières s)"}}
+{"command": "essential.addProperty", "params": {"comp": "SKETCH - a remplir", "layer": "Nom du perso", "path": "text/sourceText", "name": "Nom du perso"}}
+{"command": "essential.addProperty", "params": {"comp": "SKETCH - a remplir", "layer": "Controles", "path": "effects/#1/color", "name": "Couleur principale"}}
+{"command": "essential.addProperty", "params": {"comp": "SKETCH - a remplir", "layer": "Controles", "path": "effects/#2/color", "name": "Couleur fond"}}
+{"command": "essential.addProperty", "params": {"comp": "SKETCH - a remplir", "layer": "Controles", "path": "effects/#5/slider", "name": "Temps de la chute (s)"}}
+{"command": "essential.addProperty", "params": {"comp": "SKETCH - a remplir", "layer": "Controles", "path": "effects/#6/slider", "name": "Force secousse"}}

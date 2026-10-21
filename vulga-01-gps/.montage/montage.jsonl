@@ -1,0 +1,134 @@
+{"command": "comp.settings", "params": {"comp": "VULGA - a remplir", "duration": 62}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Question", "text": "Sans Einstein, pas de GPS ?"}}
+{"command": "layer.setText", "params": {"layer": "Question", "size": 72}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Point 1", "text": "1. Des horloges dans l'espace"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Point 2", "text": "2. 4 signaux = ta position"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Point 3", "text": "3. Einstein corrige l'heure"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Conclusion fleche", "text": "à 5 m près"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Recap", "text": "Sans Einstein, le GPS\ndérive de 10 km/jour."}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.setText", "params": {"layer": "Sources", "text": "Sources : gps.gov · Ashby (2003)"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 01", "text": "Ton GPS te trouve\nà 5 mètres près.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.8, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.92, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 1.02, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/opacity", "time": 0.8, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/opacity", "time": 0.88, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 02", "text": "Et il doit ça\nà Einstein.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 4.257142857142857, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 4.377142857142857, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 4.477142857142857, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/opacity", "time": 4.257142857142857, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/opacity", "time": 4.337142857142857, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 03", "text": "Imagine un\norage au loin.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 7.0, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 7.12, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 7.22, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/opacity", "time": 7.0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/opacity", "time": 7.08, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 04", "text": "Tu comptes : éclair…\npuis tonnerre.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/scale", "time": 9.385714285714286, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/scale", "time": 9.505714285714285, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/scale", "time": 9.605714285714287, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/opacity", "time": 9.385714285714286, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/opacity", "time": 9.465714285714286, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 05", "text": "Le délai donne\nla distance.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/scale", "time": 12.12857142857143, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/scale", "time": 12.248571428571429, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/scale", "time": 12.34857142857143, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/opacity", "time": 12.12857142857143, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/opacity", "time": 12.20857142857143, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 06", "text": "Le GPS fait pareil\navec la lumière.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/scale", "time": 14.514285714285716, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/scale", "time": 14.634285714285715, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/scale", "time": 14.734285714285717, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/opacity", "time": 14.514285714285716, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/opacity", "time": 14.594285714285716, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 07", "text": "31 satellites,\nà 20 000 km.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/scale", "time": 17.614285714285717, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/scale", "time": 17.73428571428572, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/scale", "time": 17.834285714285716, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/opacity", "time": 17.614285714285717, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/opacity", "time": 17.694285714285716, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 08", "text": "Chacun a une\nhorloge atomique.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/scale", "time": 20.35714285714286, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/scale", "time": 20.477142857142862, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/scale", "time": 20.57714285714286, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/opacity", "time": 20.35714285714286, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/opacity", "time": 20.43714285714286, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 09", "text": "Il envoie : l'heure\net sa position.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/scale", "time": 22.742857142857147, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/scale", "time": 22.86285714285715, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/scale", "time": 22.962857142857146, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/opacity", "time": 22.742857142857147, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/opacity", "time": 22.822857142857146, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 10", "text": "Ton tél mesure le\nretard du signal.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/scale", "time": 25.84285714285715, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/scale", "time": 25.96285714285715, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/scale", "time": 26.062857142857148, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/opacity", "time": 25.84285714285715, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/opacity", "time": 25.922857142857147, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 11", "text": "Retard = distance\nau satellite.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/scale", "time": 28.94285714285715, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/scale", "time": 29.06285714285715, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/scale", "time": 29.16285714285715, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/opacity", "time": 28.94285714285715, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/opacity", "time": 29.02285714285715, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 12", "text": "Avec 4 satellites,\nil te situe.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/scale", "time": 31.328571428571436, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/scale", "time": 31.448571428571437, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/scale", "time": 31.548571428571435, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/opacity", "time": 31.328571428571436, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/opacity", "time": 31.408571428571435, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 13", "text": "Mais là-haut,\nle temps triche.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/scale", "time": 34.07142857142858, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/scale", "time": 34.191428571428574, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/scale", "time": 34.291428571428575, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/opacity", "time": 34.07142857142858, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/opacity", "time": 34.151428571428575, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 14", "text": "Sa vitesse :\n−7µs chaque jour.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/scale", "time": 36.45714285714286, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/scale", "time": 36.57714285714286, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/scale", "time": 36.67714285714286, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/opacity", "time": 36.45714285714286, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/opacity", "time": 36.53714285714286, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 15", "text": "Moins de gravité,\n+45µs par jour.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/scale", "time": 39.2, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/scale", "time": 39.32, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/scale", "time": 39.42, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/opacity", "time": 39.2, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/opacity", "time": 39.28, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 16", "text": "Bilan : 38µs\nd'avance par jour.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/scale", "time": 41.94285714285714, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/scale", "time": 42.06285714285714, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/scale", "time": 42.16285714285714, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/opacity", "time": 41.94285714285714, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/opacity", "time": 42.02285714285714, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 17", "text": "Sans correction :\n10 km par jour !", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/scale", "time": 44.68571428571428, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/scale", "time": 44.80571428571428, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/scale", "time": 44.90571428571428, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/opacity", "time": 44.68571428571428, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/opacity", "time": 44.76571428571428, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 18", "text": "On les règle donc\navant le départ.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/scale", "time": 48.14285714285714, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/scale", "time": 48.262857142857136, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/scale", "time": 48.36285714285714, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/opacity", "time": 48.14285714285714, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/opacity", "time": 48.22285714285714, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 19", "text": "Merci, Albert.", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "applyFill": true, "justify": "center", "leading": 86, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/scale", "time": 51.24285714285714, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/scale", "time": 51.36285714285714, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/scale", "time": 51.46285714285714, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/opacity", "time": 51.24285714285714, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/opacity", "time": 51.32285714285714, "timeBase": "comp", "value": 100}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "time.set", "params": {"time": 1.2}}

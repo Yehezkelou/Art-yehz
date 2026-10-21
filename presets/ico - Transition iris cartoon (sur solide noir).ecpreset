@@ -1,0 +1,327 @@
+{
+ "effectcraftAnimationPreset": 1,
+ "name": "ico - Transition iris cartoon (sur solide noir)",
+ "properties": [],
+ "effects": [
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.6
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Iris ouverture (s)",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.8
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Iris fermeture (s)",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Iris décalage X",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Iris décalage Y",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "center",
+     "name": "Iris Center",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": true,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Point"
+     },
+     "uid": 125,
+     "value": {
+      "t": "Vec2",
+      "v": [
+       540.0,
+       960.0
+      ]
+     },
+     "expr": {
+      "enabled": true,
+      "text": "[thisLayer.width / 2, thisLayer.height / 2] + [effect(\"Iris décalage X\")(\"Slider\"), effect(\"Iris décalage Y\")(\"Slider\")];"
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "points",
+     "name": "Iris Points",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 0,
+      "kind": "Slider",
+      "max": 32.0,
+      "min": 6.0,
+      "slider_max": 32.0,
+      "slider_min": 6.0
+     },
+     "uid": 126,
+     "value": {
+      "t": "Scalar",
+      "v": 48.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "outerRadius",
+     "name": "Outer Radius",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 32000.0,
+      "min": 0.0,
+      "slider_max": 2000.0,
+      "slider_min": 0.0
+     },
+     "uid": 127,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     },
+     "expr": {
+      "enabled": true,
+      "text": "var a = effect(\"Iris ouverture (s)\")(\"Slider\"), b = effect(\"Iris fermeture (s)\")(\"Slider\"), k = 1;\nif (a > 0) k = Math.min(k, (time - inPoint) / a);\nif (b > 0) k = Math.min(k, (outPoint - time) / b);\nk = Math.max(0, Math.min(1, k));\nvar R = Math.sqrt(thisLayer.width * thisLayer.width + thisLayer.height * thisLayer.height) / 2 + 40;\nR * k;"
+     }
+    },
+    {
+     "hold_only": true,
+     "match": "useInnerRadius",
+     "name": "Use Inner Radius",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Checkbox"
+     },
+     "uid": 128,
+     "value": {
+      "t": "Bool",
+      "v": false
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "innerRadius",
+     "name": "Inner Radius",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 32000.0,
+      "min": 0.0,
+      "slider_max": 2000.0,
+      "slider_min": 0.0
+     },
+     "uid": 129,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "rotation",
+     "name": "Rotation",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Angle"
+     },
+     "uid": 130,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "feather",
+     "name": "Feather",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 1000.0,
+      "min": 0.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 131,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.transition.iriswipe",
+    "kind": "Effect"
+   },
+   "match": "ec.transition.iriswipe",
+   "name": "ico Iris",
+   "uid": 124
+  }
+ ]
+}

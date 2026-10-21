@@ -1,0 +1,16 @@
+# Logiciels : chacun a son propre dépôt git
+logiciel/
+# Rendus et exports lourds (refaits depuis les projets)
+*.mp4
+*.mov
+*.wav
+plans/*.pdf
+# Fichiers automatiques
+EffectCraft Auto-Save/
+*.sauvegarde-*.ecproj
+__pycache__/
+*.pyc
+# Dossiers de travail
+a-trier/*
+!a-trier/README.md
+regards/

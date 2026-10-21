@@ -1,0 +1,108 @@
+{"command": "comp.new", "params": {"name": "Planche bible", "width": 1080, "height": 1920, "frameRate": 24, "duration": 1, "background": "#101218", "open": true}}
+{"command": "layer.newText", "params": {"text": "BIBLE DE LA CHAÎNE", "position": [540, 175], "font": "Lilita One", "style": "Regular", "size": 100, "fill": "#FFFFFF", "justify": "center", "name": "Titre"}}
+{"command": "layer.newText", "params": {"text": "v1 · 20 oct. 2026 · 9:16 · 24 i/s", "position": [540, 238], "font": "Montserrat", "style": "SemiBold", "size": 34, "fill": "#9AA3B8", "justify": "center", "name": "Sous-titre"}}
+{"command": "layer.newText", "params": {"text": "Sketch humour", "position": [540, 350], "font": "Lilita One", "style": "Regular", "size": 50, "fill": "#FFFFFF", "justify": "center", "name": "Palette Sketch humour"}}
+{"command": "layer.newSolid", "params": {"name": "Sketch humour 1", "color": "#FFD24A", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [140, 465, 0]}}
+{"command": "layer.newText", "params": {"text": "#FFD24A", "position": [140, 568], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Sketch humour 1"}}
+{"command": "layer.newSolid", "params": {"name": "Sketch humour 2", "color": "#1B2340", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [300, 465, 0]}}
+{"command": "layer.newText", "params": {"text": "#1B2340", "position": [300, 568], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Sketch humour 2"}}
+{"command": "layer.newSolid", "params": {"name": "Sketch humour 3", "color": "#141826", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [460, 465, 0]}}
+{"command": "layer.newText", "params": {"text": "#141826", "position": [460, 568], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Sketch humour 3"}}
+{"command": "layer.newSolid", "params": {"name": "Sketch humour 4", "color": "#FF5A4E", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [620, 465, 0]}}
+{"command": "layer.newText", "params": {"text": "#FF5A4E", "position": [620, 568], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Sketch humour 4"}}
+{"command": "layer.newSolid", "params": {"name": "Sketch humour 5", "color": "#4FD1E8", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [780, 465, 0]}}
+{"command": "layer.newText", "params": {"text": "#4FD1E8", "position": [780, 568], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Sketch humour 5"}}
+{"command": "layer.newSolid", "params": {"name": "Sketch humour 6", "color": "#F6F1E7", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [940, 465, 0]}}
+{"command": "layer.newText", "params": {"text": "#F6F1E7", "position": [940, 568], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Sketch humour 6"}}
+{"command": "layer.newText", "params": {"text": "Pixel art", "position": [540, 640], "font": "Lilita One", "style": "Regular", "size": 50, "fill": "#FFFFFF", "justify": "center", "name": "Palette Pixel art"}}
+{"command": "layer.newSolid", "params": {"name": "Pixel art 1", "color": "#1D1B2E", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [140, 755, 0]}}
+{"command": "layer.newText", "params": {"text": "#1D1B2E", "position": [140, 858], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Pixel art 1"}}
+{"command": "layer.newSolid", "params": {"name": "Pixel art 2", "color": "#3E5BA9", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [300, 755, 0]}}
+{"command": "layer.newText", "params": {"text": "#3E5BA9", "position": [300, 858], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Pixel art 2"}}
+{"command": "layer.newSolid", "params": {"name": "Pixel art 3", "color": "#3FB56B", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [460, 755, 0]}}
+{"command": "layer.newText", "params": {"text": "#3FB56B", "position": [460, 858], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Pixel art 3"}}
+{"command": "layer.newSolid", "params": {"name": "Pixel art 4", "color": "#F4C542", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [620, 755, 0]}}
+{"command": "layer.newText", "params": {"text": "#F4C542", "position": [620, 858], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Pixel art 4"}}
+{"command": "layer.newSolid", "params": {"name": "Pixel art 5", "color": "#E5533D", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [780, 755, 0]}}
+{"command": "layer.newText", "params": {"text": "#E5533D", "position": [780, 858], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Pixel art 5"}}
+{"command": "layer.newSolid", "params": {"name": "Pixel art 6", "color": "#F2EDE4", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [940, 755, 0]}}
+{"command": "layer.newText", "params": {"text": "#F2EDE4", "position": [940, 858], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Pixel art 6"}}
+{"command": "layer.newText", "params": {"text": "Aventure fantasy", "position": [540, 930], "font": "Lilita One", "style": "Regular", "size": 50, "fill": "#FFFFFF", "justify": "center", "name": "Palette Aventure fantasy"}}
+{"command": "layer.newSolid", "params": {"name": "Aventure fantasy 1", "color": "#0F2A2E", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [140, 1045, 0]}}
+{"command": "layer.newText", "params": {"text": "#0F2A2E", "position": [140, 1148], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Aventure fantasy 1"}}
+{"command": "layer.newSolid", "params": {"name": "Aventure fantasy 2", "color": "#2F6B4F", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [300, 1045, 0]}}
+{"command": "layer.newText", "params": {"text": "#2F6B4F", "position": [300, 1148], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Aventure fantasy 2"}}
+{"command": "layer.newSolid", "params": {"name": "Aventure fantasy 3", "color": "#C9A227", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [460, 1045, 0]}}
+{"command": "layer.newText", "params": {"text": "#C9A227", "position": [460, 1148], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Aventure fantasy 3"}}
+{"command": "layer.newSolid", "params": {"name": "Aventure fantasy 4", "color": "#7A4FB3", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [620, 1045, 0]}}
+{"command": "layer.newText", "params": {"text": "#7A4FB3", "position": [620, 1148], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Aventure fantasy 4"}}
+{"command": "layer.newSolid", "params": {"name": "Aventure fantasy 5", "color": "#F28C38", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [780, 1045, 0]}}
+{"command": "layer.newText", "params": {"text": "#F28C38", "position": [780, 1148], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Aventure fantasy 5"}}
+{"command": "layer.newSolid", "params": {"name": "Aventure fantasy 6", "color": "#E8D9B5", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [940, 1045, 0]}}
+{"command": "layer.newText", "params": {"text": "#E8D9B5", "position": [940, 1148], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Aventure fantasy 6"}}
+{"command": "layer.newText", "params": {"text": "Vulgarisation", "position": [540, 1220], "font": "Lilita One", "style": "Regular", "size": 50, "fill": "#FFFFFF", "justify": "center", "name": "Palette Vulgarisation"}}
+{"command": "layer.newSolid", "params": {"name": "Vulgarisation 1", "color": "#0E1A2B", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [140, 1335, 0]}}
+{"command": "layer.newText", "params": {"text": "#0E1A2B", "position": [140, 1438], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Vulgarisation 1"}}
+{"command": "layer.newSolid", "params": {"name": "Vulgarisation 2", "color": "#2E86DE", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [300, 1335, 0]}}
+{"command": "layer.newText", "params": {"text": "#2E86DE", "position": [300, 1438], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Vulgarisation 2"}}
+{"command": "layer.newSolid", "params": {"name": "Vulgarisation 3", "color": "#22C39B", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [460, 1335, 0]}}
+{"command": "layer.newText", "params": {"text": "#22C39B", "position": [460, 1438], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Vulgarisation 3"}}
+{"command": "layer.newSolid", "params": {"name": "Vulgarisation 4", "color": "#FFB020", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [620, 1335, 0]}}
+{"command": "layer.newText", "params": {"text": "#FFB020", "position": [620, 1438], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Vulgarisation 4"}}
+{"command": "layer.newSolid", "params": {"name": "Vulgarisation 5", "color": "#FF5C7A", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [780, 1335, 0]}}
+{"command": "layer.newText", "params": {"text": "#FF5C7A", "position": [780, 1438], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Vulgarisation 5"}}
+{"command": "layer.newSolid", "params": {"name": "Vulgarisation 6", "color": "#F4F6FA", "width": 140, "height": 140}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [940, 1335, 0]}}
+{"command": "layer.newText", "params": {"text": "#F4F6FA", "position": [940, 1438], "font": "Montserrat", "style": "SemiBold", "size": 24, "fill": "#C9CFDC", "justify": "center", "name": "hex Vulgarisation 6"}}
+{"command": "layer.newText", "params": {"text": "Titres : Lilita One", "position": [540, 1550], "font": "Lilita One", "style": "Regular", "size": 60, "fill": "#FFD24A", "justify": "center", "name": "Police titres"}}
+{"command": "layer.newText", "params": {"text": "Sous-titres : Montserrat\nExtraBold, contour noir", "position": [540, 1640], "font": "Montserrat", "style": "ExtraBold", "size": 50, "fill": "#FFFFFF", "justify": "center", "stroke": "#000000", "applyStroke": true, "strokeWidth": 12, "strokeOverFill": false, "name": "Police sous-titres"}}
+{"command": "layer.newText", "params": {"text": "PIXEL : PRESS START 2P", "position": [540, 1810], "font": "Press Start 2P", "style": "Regular", "size": 32, "fill": "#3FB56B", "justify": "center", "name": "Police pixel"}}
+{"command": "comp.new", "params": {"name": "Guide zones 9:16", "width": 1080, "height": 1920, "frameRate": 24, "duration": 1, "background": "#000000", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Zone visage-action", "color": "#34C759", "width": 960, "height": 1150}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [540, 725, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 18}}
+{"command": "layer.newSolid", "params": {"name": "Zone sous-titres", "color": "#0A84FF", "width": 800, "height": 260}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [540, 1430, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 45}}
+{"command": "layer.newSolid", "params": {"name": "Bas 15% (UI appli)", "color": "#FF3B30", "width": 1080, "height": 288}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [540, 1776, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Haut 8% (UI appli)", "color": "#FF3B30", "width": 1080, "height": 150}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [540, 75, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Bord gauche", "color": "#FF3B30", "width": 60, "height": 1920}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [30, 960, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Bord droit", "color": "#FF3B30", "width": 60, "height": 1920}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [1050, 960, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Colonne boutons", "color": "#FF9500", "width": 140, "height": 732}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "position", "value": [1010, 1266, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 60}}
+{"command": "layer.newText", "params": {"text": "INTERDIT : UI de l'appli", "position": [540, 1790], "font": "Montserrat", "style": "ExtraBold", "size": 40, "fill": "#FFFFFF", "justify": "center", "name": "L bas"}}
+{"command": "layer.newText", "params": {"text": "boutons", "position": [1005, 1270], "font": "Montserrat", "style": "ExtraBold", "size": 26, "fill": "#FFFFFF", "justify": "center", "name": "L boutons"}}
+{"command": "layer.newText", "params": {"text": "SOUS-TITRES\n≤ 2 lignes · ≤ 20 car.", "position": [540, 1410], "font": "Montserrat", "style": "ExtraBold", "size": 40, "fill": "#FFFFFF", "justify": "center", "name": "L sous-titres"}}
+{"command": "layer.newText", "params": {"text": "visage + action", "position": [540, 740], "font": "Montserrat", "style": "ExtraBold", "size": 44, "fill": "#FFFFFF", "justify": "center", "name": "L action"}}

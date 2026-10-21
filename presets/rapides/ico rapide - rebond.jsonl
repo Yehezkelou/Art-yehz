@@ -1,0 +1,4 @@
+// ico-vid rapide : Rebond squash & stretch depuis le point d'entrée. S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/position", "expression": "var H = 300, F = 1.6, AM = 0.5;   // hauteur (px), rebonds/s, amortissement\nvar d = Math.max(0, time - inPoint), a = Math.abs(Math.sin(Math.PI * d * F)), dec = Math.exp(-AM * d);\nvalue - [0, H * a * dec];"}}
+{"command": "prop.setExpression", "params": {"path": "transform/scale", "expression": "var F = 1.6, AM = 0.5;\nvar d = Math.max(0, time - inPoint), a = Math.abs(Math.sin(Math.PI * d * F)), dec = Math.exp(-AM * d);\nvar c = Math.max(0, 1 - a / 0.2) * dec;\nvar v = value.slice(); v[0] *= 1 + 0.25 * c; v[1] *= 1 - 0.25 * c; v;"}}

@@ -1,0 +1,50 @@
+{"command": "file.newProject", "params": {}}
+{"command": "file.importProject", "params": {"path": "/home/Yehezou/videos/bible/bible.ecproj"}}
+{"command": "comp.new", "params": {"name": "PIXEL - sortie 1080x1920", "width": 1080, "height": 1920, "frameRate": 24, "duration": 20, "background": "#1D1B2E", "open": true}}
+{"command": "comp.new", "params": {"name": "PIXEL 270x480", "width": 270, "height": 480, "frameRate": 12, "duration": 20, "background": "#1D1B2E", "preserveFrameRate": true, "open": true}}
+{"command": "layer.newShape", "params": {"name": "Ciel", "kind": "rect", "size": [270, 480], "position": [135, 240], "fill": "#1D1B2E"}}
+{"command": "prop.setExpression", "params": {"layer": "Ciel", "path": "contents/group/contents/fill/color", "expression": "comp(\"PIXEL - sortie 1080x1920\").layer(\"Controles\").effect(2)(1)"}}
+{"command": "layer.newShape", "params": {"name": "Lune", "kind": "ellipse", "size": [24, 24], "position": [214, 132], "fill": "#F2EDE4"}}
+{"command": "layer.newShape", "params": {"name": "Sol", "kind": "rect", "size": [270, 72], "position": [135, 444], "fill": "#3FB56B"}}
+{"command": "prop.setExpression", "params": {"layer": "Sol", "path": "contents/group/contents/fill/color", "expression": "comp(\"PIXEL - sortie 1080x1920\").layer(\"Controles\").effect(3)(1)"}}
+{"command": "layer.newShape", "params": {"name": "Piece", "kind": "rect", "size": [8, 8], "position": [176, 352], "fill": "#F4C542"}}
+{"command": "prop.setExpression", "params": {"layer": "Piece", "path": "contents/group/contents/fill/color", "expression": "comp(\"PIXEL - sortie 1080x1920\").layer(\"Controles\").effect(1)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Piece", "path": "transform/opacity", "expression": "Math.floor(time * 4) % 2 ? 100 : 55"}}
+{"command": "prop.setExpression", "params": {"layer": "Piece", "path": "transform/position", "expression": "[176, 352 + (Math.floor(time * 3) % 2 ? 0 : -2), 0]"}}
+{"command": "layer.newShape", "params": {"name": "Heros", "kind": "rect", "size": [16, 16], "position": [80, 400], "fill": "#E5533D"}}
+{"command": "prop.setExpression", "params": {"layer": "Heros", "path": "contents/group/contents/fill/color", "expression": "comp(\"PIXEL - sortie 1080x1920\").layer(\"Controles\").effect(4)(1)"}}
+{"command": "layer.newShape", "params": {"name": "Oeil", "kind": "rect", "size": [4, 4], "position": [84, 396], "fill": "#1D1B2E"}}
+{"command": "layer.setParent", "params": {"layers": ["Oeil"], "parent": "Heros"}}
+{"command": "prop.setExpression", "params": {"layer": "Heros", "path": "transform/position", "expression": "var p = 2, d = time % p, h = 0;\nif (d < 0.5) { var u = d / 0.5; h = 4 * 40 * u * (1 - u); }\n[80, Math.round(400 - h), 0];"}}
+{"command": "layer.newText", "params": {"name": "Titre pixel", "text": "TITRE", "position": [135, 80], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "justify": "center", "applyFill": true}}
+{"command": "prop.setExpression", "params": {"layer": "Titre pixel", "path": "text/sourceText", "expression": "comp(\"PIXEL - sortie 1080x1920\").layer(\"TXT Titre\").text.sourceText"}}
+{"command": "layer.newText", "params": {"name": "ST 01", "text": "SOUS-TITRE\n12 CAR. MAX", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "justify": "center", "applyFill": true, "leading": 24}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "layer.addItem", "params": {"item": "PIXEL 270x480", "time": 0, "index": 1}}
+{"command": "layer.setTransform", "params": {"layers": ["PIXEL 270x480"], "prop": "scale", "value": [400, 400, 100]}}
+{"command": "layer.setSwitch", "params": {"layers": ["PIXEL 270x480"], "switch": "quality", "value": false}}
+{"command": "layer.newText", "params": {"name": "TXT Titre", "text": "TITRE", "position": [540, 200], "font": "Press Start 2P", "style": "Regular", "size": 32, "fill": "#FFFFFF", "justify": "center", "applyFill": true}}
+{"command": "layer.setSwitch", "params": {"layers": ["TXT Titre"], "switch": "video", "value": false}}
+{"command": "layer.newNull", "params": {}}
+{"command": "layer.rename", "params": {"layer": "#1", "name": "Controles"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#1/color", "value": "#F4C542"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#2/color", "value": "#1D1B2E"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#3/color", "value": "#3FB56B"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#4/color", "value": "#E5533D"}}
+{"command": "comp.open", "params": {"comp": "Signature"}}
+{"command": "layer.setText", "params": {"layer": "Nom chaine", "fill": "#F4C542"}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "layer.addItem", "params": {"item": "Signature", "time": 19, "index": 1}}
+{"command": "layer.addItem", "params": {"item": "Guide zones 9:16", "time": 0, "index": 1}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "guide", "value": true}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "lock", "value": true}}
+{"command": "essential.addProperty", "params": {"comp": "PIXEL - sortie 1080x1920", "layer": "TXT Titre", "path": "text/sourceText", "name": "Titre (police pixel)"}}
+{"command": "essential.addProperty", "params": {"comp": "PIXEL - sortie 1080x1920", "layer": "Controles", "path": "effects/#1/color", "name": "Couleur principale (pièces)"}}
+{"command": "essential.addProperty", "params": {"comp": "PIXEL - sortie 1080x1920", "layer": "Controles", "path": "effects/#2/color", "name": "Couleur fond"}}
+{"command": "essential.addProperty", "params": {"comp": "PIXEL - sortie 1080x1920", "layer": "Controles", "path": "effects/#3/color", "name": "Couleur sol"}}
+{"command": "essential.addProperty", "params": {"comp": "PIXEL - sortie 1080x1920", "layer": "Controles", "path": "effects/#4/color", "name": "Couleur héros"}}

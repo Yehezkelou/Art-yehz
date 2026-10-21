@@ -1,0 +1,10 @@
+// ico-vid : surligne le mot en cours (karaoké) sur le calque texte sélectionné.
+// Réglage : l'effet « Slider Control » ajouté = mots par seconde (0 = 2,5 par défaut).
+// Couleur du mot : Animateur ▸ Fill Color. Un seul animateur de texte sur le calque.
+{"command": "effect.apply", "params": {"effect": "Slider Control"}}
+{"command": "layer.addTextAnimator", "params": {"properties": ["fillColor"], "name": "ico Mot surligne"}}
+{"command": "prop.set", "params": {"path": "text/animators/animator/selectors/rangeSelector/advanced/units", "value": 1}}
+{"command": "prop.set", "params": {"path": "text/animators/animator/selectors/rangeSelector/advanced/basedOn", "value": 2}}
+{"command": "prop.set", "params": {"path": "text/animators/animator/properties/fillColor", "value": "#FFD24A"}}
+{"command": "prop.setExpression", "params": {"path": "text/animators/animator/selectors/rangeSelector/start", "expression": "var v = effect(\"Slider Control\")(1), w = v > 0 ? v : 2.5; Math.floor(Math.max(0, time - inPoint) * w);"}}
+{"command": "prop.setExpression", "params": {"path": "text/animators/animator/selectors/rangeSelector/end", "expression": "var v = effect(\"Slider Control\")(1), w = v > 0 ? v : 2.5; Math.floor(Math.max(0, time - inPoint) * w) + 1;"}}

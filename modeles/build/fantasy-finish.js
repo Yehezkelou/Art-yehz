@@ -1,0 +1,6 @@
+var D = {"spans": [["FANTASY - episode", "ST 01", 7.5, 10.5], ["FANTASY - episode", "Voile a suivre", 85, 89], ["FANTASY - episode", "A suivre", 85.4, 89], ["FANTASY - episode", "Episode suivant", 86, 89]], "fx": [["FANTASY - episode", "Controles", 1, "Couleur principale (or)"], ["FANTASY - episode", "Controles", 2, "Couleur fond (nuit)"], ["FANTASY - episode", "Controles", 3, "Couleur mousse"], ["FANTASY - episode", "Controles", 4, "Couleur magie"], ["FANTASY - episode", "Controles", 5, "Vitesse caméra (px/s)"]]};
+function compByName(n){for(var i=1;i<=app.project.numItems;i++){var it=app.project.item(i);if(it.name===n&&it.numLayers!==undefined)return it;}return null;}
+app.beginUndoGroup('Finitions du modèle'); var log=[];
+for(var i=0;i<D.spans.length;i++){var s=D.spans[i];var c=compByName(s[0]);var l=c?c.layer(s[1]):null; if(!l){log.push('absent '+s[1]);continue;} l.inPoint=s[2]; l.outPoint=s[3];}
+for(var j=0;j<D.fx.length;j++){var f=D.fx[j];var c2=compByName(f[0]);var l2=c2?c2.layer(f[1]):null; if(!l2){log.push('absent '+f[1]);continue;} l2.effect(f[2]).name=f[3];}
+app.endUndoGroup(); 'spans '+D.spans.length+' fx '+D.fx.length+' '+log.join(',');

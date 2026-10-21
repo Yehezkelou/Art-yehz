@@ -1,0 +1,3 @@
+// ico-vid rapide : Clignement automatique (sur un œil). S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/scale", "expression": "var P = 3.3;   // intervalle (s)\nvar dd = (time + 0.7) % P;\nvar y = dd < 0.14 ? 1 - 0.92 * Math.sin(Math.PI * dd / 0.14) : 1;\nvar v = value.slice(); v[1] *= y; v;"}}

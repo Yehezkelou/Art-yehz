@@ -1,0 +1,162 @@
+{
+ "effectcraftAnimationPreset": 1,
+ "name": "ico - Transition volet",
+ "properties": [],
+ "effects": [
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.4
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Volet entrée (s)",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "slider",
+     "name": "Slider",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 2,
+      "kind": "Slider",
+      "max": 1000000.0,
+      "min": -1000000.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 119,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.control.slider",
+    "kind": "Effect"
+   },
+   "match": "ec.control.slider",
+   "name": "Volet sortie (s)",
+   "uid": 118
+  },
+  {
+   "children": [
+    {
+     "hold_only": false,
+     "match": "completion",
+     "name": "Transition Completion",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 0,
+      "kind": "Slider",
+      "max": 100.0,
+      "min": 0.0,
+      "slider_max": 100.0,
+      "slider_min": 0.0
+     },
+     "uid": 121,
+     "value": {
+      "t": "Scalar",
+      "v": 0.0
+     },
+     "expr": {
+      "enabled": true,
+      "text": "var a = effect(\"Volet entrée (s)\")(\"Slider\"), b = effect(\"Volet sortie (s)\")(\"Slider\"), k = 1;\nif (a > 0) k = Math.min(k, (time - inPoint) / a);\nif (b > 0) k = Math.min(k, (outPoint - time) / b);\nk = Math.max(0, Math.min(1, k));\n(1 - k) * 100;"
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "angle",
+     "name": "Wipe Angle",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "kind": "Angle"
+     },
+     "uid": 122,
+     "value": {
+      "t": "Scalar",
+      "v": 90.0
+     }
+    },
+    {
+     "hold_only": false,
+     "match": "feather",
+     "name": "Feather",
+     "node": "Prop",
+     "shown_dims": 0,
+     "spatial": false,
+     "static_only": false,
+     "three_d_only": false,
+     "two_d_only": false,
+     "ui": {
+      "decimals": 1,
+      "kind": "Slider",
+      "max": 32000.0,
+      "min": 0.0,
+      "slider_max": 500.0,
+      "slider_min": 0.0
+     },
+     "uid": 123,
+     "value": {
+      "t": "Scalar",
+      "v": 30.0
+     }
+    }
+   ],
+   "enabled": true,
+   "kind": {
+    "effect": "ec.transition.linearwipe",
+    "kind": "Effect"
+   },
+   "match": "ec.transition.linearwipe",
+   "name": "ico Volet",
+   "uid": 120
+  }
+ ]
+}

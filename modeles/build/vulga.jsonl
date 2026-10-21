@@ -1,0 +1,118 @@
+{"command": "file.newProject", "params": {}}
+{"command": "file.importProject", "params": {"path": "/home/Yehezou/videos/bible/bible.ecproj"}}
+{"command": "comp.new", "params": {"name": "VULGA - a remplir", "width": 1080, "height": 1920, "frameRate": 24, "duration": 60, "background": "#0E1A2B", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Fond", "color": "#0E1A2B", "width": 1080, "height": 1920}}
+{"command": "effect.apply", "params": {"layer": "Fond", "effect": "Gradient Ramp"}}
+{"command": "prop.set", "params": {"layer": "Fond", "path": "effects/#1/start", "value": [540, 0]}}
+{"command": "prop.set", "params": {"layer": "Fond", "path": "effects/#1/end", "value": [540, 1920]}}
+{"command": "prop.setExpression", "params": {"layer": "Fond", "path": "effects/#1/startColor", "expression": "var c = thisComp.layer(\"Controles\").effect(2)(1); [Math.min(1, c[0]*2+0.04), Math.min(1, c[1]*2+0.04), Math.min(1, c[2]*2+0.06), 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Fond", "path": "effects/#1/endColor", "expression": "thisComp.layer(\"Controles\").effect(2)(1)"}}
+{"command": "layer.newShape", "params": {"name": "Zone schema", "kind": "rounded", "size": [960, 760], "position": [540, 860], "fill": "#16263D", "stroke": "#2E86DE", "strokeWidth": 6}}
+{"command": "prop.setExpression", "params": {"layer": "Zone schema", "path": "contents/group/contents/fill/color", "expression": "var c = thisComp.layer(\"Controles\").effect(2)(1); [Math.min(1, c[0]*1.6+0.02), Math.min(1, c[1]*1.6+0.03), Math.min(1, c[2]*1.6+0.05), 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Zone schema", "path": "contents/group/contents/stroke/color", "expression": "thisComp.layer(\"Controles\").effect(1)(1)"}}
+{"command": "prop.addKey", "params": {"layer": "Zone schema", "path": "transform/opacity", "time": 1.0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Zone schema", "path": "transform/opacity", "time": 1.4, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Zone schema", "path": "transform/scale", "time": 1.0, "timeBase": "comp", "value": [92, 92, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Zone schema", "path": "transform/scale", "time": 1.4, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "layer.newShape", "params": {"name": "Surligneur", "kind": "rect", "size": [700, 26], "position": [190, 330], "fill": "#FFB020"}}
+{"command": "prop.setExpression", "params": {"layer": "Surligneur", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(5)(1)"}}
+{"command": "layer.setTransform", "params": {"layers": ["Surligneur"], "prop": "anchor", "value": [-350, 0, 0]}}
+{"command": "prop.addKey", "params": {"layer": "Surligneur", "path": "transform/scale", "time": 0.5, "timeBase": "comp", "value": [0, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Surligneur", "path": "transform/scale", "time": 0.9, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "layer.newText", "params": {"name": "Question", "text": "La grande question ?", "position": [540, 300], "font": "Lilita One", "style": "Regular", "size": 88, "fill": "#F4F6FA", "justify": "center", "applyFill": true, "stroke": "#0E1A2B", "applyStroke": true, "strokeWidth": 10, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "Question", "path": "transform/scale", "time": 0, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Question", "path": "transform/scale", "time": 0.12, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Question", "path": "transform/scale", "time": 0.22, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Question", "path": "transform/opacity", "time": 0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Question", "path": "transform/opacity", "time": 0.08, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Point 1", "text": "1. Point 1 à remplir", "position": [140, 640], "font": "Montserrat", "style": "ExtraBold", "size": 54, "fill": "#F4F6FA", "justify": "left", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "Point 1", "path": "transform/opacity", "time": 3, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Point 1", "path": "transform/opacity", "time": 3.25, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Point 1", "path": "transform/position", "time": 3, "timeBase": "comp", "value": [100, 640, 0]}}
+{"command": "prop.addKey", "params": {"layer": "Point 1", "path": "transform/position", "time": 3.3, "timeBase": "comp", "value": [140, 640, 0]}}
+{"command": "layer.newText", "params": {"name": "Point 2", "text": "2. Point 2 à remplir", "position": [140, 800], "font": "Montserrat", "style": "ExtraBold", "size": 54, "fill": "#F4F6FA", "justify": "left", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "Point 2", "path": "transform/opacity", "time": 7, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Point 2", "path": "transform/opacity", "time": 7.25, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Point 2", "path": "transform/position", "time": 7, "timeBase": "comp", "value": [100, 800, 0]}}
+{"command": "prop.addKey", "params": {"layer": "Point 2", "path": "transform/position", "time": 7.3, "timeBase": "comp", "value": [140, 800, 0]}}
+{"command": "layer.newText", "params": {"name": "Point 3", "text": "3. Point 3 à remplir", "position": [140, 960], "font": "Montserrat", "style": "ExtraBold", "size": 54, "fill": "#F4F6FA", "justify": "left", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "Point 3", "path": "transform/opacity", "time": 11, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Point 3", "path": "transform/opacity", "time": 11.25, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Point 3", "path": "transform/position", "time": 11, "timeBase": "comp", "value": [100, 960, 0]}}
+{"command": "prop.addKey", "params": {"layer": "Point 3", "path": "transform/position", "time": 11.3, "timeBase": "comp", "value": [140, 960, 0]}}
+{"command": "layer.newShape", "params": {"name": "Fleche trait", "kind": "rect", "size": [560, 14], "position": [140, 1120], "fill": "#FF5C7A"}}
+{"command": "prop.setExpression", "params": {"layer": "Fleche trait", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(4)(1)"}}
+{"command": "layer.setTransform", "params": {"layers": ["Fleche trait"], "prop": "anchor", "value": [-280, 0, 0]}}
+{"command": "prop.addKey", "params": {"layer": "Fleche trait", "path": "transform/scale", "time": 13, "timeBase": "comp", "value": [0, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Fleche trait", "path": "transform/scale", "time": 13.4, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "layer.newShape", "params": {"name": "Fleche pointe haut", "kind": "rect", "size": [56, 14], "position": [679, 1102], "fill": "#FF5C7A"}}
+{"command": "prop.setExpression", "params": {"layer": "Fleche pointe haut", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(4)(1)"}}
+{"command": "layer.setTransform", "params": {"layers": ["Fleche pointe haut"], "prop": "rotation", "value": 40}}
+{"command": "prop.addKey", "params": {"layer": "Fleche pointe haut", "path": "transform/opacity", "time": 13.35, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Fleche pointe haut", "path": "transform/opacity", "time": 13.45, "timeBase": "comp", "value": 100}}
+{"command": "layer.newShape", "params": {"name": "Fleche pointe bas", "kind": "rect", "size": [56, 14], "position": [679, 1138], "fill": "#FF5C7A"}}
+{"command": "prop.setExpression", "params": {"layer": "Fleche pointe bas", "path": "contents/group/contents/fill/color", "expression": "thisComp.layer(\"Controles\").effect(4)(1)"}}
+{"command": "layer.setTransform", "params": {"layers": ["Fleche pointe bas"], "prop": "rotation", "value": -40}}
+{"command": "prop.addKey", "params": {"layer": "Fleche pointe bas", "path": "transform/opacity", "time": 13.35, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Fleche pointe bas", "path": "transform/opacity", "time": 13.45, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Conclusion fleche", "text": "donc…", "position": [740, 1140], "font": "Lilita One", "style": "Regular", "size": 60, "fill": "#22C39B", "justify": "left", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "Conclusion fleche", "path": "transform/scale", "time": 13.6, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Conclusion fleche", "path": "transform/scale", "time": 13.719999999999999, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Conclusion fleche", "path": "transform/scale", "time": 13.82, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Conclusion fleche", "path": "transform/opacity", "time": 13.6, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Conclusion fleche", "path": "transform/opacity", "time": 13.68, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "ST 01", "text": "Sous-titre : 20 car.\nmax, 2 lignes max", "position": [540, 1380], "font": "Montserrat", "style": "ExtraBold", "size": 72, "fill": "#FFFFFF", "justify": "center", "applyFill": true, "stroke": "#000000", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false, "leading": 86}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 1.5, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 1.62, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 1.72, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/opacity", "time": 1.5, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/opacity", "time": 1.58, "timeBase": "comp", "value": 100}}
+{"command": "layer.newSolid", "params": {"name": "Voile recap", "color": "#0E1A2B", "width": 1080, "height": 1920}}
+{"command": "prop.addKey", "params": {"layer": "Voile recap", "path": "transform/opacity", "time": 52, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Voile recap", "path": "transform/opacity", "time": 52.4, "timeBase": "comp", "value": 94}}
+{"command": "layer.newText", "params": {"name": "En resume", "text": "EN RÉSUMÉ", "position": [540, 640], "font": "Montserrat", "style": "ExtraBold", "size": 48, "fill": "#FFB020", "justify": "center", "applyFill": true, "tracking": 200}}
+{"command": "layer.newText", "params": {"name": "Recap", "text": "Le récap en\nune seule phrase.", "position": [540, 780], "font": "Lilita One", "style": "Regular", "size": 88, "fill": "#F4F6FA", "justify": "center", "applyFill": true, "leading": 100}}
+{"command": "layer.newText", "params": {"name": "Sources", "text": "Sources : auteur (année), site", "position": [540, 1590], "font": "Montserrat", "style": "SemiBold", "size": 30, "fill": "#C9CFDC", "justify": "center", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "En resume", "path": "transform/scale", "time": 52.3, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "En resume", "path": "transform/scale", "time": 52.419999999999995, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "En resume", "path": "transform/scale", "time": 52.519999999999996, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "En resume", "path": "transform/opacity", "time": 52.3, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "En resume", "path": "transform/opacity", "time": 52.379999999999995, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Recap", "path": "transform/scale", "time": 52.6, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Recap", "path": "transform/scale", "time": 52.72, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Recap", "path": "transform/scale", "time": 52.82, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Recap", "path": "transform/opacity", "time": 52.6, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Recap", "path": "transform/opacity", "time": 52.68, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Sources", "path": "transform/opacity", "time": 53, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sources", "path": "transform/opacity", "time": 53.4, "timeBase": "comp", "value": 100}}
+{"command": "layer.newNull", "params": {}}
+{"command": "layer.rename", "params": {"layer": "#1", "name": "Controles"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#1/color", "value": "#2E86DE"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#2/color", "value": "#0E1A2B"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#3/color", "value": "#22C39B"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#4/color", "value": "#FF5C7A"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#5/color", "value": "#FFB020"}}
+{"command": "comp.open", "params": {"comp": "Signature"}}
+{"command": "layer.setText", "params": {"layer": "Nom chaine", "fill": "#2E86DE"}}
+{"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
+{"command": "layer.addItem", "params": {"item": "Signature", "time": 59, "index": 1}}
+{"command": "layer.addItem", "params": {"item": "Guide zones 9:16", "time": 0, "index": 1}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "guide", "value": true}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "lock", "value": true}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Question", "path": "text/sourceText", "name": "Question (titre)"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Point 1", "path": "text/sourceText", "name": "Point 1"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Point 2", "path": "text/sourceText", "name": "Point 2"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Point 3", "path": "text/sourceText", "name": "Point 3"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Conclusion fleche", "path": "text/sourceText", "name": "Conclusion de la flèche"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Recap", "path": "text/sourceText", "name": "Récap en une phrase"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Sources", "path": "text/sourceText", "name": "Sources"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Controles", "path": "effects/#1/color", "name": "Couleur principale"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Controles", "path": "effects/#2/color", "name": "Couleur fond"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Controles", "path": "effects/#4/color", "name": "Couleur accent (flèches)"}}
+{"command": "essential.addProperty", "params": {"comp": "VULGA - a remplir", "layer": "Controles", "path": "effects/#5/color", "name": "Couleur surligneur"}}

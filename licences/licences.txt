@@ -1,0 +1,10 @@
+Ressources communes à toutes les vidéos (projet par projet : voir aussi le dossier de chaque vidéo)
+
+POLICES (téléchargées le 2026-10-20 depuis github.com/google/fonts, dossier ofl/)
+- Lilita One — Juan Montoreano — SIL Open Font License 1.1 — fonts/LilitaOne-OFL.txt
+- Montserrat (variable, wght) — The Montserrat Project Authors — SIL OFL 1.1 — fonts/Montserrat-OFL.txt
+- Press Start 2P — CodeMan38 / The Press Start 2P Project Authors — SIL OFL 1.1 — fonts/PressStart2P-OFL.txt
+OFL : usage libre dans les vidéos, y compris commercial ; on ne revend pas la police seule.
+
+MUSIQUE / BRUITAGES
+- (rien pour l'instant)

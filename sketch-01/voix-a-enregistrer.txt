@@ -1,0 +1,19 @@
+SKETCH 01 — « Le cloud »  (vertical 1080x1920, 24 i/s, 17 s)
+
+Enregistre ces 4 répliques au téléphone (une prise par réplique, ou tout d'une traite).
+Respecte les silences : c'est le silence avant la chute qui fait rire.
+
+[00.8 -> 04.8]  « Ma mère m'a demandé c'est quoi le cloud. »
+[05.2 -> 09.4]  « J'ai dit : l'ordinateur de quelqu'un d'autre. »
+[09.4 -> 10.6]  ---- SILENCE (le perso cligne des yeux, il attend) ----
+[10.6 -> 13.7]  « Elle : donc nos photos sont chez un inconnu ? »
+                 (voix un peu plus aiguë, c'est la mère qui parle)
+[13.7 -> 14.5]  ---- RÉACTION : il se fige, yeux écarquillés ----
+[14.5 -> 16.4]  « Putain, elle a compris le cloud avant moi. »
+
+Quand c'est enregistré :
+  1. Dépose le fichier (.wav ou .mp3) dans ce dossier.
+  2. Dis-moi « cale la voix du sketch 01 ».
+     -> import, placement, puis Animation > Assistant > Convertir l'audio en images clés
+        (keys.audioToKeyframes) pour que la bouche suive vraiment la voix,
+        et recalage des sous-titres sur les vraies durées.

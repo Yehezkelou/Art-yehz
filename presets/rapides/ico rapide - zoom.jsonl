@@ -1,0 +1,3 @@
+// ico-vid rapide : Zoom de réaction à chaque marqueur. S'applique au calque sélectionné (remplace son expression).
+// Réglages : les nombres en tête de l'expression (Propriété ▸ expression).
+{"command": "prop.setExpression", "params": {"path": "transform/scale", "expression": "var t0 = -1; for (var i = 1; i <= marker.numKeys; i++) { if (marker.key(i).time <= time) t0 = marker.key(i).time; }\nvar d = t0 < 0 ? -1 : time - t0;\nvar Z = 20;   // zoom en %\nvar k = 0;\nif (d >= 0 && d < 0.15) k = Z * d / 0.15;\nelse if (d >= 0.15 && d < 0.4) k = Z - Z * 0.7 * (d - 0.15) / 0.25;\nelse if (d >= 0.4) k = Z * 0.3;\nvar v = value.slice(); v[0] *= 1 + k / 100; v[1] *= 1 + k / 100; v;"}}

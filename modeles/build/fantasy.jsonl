@@ -1,0 +1,177 @@
+{"command": "file.newProject", "params": {}}
+{"command": "file.importProject", "params": {"path": "/home/Yehezou/videos/bible/bible.ecproj"}}
+{"command": "comp.new", "params": {"name": "FANTASY - episode", "width": 1920, "height": 1080, "frameRate": 24, "duration": 90, "background": "#0F2A2E", "open": true}}
+{"command": "comp.new", "params": {"name": "Decor parallaxe", "width": 1920, "height": 1080, "frameRate": 24, "duration": 90, "background": "#0F2A2E", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Ciel", "color": "#0F2A2E", "width": 1920, "height": 1080}}
+{"command": "effect.apply", "params": {"layer": "Ciel", "effect": "Gradient Ramp"}}
+{"command": "prop.set", "params": {"layer": "Ciel", "path": "effects/#1/start", "value": [960, 0]}}
+{"command": "prop.set", "params": {"layer": "Ciel", "path": "effects/#1/end", "value": [960, 1080]}}
+{"command": "prop.setExpression", "params": {"layer": "Ciel", "path": "effects/#1/startColor", "expression": "var c = comp(\"FANTASY - episode\").layer(\"Controles\").effect(2)(1); [Math.min(1, c[0]*2.2+0.06), Math.min(1, c[1]*2.2+0.06), Math.min(1, c[2]*2.2+0.1), 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Ciel", "path": "effects/#1/endColor", "expression": "comp(\"FANTASY - episode\").layer(\"Controles\").effect(2)(1)"}}
+{"command": "layer.newShape", "params": {"name": "Lune", "kind": "ellipse", "size": [150, 150], "position": [1480, 230], "fill": "#E8D9B5"}}
+{"command": "layer.newShape", "params": {"name": "Plan loin", "kind": "ellipse", "size": [4200, 900], "position": [1300, 820], "fill": "#2F6B4F"}}
+{"command": "prop.setExpression", "params": {"layer": "Plan loin", "path": "contents/group/contents/fill/color", "expression": "var c = comp(\"FANTASY - episode\").layer(\"Controles\").effect(3)(1); [c[0]*0.55, c[1]*0.55, c[2]*0.55, 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Plan loin", "path": "transform/position", "expression": "[1300 - time * comp(\"FANTASY - episode\").layer(\"Controles\").effect(5)(1) * 0.25, 820, 0]"}}
+{"command": "layer.newShape", "params": {"name": "Plan milieu", "kind": "ellipse", "size": [4000, 700], "position": [1300, 980], "fill": "#2F6B4F"}}
+{"command": "prop.setExpression", "params": {"layer": "Plan milieu", "path": "contents/group/contents/fill/color", "expression": "var c = comp(\"FANTASY - episode\").layer(\"Controles\").effect(3)(1); [c[0]*0.8, c[1]*0.8, c[2]*0.8, 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Plan milieu", "path": "transform/position", "expression": "[1300 - time * comp(\"FANTASY - episode\").layer(\"Controles\").effect(5)(1) * 0.6, 980, 0]"}}
+{"command": "layer.newShape", "params": {"name": "Premier plan", "kind": "ellipse", "size": [4400, 520], "position": [1300, 1120], "fill": "#2F6B4F"}}
+{"command": "prop.setExpression", "params": {"layer": "Premier plan", "path": "contents/group/contents/fill/color", "expression": "var c = comp(\"FANTASY - episode\").layer(\"Controles\").effect(2)(1); [c[0]*0.5, c[1]*0.5, c[2]*0.5, 1]"}}
+{"command": "prop.setExpression", "params": {"layer": "Premier plan", "path": "transform/position", "expression": "[1300 - time * comp(\"FANTASY - episode\").layer(\"Controles\").effect(5)(1) * 1.2, 1120, 0]"}}
+{"command": "layer.newSolid", "params": {"name": "Brume", "color": "#FFFFFF", "width": 480, "height": 270}}
+{"command": "layer.setTransform", "params": {"layers": ["Brume"], "prop": "scale", "value": [400, 400, 100]}}
+{"command": "effect.apply", "params": {"layer": "Brume", "effect": "Fractal Noise"}}
+{"command": "prop.set", "params": {"layer": "Brume", "path": "effects/#1/contrast", "value": 160}}
+{"command": "prop.set", "params": {"layer": "Brume", "path": "effects/#1/brightness", "value": -35}}
+{"command": "prop.set", "params": {"layer": "Brume", "path": "effects/#1/transform/scale", "value": 175}}
+{"command": "prop.set", "params": {"layer": "Brume", "path": "effects/#1/complexity", "value": 3}}
+{"command": "prop.setExpression", "params": {"layer": "Brume", "path": "effects/#1/evolution", "expression": "time * 25"}}
+{"command": "prop.setExpression", "params": {"layer": "Brume", "path": "effects/#1/transform/offset", "expression": "[0.5 + time * 0.004, 0.5]"}}
+{"command": "layer.setBlendMode", "params": {"layers": ["Brume"], "mode": "Screen"}}
+{"command": "layer.setTransform", "params": {"layers": ["Brume"], "prop": "opacity", "value": 22}}
+{"command": "layer.newSolid", "params": {"name": "Particules", "color": "#000000", "width": 1920, "height": 1080}}
+{"command": "effect.apply", "params": {"layer": "Particules", "effect": "CC Particle Systems II"}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/birthRate", "value": 0.8}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/longevity", "value": 6}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/producer/position", "value": [0.5, 0.75]}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/producer/radiusX", "value": 1000}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/producer/radiusY", "value": 300}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/physics/animation", "value": 1}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/physics/velocity", "value": 0.25}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/physics/gravity", "value": -0.05}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/particle/particleType", "value": 2}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/particle/birthSize", "value": 0.12}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/particle/deathSize", "value": 0.03}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/particle/maxOpacity", "value": 80}}
+{"command": "prop.set", "params": {"layer": "Particules", "path": "effects/#1/particle/transferMode", "value": 2}}
+{"command": "prop.setExpression", "params": {"layer": "Particules", "path": "effects/#1/particle/birthColor", "expression": "comp(\"FANTASY - episode\").layer(\"Controles\").effect(1)(1)"}}
+{"command": "prop.setExpression", "params": {"layer": "Particules", "path": "effects/#1/particle/deathColor", "expression": "comp(\"FANTASY - episode\").layer(\"Controles\").effect(4)(1)"}}
+{"command": "layer.setBlendMode", "params": {"layers": ["Particules"], "mode": "Add"}}
+{"command": "comp.new", "params": {"name": "Generique", "width": 1920, "height": 1080, "frameRate": 24, "duration": 4, "background": "#000000", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Fond generique", "color": "#000000", "width": 1920, "height": 1080}}
+{"command": "effect.apply", "params": {"layer": "Fond generique", "effect": "Gradient Ramp"}}
+{"command": "prop.set", "params": {"layer": "Fond generique", "path": "effects/#1/start", "value": [960, 540]}}
+{"command": "prop.set", "params": {"layer": "Fond generique", "path": "effects/#1/end", "value": [960, 1500]}}
+{"command": "prop.set", "params": {"layer": "Fond generique", "path": "effects/#1/shape", "value": 1}}
+{"command": "prop.setExpression", "params": {"layer": "Fond generique", "path": "effects/#1/startColor", "expression": "comp(\"FANTASY - episode\").layer(\"Controles\").effect(2)(1)"}}
+{"command": "prop.set", "params": {"layer": "Fond generique", "path": "effects/#1/endColor", "value": "#000000"}}
+{"command": "layer.newText", "params": {"name": "Titre serie", "text": "LA QUÊTE DE ...", "position": [960, 580], "font": "Lilita One", "style": "Regular", "size": 150, "fill": "#C9A227", "justify": "center", "applyFill": true, "stroke": "#0F2A2E", "applyStroke": true, "strokeWidth": 10, "strokeOverFill": false}}
+{"command": "prop.setExpression", "params": {"layer": "Titre serie", "path": "text/sourceText", "expression": "comp(\"FANTASY - episode\").layer(\"TXT Titre serie\").text.sourceText"}}
+{"command": "prop.addKey", "params": {"layer": "Titre serie", "path": "transform/scale", "time": 0, "timeBase": "comp", "value": [94, 94, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Titre serie", "path": "transform/scale", "time": 4, "timeBase": "comp", "value": [104, 104, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Titre serie", "path": "transform/opacity", "time": 0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Titre serie", "path": "transform/opacity", "time": 0.6, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Titre serie", "path": "transform/opacity", "time": 3.4, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Titre serie", "path": "transform/opacity", "time": 4, "timeBase": "comp", "value": 0}}
+{"command": "layer.newText", "params": {"name": "Sous-titre serie", "text": "une série ico-vid", "position": [960, 680], "font": "Montserrat", "style": "ExtraBold", "size": 40, "fill": "#E8D9B5", "justify": "center", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre serie", "path": "transform/opacity", "time": 0.8, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre serie", "path": "transform/opacity", "time": 1.4, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre serie", "path": "transform/opacity", "time": 3.4, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre serie", "path": "transform/opacity", "time": 4, "timeBase": "comp", "value": 0}}
+{"command": "comp.new", "params": {"name": "Titre episode", "width": 1920, "height": 1080, "frameRate": 24, "duration": 3, "background": "#000000", "open": true}}
+{"command": "layer.newText", "params": {"name": "Numero episode", "text": "ÉPISODE 1", "position": [960, 470], "font": "Montserrat", "style": "ExtraBold", "size": 48, "fill": "#E8D9B5", "justify": "center", "applyFill": true, "tracking": 200}}
+{"command": "prop.setExpression", "params": {"layer": "Numero episode", "path": "text/sourceText", "expression": "comp(\"FANTASY - episode\").layer(\"TXT Numero episode\").text.sourceText"}}
+{"command": "layer.newText", "params": {"name": "Titre ep", "text": "Le titre de l'épisode", "position": [960, 600], "font": "Lilita One", "style": "Regular", "size": 110, "fill": "#C9A227", "justify": "center", "applyFill": true, "stroke": "#0F2A2E", "applyStroke": true, "strokeWidth": 10, "strokeOverFill": false}}
+{"command": "prop.setExpression", "params": {"layer": "Titre ep", "path": "text/sourceText", "expression": "comp(\"FANTASY - episode\").layer(\"TXT Titre episode\").text.sourceText"}}
+{"command": "prop.addKey", "params": {"layer": "Numero episode", "path": "transform/opacity", "time": 0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Numero episode", "path": "transform/opacity", "time": 0.5, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Numero episode", "path": "transform/opacity", "time": 2.4, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Numero episode", "path": "transform/opacity", "time": 3, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/opacity", "time": 0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/opacity", "time": 0.5, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/opacity", "time": 2.4, "timeBase": "comp", "value": 100}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/opacity", "time": 3, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/scale", "time": 0.15, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/scale", "time": 0.27, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/scale", "time": 0.37, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/opacity", "time": 0.15, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Titre ep", "path": "transform/opacity", "time": 0.22999999999999998, "timeBase": "comp", "value": 100}}
+{"command": "comp.new", "params": {"name": "Signature 16:9", "width": 1920, "height": 1080, "frameRate": 24, "duration": 1, "background": "#101218", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Fond signature", "color": "#101218", "width": 1920, "height": 1080}}
+{"command": "layer.newText", "params": {"name": "Nom chaine", "text": "ico-vid", "position": [960, 580], "font": "Lilita One", "style": "Regular", "size": 150, "fill": "#C9A227", "justify": "center", "applyFill": true, "stroke": "#141826", "applyStroke": true, "strokeWidth": 14, "strokeOverFill": false}}
+{"command": "layer.newText", "params": {"name": "Pseudo", "text": "@yehz", "position": [960, 660], "font": "Montserrat", "style": "ExtraBold", "size": 44, "fill": "#F6F1E7", "justify": "center", "applyFill": true}}
+{"command": "prop.addKey", "params": {"layer": "Nom chaine", "path": "transform/scale", "time": 0, "timeBase": "comp", "value": [0, 0, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom chaine", "path": "transform/scale", "time": 0.17, "timeBase": "comp", "value": [118, 118, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom chaine", "path": "transform/scale", "time": 0.29, "timeBase": "comp", "value": [96, 96, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom chaine", "path": "transform/scale", "time": 0.38, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom chaine", "path": "transform/scale", "time": 0.85, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Nom chaine", "path": "transform/scale", "time": 1.0, "timeBase": "comp", "value": [108, 108, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Pseudo", "path": "transform/opacity", "time": 0.25, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Pseudo", "path": "transform/opacity", "time": 0.42, "timeBase": "comp", "value": 100}}
+{"command": "comp.new", "params": {"name": "Guide zones 16:9", "width": 1920, "height": 1080, "frameRate": 24, "duration": 1, "background": "#000000", "open": true}}
+{"command": "layer.newSolid", "params": {"name": "Bord haut", "color": "#FF3B30", "width": 1920, "height": 54}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord haut"], "prop": "position", "value": [960, 27, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord haut"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Bord bas", "color": "#FF3B30", "width": 1920, "height": 54}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord bas"], "prop": "position", "value": [960, 1053, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord bas"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Bord gauche", "color": "#FF3B30", "width": 96, "height": 1080}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord gauche"], "prop": "position", "value": [48, 540, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord gauche"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Bord droit", "color": "#FF3B30", "width": 96, "height": 1080}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord droit"], "prop": "position", "value": [1872, 540, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["Bord droit"], "prop": "opacity", "value": 55}}
+{"command": "layer.newSolid", "params": {"name": "Zone sous-titres", "color": "#0A84FF", "width": 1440, "height": 150}}
+{"command": "layer.setTransform", "params": {"layers": ["Zone sous-titres"], "prop": "position", "value": [960, 925, 0]}}
+{"command": "layer.setTransform", "params": {"layers": ["Zone sous-titres"], "prop": "opacity", "value": 40}}
+{"command": "comp.open", "params": {"comp": "FANTASY - episode"}}
+{"command": "layer.addItem", "params": {"item": "Decor parallaxe", "time": 0, "index": 1}}
+{"command": "layer.newShape", "params": {"name": "Heros (a remplacer)", "kind": "rounded", "size": [130, 230], "position": [700, 800], "fill": "#E8D9B5", "stroke": "#0F2A2E", "strokeWidth": 8}}
+{"command": "layer.newShape", "params": {"name": "Tete heros", "kind": "ellipse", "size": [110, 110], "position": [700, 630], "fill": "#E8D9B5", "stroke": "#0F2A2E", "strokeWidth": 8}}
+{"command": "layer.setParent", "params": {"layers": ["Tete heros"], "parent": "Heros (a remplacer)"}}
+{"command": "prop.setExpression", "params": {"layer": "Heros (a remplacer)", "path": "transform/scale", "expression": "var s = Math.sin(time * 2.1) * 1.2; [100 - s * 0.5, 100 + s, 100]"}}
+{"command": "layer.addItem", "params": {"item": "Titre episode", "time": 4, "index": 1}}
+{"command": "layer.addItem", "params": {"item": "Generique", "time": 0, "index": 1}}
+{"command": "layer.newText", "params": {"name": "ST 01", "text": "Sous-titre : 2 lignes max,\nreste dans la zone bleue", "position": [960, 905], "font": "Montserrat", "style": "ExtraBold", "size": 54, "fill": "#FFFFFF", "justify": "center", "applyFill": true, "stroke": "#000000", "applyStroke": true, "strokeWidth": 10, "strokeOverFill": false, "leading": 64}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 7.5, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 7.62, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/scale", "time": 7.72, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/opacity", "time": 7.5, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "ST 01", "path": "transform/opacity", "time": 7.58, "timeBase": "comp", "value": 100}}
+{"command": "layer.newSolid", "params": {"name": "Voile a suivre", "color": "#000000", "width": 1920, "height": 1080}}
+{"command": "prop.addKey", "params": {"layer": "Voile a suivre", "path": "transform/opacity", "time": 85, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Voile a suivre", "path": "transform/opacity", "time": 85.8, "timeBase": "comp", "value": 75}}
+{"command": "layer.newText", "params": {"name": "A suivre", "text": "À suivre…", "position": [960, 560], "font": "Lilita One", "style": "Regular", "size": 130, "fill": "#C9A227", "justify": "center", "applyFill": true, "stroke": "#0F2A2E", "applyStroke": true, "strokeWidth": 10, "strokeOverFill": false}}
+{"command": "prop.addKey", "params": {"layer": "A suivre", "path": "transform/scale", "time": 85.4, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "A suivre", "path": "transform/scale", "time": 85.52000000000001, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "A suivre", "path": "transform/scale", "time": 85.62, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "A suivre", "path": "transform/opacity", "time": 85.4, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "A suivre", "path": "transform/opacity", "time": 85.48, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Episode suivant", "text": "Prochain épisode : ...", "position": [960, 650], "font": "Montserrat", "style": "ExtraBold", "size": 44, "fill": "#E8D9B5", "justify": "center", "applyFill": true}}
+{"command": "prop.setExpression", "params": {"layer": "Episode suivant", "path": "text/sourceText", "expression": "thisComp.layer(\"TXT Episode suivant\").text.sourceText"}}
+{"command": "prop.addKey", "params": {"layer": "Episode suivant", "path": "transform/opacity", "time": 86, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Episode suivant", "path": "transform/opacity", "time": 86.5, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "TXT Titre serie", "text": "LA QUÊTE DE ...", "position": [960, 100], "font": "Montserrat", "style": "ExtraBold", "size": 30, "fill": "#FFFFFF", "justify": "center", "applyFill": true}}
+{"command": "layer.setSwitch", "params": {"layers": ["TXT Titre serie"], "switch": "video", "value": false}}
+{"command": "layer.newText", "params": {"name": "TXT Numero episode", "text": "ÉPISODE 1", "position": [960, 100], "font": "Montserrat", "style": "ExtraBold", "size": 30, "fill": "#FFFFFF", "justify": "center", "applyFill": true}}
+{"command": "layer.setSwitch", "params": {"layers": ["TXT Numero episode"], "switch": "video", "value": false}}
+{"command": "layer.newText", "params": {"name": "TXT Titre episode", "text": "Le titre de l'épisode", "position": [960, 100], "font": "Montserrat", "style": "ExtraBold", "size": 30, "fill": "#FFFFFF", "justify": "center", "applyFill": true}}
+{"command": "layer.setSwitch", "params": {"layers": ["TXT Titre episode"], "switch": "video", "value": false}}
+{"command": "layer.newText", "params": {"name": "TXT Episode suivant", "text": "Prochain épisode : ...", "position": [960, 100], "font": "Montserrat", "style": "ExtraBold", "size": 30, "fill": "#FFFFFF", "justify": "center", "applyFill": true}}
+{"command": "layer.setSwitch", "params": {"layers": ["TXT Episode suivant"], "switch": "video", "value": false}}
+{"command": "layer.newNull", "params": {}}
+{"command": "layer.rename", "params": {"layer": "#1", "name": "Controles"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#1/color", "value": "#C9A227"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#2/color", "value": "#0F2A2E"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#3/color", "value": "#2F6B4F"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Color Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#4/color", "value": "#7A4FB3"}}
+{"command": "effect.apply", "params": {"layer": "Controles", "effect": "Slider Control"}}
+{"command": "prop.set", "params": {"layer": "Controles", "path": "effects/#5/slider", "value": 6}}
+{"command": "layer.addItem", "params": {"item": "Signature 16:9", "time": 89, "index": 1}}
+{"command": "layer.addItem", "params": {"item": "Guide zones 16:9", "time": 0, "index": 1}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "guide", "value": true}}
+{"command": "layer.setTransform", "params": {"layers": ["#1"], "prop": "opacity", "value": 55}}
+{"command": "layer.setSwitch", "params": {"layers": ["#1"], "switch": "lock", "value": true}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "TXT Titre serie", "path": "text/sourceText", "name": "Titre de la série"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "TXT Numero episode", "path": "text/sourceText", "name": "Numéro d'épisode"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "TXT Titre episode", "path": "text/sourceText", "name": "Titre de l'épisode"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "TXT Episode suivant", "path": "text/sourceText", "name": "Carton « à suivre »"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "Controles", "path": "effects/#1/color", "name": "Couleur principale (or)"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "Controles", "path": "effects/#2/color", "name": "Couleur fond (nuit)"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "Controles", "path": "effects/#3/color", "name": "Couleur mousse"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "Controles", "path": "effects/#4/color", "name": "Couleur magie"}}
+{"command": "essential.addProperty", "params": {"comp": "FANTASY - episode", "layer": "Controles", "path": "effects/#5/slider", "name": "Vitesse caméra (px/s)"}}

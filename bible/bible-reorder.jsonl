@@ -1,0 +1,39 @@
+{"command": "comp.open", "params": {"comp": 1}}
+{"command": "layer.settings", "params": {"layer": "Pixel art 1", "color": "#F4C542"}}
+{"command": "layer.setText", "params": {"layer": "hex Pixel art 1", "text": "#F4C542"}}
+{"command": "layer.settings", "params": {"layer": "Pixel art 2", "color": "#1D1B2E"}}
+{"command": "layer.setText", "params": {"layer": "hex Pixel art 2", "text": "#1D1B2E"}}
+{"command": "layer.settings", "params": {"layer": "Pixel art 3", "color": "#3E5BA9"}}
+{"command": "layer.setText", "params": {"layer": "hex Pixel art 3", "text": "#3E5BA9"}}
+{"command": "layer.settings", "params": {"layer": "Pixel art 4", "color": "#E5533D"}}
+{"command": "layer.setText", "params": {"layer": "hex Pixel art 4", "text": "#E5533D"}}
+{"command": "layer.settings", "params": {"layer": "Pixel art 5", "color": "#3FB56B"}}
+{"command": "layer.setText", "params": {"layer": "hex Pixel art 5", "text": "#3FB56B"}}
+{"command": "layer.settings", "params": {"layer": "Pixel art 6", "color": "#F2EDE4"}}
+{"command": "layer.setText", "params": {"layer": "hex Pixel art 6", "text": "#F2EDE4"}}
+{"command": "layer.settings", "params": {"layer": "Aventure fantasy 1", "color": "#C9A227"}}
+{"command": "layer.setText", "params": {"layer": "hex Aventure fantasy 1", "text": "#C9A227"}}
+{"command": "layer.settings", "params": {"layer": "Aventure fantasy 2", "color": "#0F2A2E"}}
+{"command": "layer.setText", "params": {"layer": "hex Aventure fantasy 2", "text": "#0F2A2E"}}
+{"command": "layer.settings", "params": {"layer": "Aventure fantasy 3", "color": "#2F6B4F"}}
+{"command": "layer.setText", "params": {"layer": "hex Aventure fantasy 3", "text": "#2F6B4F"}}
+{"command": "layer.settings", "params": {"layer": "Aventure fantasy 4", "color": "#F28C38"}}
+{"command": "layer.setText", "params": {"layer": "hex Aventure fantasy 4", "text": "#F28C38"}}
+{"command": "layer.settings", "params": {"layer": "Aventure fantasy 5", "color": "#7A4FB3"}}
+{"command": "layer.setText", "params": {"layer": "hex Aventure fantasy 5", "text": "#7A4FB3"}}
+{"command": "layer.settings", "params": {"layer": "Aventure fantasy 6", "color": "#E8D9B5"}}
+{"command": "layer.setText", "params": {"layer": "hex Aventure fantasy 6", "text": "#E8D9B5"}}
+{"command": "layer.settings", "params": {"layer": "Vulgarisation 1", "color": "#2E86DE"}}
+{"command": "layer.setText", "params": {"layer": "hex Vulgarisation 1", "text": "#2E86DE"}}
+{"command": "layer.settings", "params": {"layer": "Vulgarisation 2", "color": "#0E1A2B"}}
+{"command": "layer.setText", "params": {"layer": "hex Vulgarisation 2", "text": "#0E1A2B"}}
+{"command": "layer.settings", "params": {"layer": "Vulgarisation 3", "color": "#22C39B"}}
+{"command": "layer.setText", "params": {"layer": "hex Vulgarisation 3", "text": "#22C39B"}}
+{"command": "layer.settings", "params": {"layer": "Vulgarisation 4", "color": "#FF5C7A"}}
+{"command": "layer.setText", "params": {"layer": "hex Vulgarisation 4", "text": "#FF5C7A"}}
+{"command": "layer.settings", "params": {"layer": "Vulgarisation 5", "color": "#FFB020"}}
+{"command": "layer.setText", "params": {"layer": "hex Vulgarisation 5", "text": "#FFB020"}}
+{"command": "layer.settings", "params": {"layer": "Vulgarisation 6", "color": "#F4F6FA"}}
+{"command": "layer.setText", "params": {"layer": "hex Vulgarisation 6", "text": "#F4F6FA"}}
+{"command": "comp.saveFrameAs", "params": {"path": "/home/Yehezou/videos/bible/planche-bible.png", "time": 0}}
+{"command": "file.save", "params": {}}
