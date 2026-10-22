@@ -1,0 +1,22 @@
+# pixel-01-sort : « Le sort raté » (idée P1 de plans/idees-episodes.md, script validé le 22/10/2026)
+# Scène (Tim, bâton, étincelles, boule, poule) : séquence PNG de .montage/composer.py,
+# posée dans la comp pixel par .montage/poser_scene.py après monter.py.
+format = "pixel"
+titre = "LE SORT RATÉ"
+duree = 12
+
+[[repliques]]
+texte = "BOULE DE FEU !"
+debut = 0.6
+fin = 3.0
+
+[[repliques]]
+texte = "CHARGE..."
+debut = 3.0
+fin = 4.8
+
+[[repliques]]
+texte = "COT."
+debut = 6.2
+fin = 8.0
+chute = true

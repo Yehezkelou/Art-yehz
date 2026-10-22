@@ -80,3 +80,43 @@ url      = ""
 date     = 2026-10-22
 vendable = true
 credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim-sort.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-01-sort
+credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim-sort-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-01-sort
+credit   = ""
+
+[[asset]]
+fichier  = "objets/sort/sort.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-01-sort
+credit   = ""
+
+[[asset]]
+fichier  = "objets/sort/sort-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-01-sort
+credit   = ""

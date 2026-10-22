@@ -1,0 +1,26 @@
+{"command": "comp.settings", "params": {"comp": "PIXEL - sortie 1080x1920", "duration": 12.0}}
+{"command": "comp.settings", "params": {"comp": "PIXEL 270x480", "duration": 12.0}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "layer.setText", "params": {"layer": "TXT Titre", "text": "LE SORT RATÉ"}}
+{"command": "comp.open", "params": {"comp": "PIXEL 270x480"}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 01", "text": "BOULE\nDE FEU !", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.6, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.72, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.82, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/opacity", "time": 0.6, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/opacity", "time": 0.6799999999999999, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 02", "text": "CHARGE...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 3.0, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 3.12, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 3.22, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/opacity", "time": 3.0, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/opacity", "time": 3.08, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 03", "text": "COT.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 6.2, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 6.32, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 6.42, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/opacity", "time": 6.2, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/opacity", "time": 6.28, "timeBase": "comp", "value": 100}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "time.set", "params": {"time": 1.2}}

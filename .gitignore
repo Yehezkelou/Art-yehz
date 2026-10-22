@@ -22,3 +22,5 @@ references/*
 !references/README.md
 # Skills tiers clonés (dépôts git à part) ; la version utilisée est copiée dans .claude/skills/
 /skills/
+# Séquences d'images composées par les scripts d'épisode (refaites par .montage/composer.py)
+*/.montage/scene/
