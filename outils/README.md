@@ -117,6 +117,61 @@ Chrome puis Edge (GPU haute performance demandé) ; node : `ICO_NODE`, sinon le 
 (RTX 3050) : ~0,7 s de démarrage puis ~20 ms par image en 270×480 pour la démo
 (`outils/rendu3d/exemples/demo.mjs`).
 
+## Voxels (vox.py + outils.voxel)
+
+Modèles écrits par script Python → `.vox` MagicaVoxel (palette ico-pixel-32 aux index 1–32) → scène rendu3d.
+Axes partout : x → droite, y → haut, z → avant (vue de face : on regarde vers −z) ; le voxel (x, y, z) occupe
+le cube [x, x+1] × [y, y+1] × [z, z+1].
+
+```python
+import vox                                    # outils/vox.py, Python pur
+m = vox.Modele(8, 8, 8, nom="tete")           # m[x, y, z] = i (1–32), 0 = vide
+m.boite(0, 0, 0, 7, 6, 7, 28)                 # bornes incluses
+m.calques([["..o..o.."]], {"o": 1}, y0=3, z0=7)   # un calque par y, une ligne par z, un caractère par x
+bras_g = bras_d.miroir_x("bras_g")            # copie retournée ; m.copier(), m.symetrie_x()
+vox.ecrire_vox("perso.vox", [tete, corps])    # un ou plusieurs modèles ; vox.lire_vox(chemin) → [Modele]
+vox.apercu("apercu.png", m, vue="trois-quarts")   # vues : trois-quarts, face, dessus, cote
+```
+`python3 -I outils/vox.py info|apercu|palette …`. Palette à charger dans MagicaVoxel :
+`assets/3d/palette/ico-pixel-32-magicavoxel.png` (256×1, pixel x = index x + 1). Un voxel d'index > 32
+(couleur hors palette ajoutée dans MagicaVoxel) est refusé à la lecture.
+
+Dans une scène (`creer` peut être `async`) :
+```js
+const [tete] = await outils.voxel.charger("assets/3d/persos/x/tete.vox");   // ou "./x.vox" (dossier de la scène)
+const m = outils.voxel.maillage(tete, { contour: 1, occlusion: true, centre: "bas" });   // THREE.Mesh
+const perso = await outils.voxel.chargerRig("assets/3d/persos/x/x.rig.toml", { contour: 1 });
+perso.poser("marche", t);   // idle, marche, saut, parle, coucou ; 12 i/s par défaut ({ ips: 0 } = continu)
+```
+Maillage glouton (faces internes retirées), MeshBasicMaterial : chaque face prend une couleur **exacte** selon son
+orientation vue de la caméra (dessus / face / cote / dessous, rampe par défaut `outils.voxel.rampe(i)`, même table que
+`vox.rampe`), un palier plus sombre si elle est coincée (occlusion), arêtes vives en traits d'index 1 ou 2 (`contour`).
+Autres outils : `outils.texturePixel(chemin)` (texture NearestFilter sans mipmaps), `outils.halo(rayon, couleurs)`
+(anneaux pleins), `outils.pas12(t)`. La page ne lit dans le dépôt (`/depot/`) que les `.vox`, `.toml`, `.json`,
+`.png`, jamais `references/`.
+
+Rig (`<nom>.rig.toml`, ou `.json` de même structure) — coordonnées en voxels dans la grille commune du perso :
+```toml
+echelle = 1                  # taille d'un voxel dans la scène
+sol = [5, 0, 4]              # facultatif : point qui devient l'origine du groupe (défaut : milieu du dessous)
+[parties.tete]
+fichier = "tim.vox"          # relatif au .rig.toml
+modele = "tete"              # nom ou numéro du modèle dans le fichier (défaut 0)
+origine = [1, 9, 0]          # coin (0, 0, 0) de la partie dans la grille du perso
+pivot = [5, 9, 4]            # point de rotation (même grille)
+parent = "corps"             # absent = racine
+role = "tete"                # facultatif (défaut : le nom) : rôle lu par les clips
+[clips.balade]               # facultatif : clip dérivé
+base = "marche"
+vitesse = 0.6
+amplitude = 0.7
+```
+Rôles des clips : `corps`, `tete`, `bras_g`, `bras_d`, `jambe_g`, `jambe_d` (g/d du personnage : `bras_d` du côté −x),
+`bouche` (visible/caché pendant `parle`). Clip maison : `perso.clips.danse = (r, u, o) => { r.roles.tete.rotation.y = u; }`.
+Démo : `python3 -I outils/rendu3d/exemples/voxel_demo.py` puis
+`node outils/rendu3d/rendu3d.mjs --scene outils/rendu3d/exemples/voxel_demo.mjs --out <dossier> --debut 0 --fin 2 --ips 12`
+(~1,2 s de démarrage puis ~20 ms par image sur le PC « HP »).
+
 ## Fichiers
 
 - `monter.py` — l'outil ; `rapides.py` — les mouvements rapides (aussi en scripts `.jsonl` dans

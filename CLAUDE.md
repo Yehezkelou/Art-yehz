@@ -7,7 +7,7 @@ Chaîne vidéo pixel art de @yehz (YouTube, TikTok, Instagram). Tout se passe da
 - **Idées d'épisodes** : `plans/idees-episodes.md` (15 idées réécrites, auteurs cités, non validées : chaque idée passe par l'étape script de sa recette).
 - **Vidéos finies** : `rendu/` (une copie de chaque `.mp4`, faite par `monter.py --rendu` en plus du Bureau ; ignoré par git).
 - **Bible** : `bible.md` ; palette `bible/palette/ico-pixel-32.{gpl,hex}` ; journal des gênes `ce-qui-m-a-gene.md`.
-- **Outils** : `outils/` (monter.py, rapides.py, verifier_licences.py, pilote_agy.py, rendu3d.py) ; tests : `python3 -I -m unittest discover -s outils/tests`.
+- **Outils** : `outils/` (monter.py, rapides.py, verifier_licences.py, pilote_agy.py, rendu3d.py, vox.py) ; tests : `python3 -I -m unittest discover -s outils/tests`.
 - **Logiciels** : `logiciel/` (suite ArtCraft + VoiceStudio, dépôts séparés, hors git). Copie de production d'EffectCraft : `~/dev/vid/effectcraft` (ne rien y modifier).
 
 ## Machine et dépôt

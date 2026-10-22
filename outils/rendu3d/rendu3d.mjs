@@ -9,7 +9,8 @@
 // --images : ne rend que ces numéros (les autres fichiers ne sont pas touchés).
 //
 // Scène (module ESM) : export default function creer(THREE, outils, params) { … return { scene, camera, update(t) } }
-// (outils : voir outils.mjs ; t en secondes absolues ; tout doit être déterministe). Sans lumière dans la scène,
+// (outils : voir outils.mjs ; t en secondes absolues ; tout doit être déterministe). Fichiers du dépôt lisibles par la
+// page sous /depot/ (.vox, .toml, .json, .png seulement : outils.voxel.charger, outils.texturePixel). Sans lumière dans la scène,
 // une ambiance + un soleil sont ajoutés. Le fond --fond s'applique là où la scène n'a pas de scene.background.
 //
 // Chaque image : WebGLRenderer sans antialiasing, pixelRatio 1, puis couleur de palette la plus proche
@@ -197,10 +198,15 @@ export function trouverNavigateur(env = process.env) {
 }
 
 const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", ".mjs": "text/javascript",
-  ".json": "application/json", ".png": "image/png", ".glb": "model/gltf-binary", ".gltf": "model/gltf+json" };
+  ".json": "application/json", ".png": "image/png", ".glb": "model/gltf-binary", ".gltf": "model/gltf+json",
+  ".vox": "application/octet-stream", ".toml": "text/plain; charset=utf-8" };
+// Fichiers du dépôt lisibles par les scènes (outils.voxel, outils.texturePixel) sous /depot/ : ces extensions seulement,
+// jamais dans references/.
+export const EXTENSIONS_DEPOT = new Set([".vox", ".toml", ".json", ".png"]);
 
 function servir(racines) {
-  // racines : { "/three/": dossier, "/scene/": dossier, "/": dossier } ; rien hors de ces dossiers
+  // racines : { "/three/": dossier, "/scene/": dossier, "/depot/": dossier, "/": dossier } ; rien hors de ces dossiers ;
+  // sous /depot/ (racine du dépôt), seulement les extensions EXTENSIONS_DEPOT
   const serveur = http.createServer((req, res) => {
     const url = decodeURIComponent(new URL(req.url, "http://x").pathname);
     const pref = Object.keys(racines).sort((a, b) => b.length - a.length).find((p) => url.startsWith(p));
@@ -210,6 +216,8 @@ function servir(racines) {
       fichier = path.resolve(base, "." + path.sep + url.slice(pref.length));
       if (url === "/") fichier = path.join(base, "page.html");
       if (fichier !== base && !fichier.startsWith(base + path.sep)) fichier = null;
+      if (fichier && pref === "/depot/" && (!EXTENSIONS_DEPOT.has(path.extname(fichier).toLowerCase())
+        || path.relative(base, fichier).split(path.sep)[0].toLowerCase() === "references")) fichier = null;  // n'entre jamais dans une vidéo
     }
     if (!fichier || !fs.existsSync(fichier) || !fs.statSync(fichier).isFile()) {
       res.writeHead(404); res.end("introuvable"); return;
@@ -235,7 +243,8 @@ export async function rendre(o) {
   const navigateur = trouverNavigateur();
   fs.mkdirSync(o.out, { recursive: true });
 
-  const serveur = await servir({ "/three/": path.join(ICI, "node_modules", "three"), "/scene/": path.dirname(o.scene), "/": ICI });
+  const serveur = await servir({ "/three/": path.join(ICI, "node_modules", "three"), "/scene/": path.dirname(o.scene),
+    "/depot/": RACINE, "/": ICI });
   const port = serveur.address().port;
   const t0 = performance.now();
   const nav = await puppeteer.launch({

@@ -1,0 +1,53 @@
+# Rig de démonstration (outils/rendu3d/exemples/voxel_demo.py) : coordonnées en voxels, grille du perso.
+nom = "chibi-demo"
+echelle = 1
+sol = [5, 0, 4]          # milieu du dessous (origine du groupe)
+
+[parties.corps]
+fichier = "voxel_demo.vox"
+modele = "corps"
+origine = [2, 4, 2]
+pivot = [5, 4, 4]
+
+[parties.tete]
+fichier = "voxel_demo.vox"
+modele = "tete"
+origine = [1, 9, 0]
+pivot = [5, 9, 4]
+parent = "corps"
+
+[parties.bras_d]
+fichier = "voxel_demo.vox"
+modele = "bras_d"
+origine = [0, 5, 3]
+pivot = [1, 9, 4]
+parent = "corps"
+
+[parties.bras_g]
+fichier = "voxel_demo.vox"
+modele = "bras_g"
+origine = [8, 5, 3]
+pivot = [9, 9, 4]
+parent = "corps"
+
+[parties.jambe_d]
+fichier = "voxel_demo.vox"
+modele = "jambe_d"
+origine = [2, 0, 3]
+pivot = [3, 4, 4]
+parent = "corps"
+
+[parties.jambe_g]
+fichier = "voxel_demo.vox"
+modele = "jambe_g"
+origine = [6, 0, 3]
+pivot = [7, 4, 4]
+parent = "corps"
+
+[clips.marche]
+vitesse = 1.0
+
+[clips.balade]
+base = "marche"
+vitesse = 0.6
+amplitude = 0.7

@@ -350,3 +350,13 @@ url      = ""
 date     = 2026-10-22
 vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
 credit   = ""
+
+[[asset]]
+fichier  = "3d/palette/ico-pixel-32-magicavoxel.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # palette ico-pixel-32 en 256×1 pour MagicaVoxel (python3 -I outils/vox.py palette …)
+credit   = ""

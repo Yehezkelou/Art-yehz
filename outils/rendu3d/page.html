@@ -44,6 +44,7 @@ window.__preparer = async (o) => {
   if (!r || !r.scene || !r.scene.isScene) throw new Error("creer() doit renvoyer { scene: THREE.Scene, camera, update(t) }");
   if (!r.camera || !r.camera.isCamera) throw new Error("creer() doit renvoyer une camera THREE (PerspectiveCamera ou OrthographicCamera)");
   if (r.update !== undefined && typeof r.update !== "function") throw new Error("update doit être une fonction update(t)");
+  await outils.attendre();  // textures et fichiers lancés pendant creer()
 
   let lumiere = false;
   r.scene.traverse((ob) => { if (ob.isLight) lumiere = true; });
@@ -55,7 +56,7 @@ window.__preparer = async (o) => {
   }
   const gl = renderer.getContext();
   const dbg = gl.getExtension("WEBGL_debug_renderer_info");
-  etat = { renderer, r, gl, tampon: new Uint8Array(o.largeur * o.hauteur * 4), w: o.largeur, h: o.hauteur };
+  etat = { renderer, r, outils, gl, tampon: new Uint8Array(o.largeur * o.hauteur * 4), w: o.largeur, h: o.hauteur };
   return {
     lumiere_defaut: !lumiere,
     gpu: dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER),
@@ -65,8 +66,9 @@ window.__preparer = async (o) => {
 
 // Rend l'instant t (s) ; renvoie les octets RGBA bruts (haut → bas) en base64.
 window.__rendre = async (t) => {
-  const { renderer, r, gl, tampon, w, h } = etat;
+  const { renderer, r, outils, gl, tampon, w, h } = etat;
   if (r.update) await r.update(t);
+  await outils.attendre();
   renderer.render(r.scene, r.camera);
   gl.readPixels(0, 0, w, h, gl.RGBA, gl.UNSIGNED_BYTE, tampon);
   const out = new Uint8Array(tampon.length), pas = w * 4;
