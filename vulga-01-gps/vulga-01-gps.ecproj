@@ -47389,7 +47389,7 @@
           "num": 24,
           "den": 1
         },
-        "duration": 15748992000000,
+        "duration": 17019072000000,
         "display_start": 0,
         "background": [
           0.05490196,
@@ -47398,7 +47398,7 @@
         ],
         "work_area": [
           0,
-          15748992000000
+          17019072000000
         ],
         "layers": [
           {
@@ -47410,8 +47410,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 13018320000000,
-            "out_point": 13325256000000,
+            "in_point": 13812120000000,
+            "out_point": 14542416000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -47462,14 +47462,14 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Merci, Albert.",
+                          "text": "Pour te trouver…\nà 5 mètres près.",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
                           "fill": [
                             1.0,
-                            1.0,
-                            1.0,
+                            0.6901961,
+                            0.1254902,
                             1.0
                           ],
                           "stroke": [
@@ -47908,7 +47908,7 @@
                       },
                       "keys": [
                         {
-                          "time": 13018320000000,
+                          "time": 13812120000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -47938,7 +47938,7 @@
                           "roving": false
                         },
                         {
-                          "time": 13050072000000,
+                          "time": 13843872000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -47968,7 +47968,7 @@
                           "roving": false
                         },
                         {
-                          "time": 13071240000000,
+                          "time": 13875624000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -48099,7 +48099,7 @@
                       },
                       "keys": [
                         {
-                          "time": 13018320000000,
+                          "time": 13812120000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -48125,7 +48125,7 @@
                           "roving": false
                         },
                         {
-                          "time": 13039488000000,
+                          "time": 13833288000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -48373,8 +48373,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 12224520000000,
-            "out_point": 12954816000000,
+            "in_point": 12859560000000,
+            "out_point": 13494600000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -48425,7 +48425,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "On les règle donc\navant le départ.",
+                          "text": "On ralentit donc\nl'horloge au sol.",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -48871,7 +48871,7 @@
                       },
                       "keys": [
                         {
-                          "time": 12224520000000,
+                          "time": 12859560000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -48901,7 +48901,7 @@
                           "roving": false
                         },
                         {
-                          "time": 12256272000000,
+                          "time": 12891312000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -48931,7 +48931,7 @@
                           "roving": false
                         },
                         {
-                          "time": 12288024000000,
+                          "time": 12923064000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -49062,7 +49062,7 @@
                       },
                       "keys": [
                         {
-                          "time": 12224520000000,
+                          "time": 12859560000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -49088,7 +49088,7 @@
                           "roving": false
                         },
                         {
-                          "time": 12245688000000,
+                          "time": 12880728000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -49336,8 +49336,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 11346048000000,
-            "out_point": 12161016000000,
+            "in_point": 11801160000000,
+            "out_point": 12796056000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -49388,7 +49388,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Sans correction :\n10 km par jour !",
+                          "text": "À la vitesse de la\nlumière : 11 km !",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -49834,7 +49834,7 @@
                       },
                       "keys": [
                         {
-                          "time": 11346048000000,
+                          "time": 11801160000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -49864,7 +49864,7 @@
                           "roving": false
                         },
                         {
-                          "time": 11377800000000,
+                          "time": 11832912000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -49894,7 +49894,7 @@
                           "roving": false
                         },
                         {
-                          "time": 11409552000000,
+                          "time": 11864664000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -50025,7 +50025,7 @@
                       },
                       "keys": [
                         {
-                          "time": 11346048000000,
+                          "time": 11801160000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -50051,7 +50051,7 @@
                           "roving": false
                         },
                         {
-                          "time": 11367216000000,
+                          "time": 11822328000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -50299,8 +50299,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 10658088000000,
-            "out_point": 11282544000000,
+            "in_point": 11017944000000,
+            "out_point": 11737656000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -50351,7 +50351,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Bilan : 38µs\nd'avance par jour.",
+                          "text": "Bilan : +38 µs\nd'avance par jour.",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -50797,7 +50797,7 @@
                       },
                       "keys": [
                         {
-                          "time": 10658088000000,
+                          "time": 11017944000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -50827,7 +50827,7 @@
                           "roving": false
                         },
                         {
-                          "time": 10689840000000,
+                          "time": 11049696000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -50857,7 +50857,7 @@
                           "roving": false
                         },
                         {
-                          "time": 10711008000000,
+                          "time": 11070864000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -50988,7 +50988,7 @@
                       },
                       "keys": [
                         {
-                          "time": 10658088000000,
+                          "time": 11017944000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -51014,7 +51014,7 @@
                           "roving": false
                         },
                         {
-                          "time": 10679256000000,
+                          "time": 11039112000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -51262,8 +51262,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 9959544000000,
-            "out_point": 10594584000000,
+            "in_point": 10139472000000,
+            "out_point": 10954440000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -51314,7 +51314,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Moins de gravité,\n+45µs par jour.",
+                          "text": "Moins de gravité\n: +45 µs par jour.",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -51760,7 +51760,7 @@
                       },
                       "keys": [
                         {
-                          "time": 9959544000000,
+                          "time": 10139472000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -51790,7 +51790,7 @@
                           "roving": false
                         },
                         {
-                          "time": 9991296000000,
+                          "time": 10171224000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -51820,7 +51820,7 @@
                           "roving": false
                         },
                         {
-                          "time": 10012464000000,
+                          "time": 10192392000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -51951,7 +51951,7 @@
                       },
                       "keys": [
                         {
-                          "time": 9959544000000,
+                          "time": 10139472000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -51977,7 +51977,7 @@
                           "roving": false
                         },
                         {
-                          "time": 9980712000000,
+                          "time": 10160640000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -52225,8 +52225,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 9261000000000,
-            "out_point": 9896040000000,
+            "in_point": 9356256000000,
+            "out_point": 10075968000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -52277,7 +52277,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Sa vitesse :\n−7µs chaque jour.",
+                          "text": "Sa vitesse : −7\nµs chaque jour.",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -52723,7 +52723,7 @@
                       },
                       "keys": [
                         {
-                          "time": 9261000000000,
+                          "time": 9356256000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -52753,7 +52753,7 @@
                           "roving": false
                         },
                         {
-                          "time": 9292752000000,
+                          "time": 9377424000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -52783,7 +52783,7 @@
                           "roving": false
                         },
                         {
-                          "time": 9313920000000,
+                          "time": 9409176000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -52914,7 +52914,7 @@
                       },
                       "keys": [
                         {
-                          "time": 9261000000000,
+                          "time": 9356256000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -52940,7 +52940,7 @@
                           "roving": false
                         },
                         {
-                          "time": 9282168000000,
+                          "time": 9366840000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -53188,8 +53188,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 8657712000000,
-            "out_point": 9197496000000,
+            "in_point": 8742384000000,
+            "out_point": 9292752000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -53686,7 +53686,7 @@
                       },
                       "keys": [
                         {
-                          "time": 8657712000000,
+                          "time": 8742384000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -53716,7 +53716,7 @@
                           "roving": false
                         },
                         {
-                          "time": 8689464000000,
+                          "time": 8774136000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -53746,7 +53746,7 @@
                           "roving": false
                         },
                         {
-                          "time": 8710632000000,
+                          "time": 8805888000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -53877,7 +53877,7 @@
                       },
                       "keys": [
                         {
-                          "time": 8657712000000,
+                          "time": 8742384000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -53903,7 +53903,7 @@
                           "roving": false
                         },
                         {
-                          "time": 8678880000000,
+                          "time": 8763552000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -54151,8 +54151,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 7959168000000,
-            "out_point": 8594208000000,
+            "in_point": 8043840000000,
+            "out_point": 8678880000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -54649,7 +54649,7 @@
                       },
                       "keys": [
                         {
-                          "time": 7959168000000,
+                          "time": 8043840000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -54679,7 +54679,7 @@
                           "roving": false
                         },
                         {
-                          "time": 7990920000000,
+                          "time": 8075592000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -54709,7 +54709,7 @@
                           "roving": false
                         },
                         {
-                          "time": 8012088000000,
+                          "time": 8107344000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -54840,7 +54840,7 @@
                       },
                       "keys": [
                         {
-                          "time": 7959168000000,
+                          "time": 8043840000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -54866,7 +54866,7 @@
                           "roving": false
                         },
                         {
-                          "time": 7980336000000,
+                          "time": 8065008000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -55114,8 +55114,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 7355880000000,
-            "out_point": 7895664000000,
+            "in_point": 7440552000000,
+            "out_point": 7980336000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -55612,7 +55612,7 @@
                       },
                       "keys": [
                         {
-                          "time": 7355880000000,
+                          "time": 7440552000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -55642,7 +55642,7 @@
                           "roving": false
                         },
                         {
-                          "time": 7387632000000,
+                          "time": 7472304000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -55672,7 +55672,7 @@
                           "roving": false
                         },
                         {
-                          "time": 7408800000000,
+                          "time": 7493472000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -55803,7 +55803,7 @@
                       },
                       "keys": [
                         {
-                          "time": 7355880000000,
+                          "time": 7440552000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -55829,7 +55829,7 @@
                           "roving": false
                         },
                         {
-                          "time": 7377048000000,
+                          "time": 7461720000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -56077,8 +56077,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 6562080000000,
-            "out_point": 7292376000000,
+            "in_point": 6657336000000,
+            "out_point": 7377048000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -56575,7 +56575,7 @@
                       },
                       "keys": [
                         {
-                          "time": 6562080000000,
+                          "time": 6657336000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -56605,7 +56605,7 @@
                           "roving": false
                         },
                         {
-                          "time": 6593832000000,
+                          "time": 6689088000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -56635,7 +56635,7 @@
                           "roving": false
                         },
                         {
-                          "time": 6625584000000,
+                          "time": 6710256000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -56766,7 +56766,7 @@
                       },
                       "keys": [
                         {
-                          "time": 6562080000000,
+                          "time": 6657336000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -56792,7 +56792,7 @@
                           "roving": false
                         },
                         {
-                          "time": 6583248000000,
+                          "time": 6678504000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -57040,8 +57040,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 5778864000000,
-            "out_point": 6498576000000,
+            "in_point": 5863536000000,
+            "out_point": 6593832000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -57538,7 +57538,7 @@
                       },
                       "keys": [
                         {
-                          "time": 5778864000000,
+                          "time": 5863536000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -57568,7 +57568,7 @@
                           "roving": false
                         },
                         {
-                          "time": 5810616000000,
+                          "time": 5895288000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -57598,7 +57598,7 @@
                           "roving": false
                         },
                         {
-                          "time": 5831784000000,
+                          "time": 5927040000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -57729,7 +57729,7 @@
                       },
                       "keys": [
                         {
-                          "time": 5778864000000,
+                          "time": 5863536000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -57755,7 +57755,7 @@
                           "roving": false
                         },
                         {
-                          "time": 5800032000000,
+                          "time": 5884704000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -58003,8 +58003,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 5175576000000,
-            "out_point": 5715360000000,
+            "in_point": 5260248000000,
+            "out_point": 5800032000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -58501,7 +58501,7 @@
                       },
                       "keys": [
                         {
-                          "time": 5175576000000,
+                          "time": 5260248000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -58531,7 +58531,7 @@
                           "roving": false
                         },
                         {
-                          "time": 5196744000000,
+                          "time": 5292000000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -58561,7 +58561,7 @@
                           "roving": false
                         },
                         {
-                          "time": 5228496000000,
+                          "time": 5313168000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -58692,7 +58692,7 @@
                       },
                       "keys": [
                         {
-                          "time": 5175576000000,
+                          "time": 5260248000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -58718,7 +58718,7 @@
                           "roving": false
                         },
                         {
-                          "time": 5186160000000,
+                          "time": 5281416000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -58966,8 +58966,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 4477032000000,
-            "out_point": 5112072000000,
+            "in_point": 4561704000000,
+            "out_point": 5196744000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -59464,7 +59464,7 @@
                       },
                       "keys": [
                         {
-                          "time": 4477032000000,
+                          "time": 4561704000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -59494,7 +59494,7 @@
                           "roving": false
                         },
                         {
-                          "time": 4508784000000,
+                          "time": 4593456000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -59524,7 +59524,7 @@
                           "roving": false
                         },
                         {
-                          "time": 4529952000000,
+                          "time": 4625208000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -59655,7 +59655,7 @@
                       },
                       "keys": [
                         {
-                          "time": 4477032000000,
+                          "time": 4561704000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -59681,7 +59681,7 @@
                           "roving": false
                         },
                         {
-                          "time": 4498200000000,
+                          "time": 4582872000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -59929,8 +59929,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 3683232000000,
-            "out_point": 4413528000000,
+            "in_point": 3778488000000,
+            "out_point": 4498200000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -60427,7 +60427,7 @@
                       },
                       "keys": [
                         {
-                          "time": 3683232000000,
+                          "time": 3778488000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -60457,7 +60457,7 @@
                           "roving": false
                         },
                         {
-                          "time": 3714984000000,
+                          "time": 3810240000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -60487,7 +60487,7 @@
                           "roving": false
                         },
                         {
-                          "time": 3746736000000,
+                          "time": 3831408000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -60618,7 +60618,7 @@
                       },
                       "keys": [
                         {
-                          "time": 3683232000000,
+                          "time": 3778488000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -60644,7 +60644,7 @@
                           "roving": false
                         },
                         {
-                          "time": 3704400000000,
+                          "time": 3799656000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -60892,8 +60892,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 3079944000000,
-            "out_point": 3619728000000,
+            "in_point": 3175200000000,
+            "out_point": 3714984000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -61390,7 +61390,7 @@
                       },
                       "keys": [
                         {
-                          "time": 3079944000000,
+                          "time": 3175200000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -61420,7 +61420,7 @@
                           "roving": false
                         },
                         {
-                          "time": 3111696000000,
+                          "time": 3206952000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -61450,7 +61450,7 @@
                           "roving": false
                         },
                         {
-                          "time": 3132864000000,
+                          "time": 3228120000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -61581,7 +61581,7 @@
                       },
                       "keys": [
                         {
-                          "time": 3079944000000,
+                          "time": 3175200000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -61607,7 +61607,7 @@
                           "roving": false
                         },
                         {
-                          "time": 3101112000000,
+                          "time": 3196368000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -61855,8 +61855,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 2381400000000,
-            "out_point": 3016440000000,
+            "in_point": 2476656000000,
+            "out_point": 3111696000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -62353,7 +62353,7 @@
                       },
                       "keys": [
                         {
-                          "time": 2381400000000,
+                          "time": 2476656000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -62383,7 +62383,7 @@
                           "roving": false
                         },
                         {
-                          "time": 2413152000000,
+                          "time": 2508408000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -62413,7 +62413,7 @@
                           "roving": false
                         },
                         {
-                          "time": 2444904000000,
+                          "time": 2529576000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -62544,7 +62544,7 @@
                       },
                       "keys": [
                         {
-                          "time": 2381400000000,
+                          "time": 2476656000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -62570,7 +62570,7 @@
                           "roving": false
                         },
                         {
-                          "time": 2402568000000,
+                          "time": 2497824000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -62818,8 +62818,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 1778112000000,
-            "out_point": 2317896000000,
+            "in_point": 1873368000000,
+            "out_point": 2413152000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -63316,7 +63316,7 @@
                       },
                       "keys": [
                         {
-                          "time": 1778112000000,
+                          "time": 1873368000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -63346,7 +63346,7 @@
                           "roving": false
                         },
                         {
-                          "time": 1809864000000,
+                          "time": 1894536000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -63376,7 +63376,7 @@
                           "roving": false
                         },
                         {
-                          "time": 1831032000000,
+                          "time": 1926288000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -63507,7 +63507,7 @@
                       },
                       "keys": [
                         {
-                          "time": 1778112000000,
+                          "time": 1873368000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -63533,7 +63533,7 @@
                           "roving": false
                         },
                         {
-                          "time": 1799280000000,
+                          "time": 1883952000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -63781,8 +63781,8 @@
             "label": "Red",
             "comment": "",
             "start_time": 0,
-            "in_point": 1079568000000,
-            "out_point": 1714608000000,
+            "in_point": 899640000000,
+            "out_point": 1809864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -63833,7 +63833,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Et il doit ça\nà Einstein.",
+                          "text": "Il se tromperait\nde 11 km par jour !",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -64279,7 +64279,7 @@
                       },
                       "keys": [
                         {
-                          "time": 1079568000000,
+                          "time": 899640000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -64309,7 +64309,7 @@
                           "roving": false
                         },
                         {
-                          "time": 1111320000000,
+                          "time": 931392000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -64339,7 +64339,7 @@
                           "roving": false
                         },
                         {
-                          "time": 1132488000000,
+                          "time": 952560000000,
                           "value": {
                             "t": "Vec3",
                             "v": [
@@ -64470,7 +64470,7 @@
                       },
                       "keys": [
                         {
-                          "time": 1079568000000,
+                          "time": 899640000000,
                           "value": {
                             "t": "Scalar",
                             "v": 0.0
@@ -64496,7 +64496,7 @@
                           "roving": false
                         },
                         {
-                          "time": 1100736000000,
+                          "time": 920808000000,
                           "value": {
                             "t": "Scalar",
                             "v": 100.0
@@ -64745,7 +64745,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 201096000000,
-            "out_point": 1016064000000,
+            "out_point": 836136000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -64796,7 +64796,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Ton GPS te trouve\nà 5 mètres près.",
+                          "text": "Sans Einstein,\nton GPS est perdu.",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 72.0,
@@ -66188,9 +66188,9 @@
             },
             "label": "Sandstone",
             "comment": "",
-            "start_time": 15494976000000,
-            "in_point": 15494976000000,
-            "out_point": 15748992000000,
+            "start_time": 16765056000000,
+            "in_point": 16765056000000,
+            "out_point": 17019072000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -66670,7 +66670,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 15748992000000,
+            "out_point": 17019072000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -67096,9 +67096,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 508032000000,
-            "in_point": 13970880000000,
-            "out_point": 15494976000000,
+            "start_time": 1778112000000,
+            "in_point": 15240960000000,
+            "out_point": 16765056000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -67967,9 +67967,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 508032000000,
-            "in_point": 13865040000000,
-            "out_point": 15494976000000,
+            "start_time": 1778112000000,
+            "in_point": 15135120000000,
+            "out_point": 16765056000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -68020,7 +68020,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Sans Einstein, le GPS\ndérive de 10 km/jour.",
+                          "text": "Sans Einstein, le GPS\ndérive de 11 km/jour.",
                           "font": "Lilita One",
                           "style": "Regular",
                           "size": 88.0,
@@ -68930,9 +68930,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 508032000000,
-            "in_point": 13790952000000,
-            "out_point": 15494976000000,
+            "start_time": 1778112000000,
+            "in_point": 15061032000000,
+            "out_point": 16765056000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -69894,9 +69894,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 508032000000,
-            "in_point": 13716864000000,
-            "out_point": 15494976000000,
+            "start_time": 1778112000000,
+            "in_point": 14986944000000,
+            "out_point": 16765056000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -70394,9 +70394,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 9017568000000,
-            "in_point": 9017568000000,
-            "out_point": 13716864000000,
+            "start_time": 8382528000000,
+            "in_point": 8382528000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -70447,7 +70447,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "à 5 m près",
+                          "text": "réglées !",
                           "font": "Lilita One",
                           "style": "Regular",
                           "size": 60.0,
@@ -71357,9 +71357,9 @@
             },
             "label": "Blue",
             "comment": "",
-            "start_time": 9017568000000,
-            "in_point": 9017568000000,
-            "out_point": 13716864000000,
+            "start_time": 8382528000000,
+            "in_point": 8382528000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -72299,9 +72299,9 @@
             },
             "label": "Blue",
             "comment": "",
-            "start_time": 9017568000000,
-            "in_point": 9017568000000,
-            "out_point": 13716864000000,
+            "start_time": 8382528000000,
+            "in_point": 8382528000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -73241,9 +73241,9 @@
             },
             "label": "Blue",
             "comment": "",
-            "start_time": 9017568000000,
-            "in_point": 9017568000000,
-            "out_point": 13716864000000,
+            "start_time": 8382528000000,
+            "in_point": 8382528000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -74191,9 +74191,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 5863536000000,
-            "in_point": 5863536000000,
-            "out_point": 13716864000000,
+            "start_time": 5334336000000,
+            "in_point": 5334336000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -74244,7 +74244,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "3. Einstein corrige l'heure",
+                          "text": "3. Là-haut, le temps file",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 54.0,
@@ -75124,9 +75124,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 6170472000000,
-            "in_point": 6170472000000,
-            "out_point": 13716864000000,
+            "start_time": 5588352000000,
+            "in_point": 5588352000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -76057,9 +76057,9 @@
             },
             "label": "Red",
             "comment": "",
-            "start_time": 4424112000000,
-            "in_point": 4424112000000,
-            "out_point": 13716864000000,
+            "start_time": 3175200000000,
+            "in_point": 3175200000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -76110,7 +76110,7 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "1. Des horloges dans l'espace",
+                          "text": "1. 31 horloges en orbite",
                           "font": "Montserrat",
                           "style": "ExtraBold",
                           "size": 54.0,
@@ -76992,7 +76992,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 13716864000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -77043,10 +77043,10 @@
                       "value": {
                         "t": "Text",
                         "v": {
-                          "text": "Sans Einstein, pas de GPS ?",
+                          "text": "Un GPS sans Einstein ?",
                           "font": "Lilita One",
                           "style": "Regular",
-                          "size": 72.0,
+                          "size": 88.0,
                           "fill": [
                             0.95686275,
                             0.9647059,
@@ -77955,7 +77955,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 13716864000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -78905,7 +78905,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 13716864000000,
+            "out_point": 14986944000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -78927,7 +78927,35 @@
             "preserve_transparency": false,
             "track_matte": null,
             "parent": null,
-            "markers": [],
+            "markers": [
+              {
+                "time": 762048000000,
+                "duration": 0,
+                "comment": "",
+                "label": "Red",
+                "chapter": "",
+                "url": "",
+                "protected": false
+              },
+              {
+                "time": 8128512000000,
+                "duration": 0,
+                "comment": "",
+                "label": "Red",
+                "chapter": "",
+                "url": "",
+                "protected": false
+              },
+              {
+                "time": 10922688000000,
+                "duration": 0,
+                "comment": "",
+                "label": "Red",
+                "chapter": "",
+                "url": "",
+                "protected": false
+              }
+            ],
             "auto_orient": "Off",
             "props": {
               "uid": 2329,
@@ -79999,6 +80027,10 @@
                           0.0
                         ]
                       },
+                      "expr": {
+                        "text": "var t0 = -1; for (var i = 1; i <= marker.numKeys; i++) { if (marker.key(i).time <= time) t0 = marker.key(i).time; }\nvar d = t0 < 0 ? -1 : time - t0;\nvar F = 30, L = 0.6;   // force (px), durée (s)\nvar o = [0, 0];\nif (d >= 0 && d < L) { var k = 1 - d / L; o = [Math.sin(time * 86) * F * k, Math.cos(time * 71) * F * 0.66 * k]; }\nvalue + o;",
+                        "enabled": true
+                      },
                       "ui": {
                         "kind": "Point"
                       },
@@ -80461,7 +80493,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 15748992000000,
+            "out_point": 17019072000000,
             "stretch": 100.0,
             "switches": {
               "video": true,

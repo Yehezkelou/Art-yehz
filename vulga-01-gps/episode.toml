@@ -5,7 +5,7 @@ question = "Un GPS sans Einstein ?"
 points = ["31 horloges en orbite", "4 signaux = ta position", "Là-haut, le temps file"]
 points_temps = [15.5, 29.0, 32.0]
 fleche_temps = 46.0
-conclusion = "réglées au sol !"
+conclusion = "réglées !"
 recap = "Sans Einstein, le GPS\ndérive de 11 km/jour."
 sources = "Sources : gps.gov · Ashby (2003)"
 

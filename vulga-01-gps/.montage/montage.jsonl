@@ -9,7 +9,7 @@
 {"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
 {"command": "layer.setText", "params": {"layer": "Point 3", "text": "3. Là-haut, le temps file"}}
 {"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
-{"command": "layer.setText", "params": {"layer": "Conclusion fleche", "text": "réglées au sol !"}}
+{"command": "layer.setText", "params": {"layer": "Conclusion fleche", "text": "réglées !"}}
 {"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
 {"command": "layer.setText", "params": {"layer": "Recap", "text": "Sans Einstein, le GPS\ndérive de 11 km/jour."}}
 {"command": "comp.open", "params": {"comp": "VULGA - a remplir"}}
