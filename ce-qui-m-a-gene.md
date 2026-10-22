@@ -36,8 +36,8 @@ Ce fichier décide des étapes 4 à 7 : **on ne code une fonction que si elle a 
 | 27 | Une question de 27 caractères en 88 px débordait des bords sûrs | vulga-01-gps | `monter.py` réduit la taille au-delà de 22 car. (72 px ici) | — corrigé dans l'outil |
 | 28 | Le récap dure 7 s sans voix (fixé à « fin − 8 s ») : peut-être trop long | vulga-01-gps | à juger en regardant la vidéo | durée du récap réglable dans l'épisode |
 | 29 | Aseprite (Windows) ne peut ni lire ni écrire dans les dossiers WSL (`\\wsl.localhost\…` → « File not found » / « Cannot save file ») | étape « usine 2.2 » (essai Tim) | dossier de travail Aseprite côté Windows (`C:\Users\Yehezkelou\ico-pixel\`), copie vers `~/videos/assets/` après chaque export | garder les sources `.aseprite` côté Windows ; le dépôt git reçoit la copie |
-| 30 | monter.py contrôle la longueur de la question (> 22 car.) mais pas celle de la conclusion de la flèche (vulga) : « réglées au sol ! » sortait du cadre et de la zone sûre | vulga-01-gps (v2, 22/10) | vu sur apercu-2.png, conclusion raccourcie à « réglées ! » | alerte (ou réduction de taille) au-delà de ~12 car., comme pour la question |
 | 30 | Word (COM) refuse `ExportAsFixedFormat` et `SaveAs2` en PDF sur un document déjà ouvert dans la même session : il faut rouvrir le `.docx` dans une session neuve | plans v2.1 et v2.2 | 2 lancements PowerShell séparés (1 : champs + SaveAs .docx ; 2 : réouverture + SaveAs .pdf) | — |
+| 31 | monter.py contrôle la longueur de la question (> 22 car.) mais pas celle de la conclusion de la flèche (vulga) : « réglées au sol ! » sortait du cadre et de la zone sûre | vulga-01-gps (v2, 22/10) | vu sur apercu-2.png, conclusion raccourcie à « réglées ! » | alerte (ou réduction de taille) au-delà de ~12 car., comme pour la question |
 
 ## Décisions à prendre
 
