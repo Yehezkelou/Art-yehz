@@ -26,3 +26,7 @@ references/*
 */.montage/scene/
 # Voix ElevenLabs (voix de la bibliothèque, pas les nôtres) : restent sur la machine
 *.mp3
+# Dépendances npm de l'outil de rendu 3D (refaites par npm ci)
+outils/rendu3d/node_modules/
+# Images rendues par outils/rendu3d pour les épisodes (refaites depuis les scènes .mjs)
+*/.montage/3d/*/

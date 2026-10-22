@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- ico-vid : page de rendu chargée par rendu3d.mjs (serveur local 127.0.0.1) ; ne s'ouvre pas seule. -->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>rendu3d</title>
+<link rel="icon" href="data:,">
+<script type="importmap">
+{ "imports": { "three": "/three/build/three.module.js", "three/addons/": "/three/examples/jsm/" } }
+</script>
+<style>html, body { margin: 0; background: #000; }</style>
+</head>
+<body>
+<script type="module">
+import * as THREE from "three";
+import { fabriquerOutils, hasard } from "/outils.mjs";
+
+let etat = null;
+
+function encoder(octets) {
+  if (typeof octets.toBase64 === "function") return octets.toBase64();
+  let s = "";
+  for (let i = 0; i < octets.length; i += 0x8000) s += String.fromCharCode.apply(null, octets.subarray(i, i + 0x8000));
+  return btoa(s);
+}
+
+// options : { scene (URL), params, palette, glyphes, largeur, hauteur, ips, fond ("transparent" | "#RRGGBB") }
+window.__preparer = async (o) => {
+  Math.random = hasard(0x1c0);  // three tire des UUID au hasard : on le rend reproductible lui aussi
+  const renderer = new THREE.WebGLRenderer({
+    antialias: false, alpha: true, premultipliedAlpha: false, preserveDrawingBuffer: true,
+    powerPreference: "high-performance",
+  });
+  renderer.setPixelRatio(1);
+  renderer.setSize(o.largeur, o.hauteur, false);
+  if (o.fond === "transparent") renderer.setClearColor(0x000000, 0);
+  else renderer.setClearColor(new THREE.Color(o.fond), 1);
+  document.body.appendChild(renderer.domElement);
+
+  const outils = fabriquerOutils(THREE, o);
+  const mod = await import(o.scene);
+  if (typeof mod.default !== "function") throw new Error("la scène doit exporter par défaut creer(THREE, outils, params)");
+  const r = await mod.default(THREE, outils, o.params);
+  if (!r || !r.scene || !r.scene.isScene) throw new Error("creer() doit renvoyer { scene: THREE.Scene, camera, update(t) }");
+  if (!r.camera || !r.camera.isCamera) throw new Error("creer() doit renvoyer une camera THREE (PerspectiveCamera ou OrthographicCamera)");
+  if (r.update !== undefined && typeof r.update !== "function") throw new Error("update doit être une fonction update(t)");
+
+  let lumiere = false;
+  r.scene.traverse((ob) => { if (ob.isLight) lumiere = true; });
+  if (!lumiere) {  // éclairage par défaut si la scène n'en a pas : ambiance + soleil haut-gauche
+    r.scene.add(new THREE.AmbientLight(0xffffff, 0.9));
+    const soleil = new THREE.DirectionalLight(0xffffff, 2.2);
+    soleil.position.set(-3, 5, 6);
+    r.scene.add(soleil);
+  }
+  const gl = renderer.getContext();
+  const dbg = gl.getExtension("WEBGL_debug_renderer_info");
+  etat = { renderer, r, gl, tampon: new Uint8Array(o.largeur * o.hauteur * 4), w: o.largeur, h: o.hauteur };
+  return {
+    lumiere_defaut: !lumiere,
+    gpu: dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER),
+    three: THREE.REVISION,
+  };
+};
+
+// Rend l'instant t (s) ; renvoie les octets RGBA bruts (haut → bas) en base64.
+window.__rendre = async (t) => {
+  const { renderer, r, gl, tampon, w, h } = etat;
+  if (r.update) await r.update(t);
+  renderer.render(r.scene, r.camera);
+  gl.readPixels(0, 0, w, h, gl.RGBA, gl.UNSIGNED_BYTE, tampon);
+  const out = new Uint8Array(tampon.length), pas = w * 4;
+  for (let y = 0; y < h; y++) out.set(tampon.subarray((h - 1 - y) * pas, (h - y) * pas), y * pas);
+  return encoder(out);
+};
+
+window.__pret = true;
+</script>
+</body>
+</html>

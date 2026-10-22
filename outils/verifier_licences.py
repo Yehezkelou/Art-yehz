@@ -78,7 +78,7 @@ def verifier(racine=RACINE, manifeste=None, projets=()):
                 credits.append(str(e["credit"]).strip())
 
     for dossier, sous, noms in os.walk(racine):
-        sous[:] = sorted(d for d in sous if not d.startswith("."))
+        sous[:] = sorted(d for d in sous if not d.startswith(".") and d != "__pycache__")   # caches Python : ignorés par git
         for nom in sorted(noms):
             chemin = os.path.realpath(os.path.join(dossier, nom))
             rel = os.path.relpath(chemin, racine).replace(os.sep, "/")

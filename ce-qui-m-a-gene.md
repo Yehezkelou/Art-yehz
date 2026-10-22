@@ -47,6 +47,9 @@ Ce fichier décide des étapes 4 à 7 : **on ne code une fonction que si elle a 
 | 38 | `monter.py` : le pop des sous-titres (opacité 0 → 100 en 0,08 s) laisse le texte invisible 1/12 s dans une comp à 12 i/s | pixel-03-binaire | clés d'opacité retirées après montage (le rebond d'échelle reste) | opacité directe à 100 quand la comp est à 12 i/s |
 | 39 | Voix ElevenLabs « Spuds Oxley - Grandpa » lente : 79,5 s pour le texte v1 (référence 48 s) | pixel-03-binaire | texte resserré (774 car.), `speed` 1,15 puis atempo 1,1 → 52,9 s | viser ≈ 13 car./s pour cette voix dès l'écriture |
 | 40 | Bible : le pixel est borné à 10–30 s ; une vulga en pixel art (54 s) n'a pas de format | pixel-03-binaire | alerte de monter.py acceptée | décider un format « pixel-vulga » (45–90 s) ou élargir la bible |
+| 41 | Scènes 3D : l'ombrage « toon » d'`outils.materiau` bave entre deux rampes une fois ramené à la palette (crème → gris, jaune ombré → brun) ; les 3 agents ont recopié chacun un ombrage maison (couleur exacte par orientation de face) dans les 7 fichiers | pixel-04-binaire3d | ombrage recopié par scène (l'import d'un dossier parent est refusé par l'outil) | `outils.voxelOmbre` / matériau « rampe » dans outils/rendu3d si une 2e vidéo 3D en a besoin |
+| 42 | ElevenLabs v3 lit lentement les suites de chiffres (réplique 12 : 14 s) et laisse jusqu'à 1,2 s de traîne | pixel-04-binaire3d | tempo par réplique (×1,2 à ×1,4, hauteur conservée) + silences de tête et de traîne coupés | écrire les chiffres en groupes courts dès le texte |
+| 43 | 2 passages 3D (plongée du circuit, recul du ruban) traversent la bande des sous-titres pendant 0,6 s | pixel-04-binaire3d | accepté : la bande sombre couvre la zone quand un sous-titre est affiché | contrôle automatique de la bande y 312–352 sur chaque séquence 3D (script des agents à reprendre dans outils/) |
 
 ## Décisions à prendre
 

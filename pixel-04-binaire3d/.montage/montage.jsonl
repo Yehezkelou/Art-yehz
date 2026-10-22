@@ -1,0 +1,451 @@
+{"command": "comp.settings", "params": {"comp": "PIXEL - sortie 1080x1920", "duration": 76.9}}
+{"command": "comp.settings", "params": {"comp": "PIXEL 270x480", "duration": 76.9}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "layer.setText", "params": {"layer": "TXT Titre", "text": "0,1 + 0,2 ?"}}
+{"command": "comp.open", "params": {"comp": "PIXEL 270x480"}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 01", "text": "0,1", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.02, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.13999999999999999, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/scale", "time": 0.24, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/opacity", "time": 0.02, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 01", "path": "transform/opacity", "time": 0.1, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 02", "text": "+ 0,2...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 1.837, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 1.9569999999999999, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/scale", "time": 2.057, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/opacity", "time": 1.837, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 02", "path": "transform/opacity", "time": 1.917, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 03", "text": "FACILE !", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 3.867, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 3.987, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/scale", "time": 4.087, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/opacity", "time": 3.867, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 03", "path": "transform/opacity", "time": 3.947, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 04", "text": "0,3 !", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/scale", "time": 4.807, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/scale", "time": 4.9270000000000005, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/scale", "time": 5.027, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/opacity", "time": 4.807, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 04", "path": "transform/opacity", "time": 4.8870000000000005, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 05", "text": "0,3...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/scale", "time": 6.71, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/scale", "time": 6.83, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/scale", "time": 6.93, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/opacity", "time": 6.71, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 05", "path": "transform/opacity", "time": 6.79, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 06", "text": "0 0 0 0...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/scale", "time": 8.738, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/scale", "time": 8.857999999999999, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/scale", "time": 8.958, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/opacity", "time": 8.738, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 06", "path": "transform/opacity", "time": 8.818, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 07", "text": "QUATRE ?!", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/scale", "time": 12.712, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/scale", "time": 12.831999999999999, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/scale", "time": 12.932, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/opacity", "time": 12.712, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 07", "path": "transform/opacity", "time": 12.792, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 08", "text": "QUATRE ?!", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/scale", "time": 13.471, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/scale", "time": 13.591, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/scale", "time": 13.691, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/opacity", "time": 13.471, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 08", "path": "transform/opacity", "time": 13.551, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 09", "text": "TIM VÉRIFIE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/scale", "time": 15.316, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/scale", "time": 15.436, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/scale", "time": 15.536000000000001, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/opacity", "time": 15.316, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 09", "path": "transform/opacity", "time": 15.396, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 10", "text": "SUR SON ORDI", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/scale", "time": 15.832, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/scale", "time": 15.952, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/scale", "time": 16.052, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/opacity", "time": 15.832, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 10", "path": "transform/opacity", "time": 15.912, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 11", "text": "PAREIL.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/scale", "time": 16.612, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/scale", "time": 16.732, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/scale", "time": 16.831999999999997, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/opacity", "time": 16.612, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 11", "path": "transform/opacity", "time": 16.691999999999997, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 12", "text": "C'EST UN", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/scale", "time": 18.125, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/scale", "time": 18.245, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/scale", "time": 18.345, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/opacity", "time": 18.125, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 12", "path": "transform/opacity", "time": 18.205, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 13", "text": "TRICHEUR !", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/scale", "time": 18.725, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/scale", "time": 18.845000000000002, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/scale", "time": 18.945, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/opacity", "time": 18.725, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 13", "path": "transform/opacity", "time": 18.805, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 14", "text": "MOI ?", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/scale", "time": 20.303, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/scale", "time": 20.423000000000002, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/scale", "time": 20.523, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/opacity", "time": 20.303, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 14", "path": "transform/opacity", "time": 20.383, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 15", "text": "JAMAIS", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/scale", "time": 21.104, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/scale", "time": 21.224, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/scale", "time": 21.323999999999998, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/opacity", "time": 21.104, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 15", "path": "transform/opacity", "time": 21.183999999999997, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 16", "text": "DE LA VIE !", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/scale", "time": 21.391, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/scale", "time": 21.511, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/scale", "time": 21.610999999999997, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/opacity", "time": 21.391, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 16", "path": "transform/opacity", "time": 21.470999999999997, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 17", "text": "NON.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/scale", "time": 22.369, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/scale", "time": 22.489, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/scale", "time": 22.589, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/opacity", "time": 22.369, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 17", "path": "transform/opacity", "time": 22.448999999999998, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 18", "text": "PERSONNE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/scale", "time": 23.064, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/scale", "time": 23.184, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/scale", "time": 23.284, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/opacity", "time": 23.064, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 18", "path": "transform/opacity", "time": 23.144, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 19", "text": "NE TRICHE.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/scale", "time": 23.747, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/scale", "time": 23.867, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/scale", "time": 23.967, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/opacity", "time": 23.747, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 19", "path": "transform/opacity", "time": 23.826999999999998, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 20", "text": "JE VAIS TE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 20", "path": "transform/scale", "time": 25.354, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 20", "path": "transform/scale", "time": 25.474, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 20", "path": "transform/scale", "time": 25.573999999999998, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 20", "path": "transform/opacity", "time": 25.354, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 20", "path": "transform/opacity", "time": 25.433999999999997, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 21", "text": "DIRE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 21", "path": "transform/scale", "time": 25.689, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 21", "path": "transform/scale", "time": 25.809, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 21", "path": "transform/scale", "time": 25.909, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 21", "path": "transform/opacity", "time": 25.689, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 21", "path": "transform/opacity", "time": 25.769, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 22", "text": "POURQUOI.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 22", "path": "transform/scale", "time": 25.969, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 22", "path": "transform/scale", "time": 26.089000000000002, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 22", "path": "transform/scale", "time": 26.189, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 22", "path": "transform/opacity", "time": 25.969, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 22", "path": "transform/opacity", "time": 26.049, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 23", "text": "PRESQUE TOUS", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 23", "path": "transform/scale", "time": 26.945, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 23", "path": "transform/scale", "time": 27.065, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 23", "path": "transform/scale", "time": 27.165, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 23", "path": "transform/opacity", "time": 26.945, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 23", "path": "transform/opacity", "time": 27.025, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 24", "text": "LES LANGAGES", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 24", "path": "transform/scale", "time": 27.528, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 24", "path": "transform/scale", "time": 27.648, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 24", "path": "transform/scale", "time": 27.747999999999998, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 24", "path": "transform/opacity", "time": 27.528, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 24", "path": "transform/opacity", "time": 27.607999999999997, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 25", "text": "DONNENT ÇA.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 25", "path": "transform/scale", "time": 28.305, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 25", "path": "transform/scale", "time": 28.425, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 25", "path": "transform/scale", "time": 28.525, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 25", "path": "transform/opacity", "time": 28.305, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 25", "path": "transform/opacity", "time": 28.384999999999998, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 26", "text": "NOUS, ON", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 26", "path": "transform/scale", "time": 29.396, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 26", "path": "transform/scale", "time": 29.516000000000002, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 26", "path": "transform/scale", "time": 29.616, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 26", "path": "transform/opacity", "time": 29.396, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 26", "path": "transform/opacity", "time": 29.476, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 27", "text": "COMPTE EN", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 27", "path": "transform/scale", "time": 29.777, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 27", "path": "transform/scale", "time": 29.897000000000002, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 27", "path": "transform/scale", "time": 29.997, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 27", "path": "transform/opacity", "time": 29.777, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 27", "path": "transform/opacity", "time": 29.857, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 28", "text": "BASE 10.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 28", "path": "transform/scale", "time": 30.21, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 28", "path": "transform/scale", "time": 30.330000000000002, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 28", "path": "transform/scale", "time": 30.43, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 28", "path": "transform/opacity", "time": 30.21, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 28", "path": "transform/opacity", "time": 30.29, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 29", "text": "CERTAINS", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 29", "path": "transform/scale", "time": 31.464, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 29", "path": "transform/scale", "time": 31.584, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 29", "path": "transform/scale", "time": 31.683999999999997, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 29", "path": "transform/opacity", "time": 31.464, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 29", "path": "transform/opacity", "time": 31.543999999999997, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 30", "text": "NOMBRES NE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 30", "path": "transform/scale", "time": 31.76, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 30", "path": "transform/scale", "time": 31.880000000000003, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 30", "path": "transform/scale", "time": 31.98, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 30", "path": "transform/opacity", "time": 31.76, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 30", "path": "transform/opacity", "time": 31.84, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 31", "text": "TOMBENT", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 31", "path": "transform/scale", "time": 32.301, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 31", "path": "transform/scale", "time": 32.421, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 31", "path": "transform/scale", "time": 32.521, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 31", "path": "transform/opacity", "time": 32.301, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 31", "path": "transform/opacity", "time": 32.381, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 32", "text": "JAMAIS JUSTE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 32", "path": "transform/scale", "time": 32.665, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 32", "path": "transform/scale", "time": 32.785, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 32", "path": "transform/scale", "time": 32.885, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 32", "path": "transform/opacity", "time": 32.665, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 32", "path": "transform/opacity", "time": 32.745, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 33", "text": "UN TIERS,", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 33", "path": "transform/scale", "time": 33.893, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 33", "path": "transform/scale", "time": 34.013, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 33", "path": "transform/scale", "time": 34.113, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 33", "path": "transform/opacity", "time": 33.893, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 33", "path": "transform/opacity", "time": 33.973, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 34", "text": "C'EST 0,3", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 34", "path": "transform/scale", "time": 34.683, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 34", "path": "transform/scale", "time": 34.803, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 34", "path": "transform/scale", "time": 34.903, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 34", "path": "transform/opacity", "time": 34.683, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 34", "path": "transform/opacity", "time": 34.763, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 35", "text": "3, 3...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 35", "path": "transform/scale", "time": 37.277, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 35", "path": "transform/scale", "time": 37.397, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 35", "path": "transform/scale", "time": 37.497, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 35", "path": "transform/opacity", "time": 37.277, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 35", "path": "transform/opacity", "time": 37.357, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 36", "text": "À L'INFINI.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 36", "path": "transform/scale", "time": 39.052, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 36", "path": "transform/scale", "time": 39.172, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 36", "path": "transform/scale", "time": 39.272, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 36", "path": "transform/opacity", "time": 39.052, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 36", "path": "transform/opacity", "time": 39.132, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 37", "text": "L'ORDI, LUI,", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 37", "path": "transform/scale", "time": 40.368, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 37", "path": "transform/scale", "time": 40.488, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 37", "path": "transform/scale", "time": 40.588, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 37", "path": "transform/opacity", "time": 40.368, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 37", "path": "transform/opacity", "time": 40.448, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 38", "text": "COMPTE EN", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 38", "path": "transform/scale", "time": 41.377, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 38", "path": "transform/scale", "time": 41.497, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 38", "path": "transform/scale", "time": 41.597, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 38", "path": "transform/opacity", "time": 41.377, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 38", "path": "transform/opacity", "time": 41.457, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 39", "text": "BASE 2 :", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 39", "path": "transform/scale", "time": 41.835, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 39", "path": "transform/scale", "time": 41.955, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 39", "path": "transform/scale", "time": 42.055, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 39", "path": "transform/opacity", "time": 41.835, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 39", "path": "transform/opacity", "time": 41.915, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 40", "text": "QUE DES 0", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 40", "path": "transform/scale", "time": 42.918, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 40", "path": "transform/scale", "time": 43.038, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 40", "path": "transform/scale", "time": 43.138, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 40", "path": "transform/opacity", "time": 42.918, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 40", "path": "transform/opacity", "time": 42.998, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 41", "text": "ET DES 1.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 41", "path": "transform/scale", "time": 43.679, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 41", "path": "transform/scale", "time": 43.799, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 41", "path": "transform/scale", "time": 43.899, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 41", "path": "transform/opacity", "time": 43.679, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 41", "path": "transform/opacity", "time": 43.759, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 42", "text": "EN BASE 2,", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 42", "path": "transform/scale", "time": 44.626, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 42", "path": "transform/scale", "time": 44.745999999999995, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 42", "path": "transform/scale", "time": 44.846, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 42", "path": "transform/opacity", "time": 44.626, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 42", "path": "transform/opacity", "time": 44.705999999999996, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 43", "text": "C'EST 0,1", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 43", "path": "transform/scale", "time": 45.598, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 43", "path": "transform/scale", "time": 45.717999999999996, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 43", "path": "transform/scale", "time": 45.818, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 43", "path": "transform/opacity", "time": 45.598, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 43", "path": "transform/opacity", "time": 45.678, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 44", "text": "QUI COINCE :", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 44", "path": "transform/scale", "time": 46.783, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 44", "path": "transform/scale", "time": 46.903, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 44", "path": "transform/scale", "time": 47.003, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 44", "path": "transform/opacity", "time": 46.783, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 44", "path": "transform/opacity", "time": 46.863, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 45", "text": "0 0 0", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 45", "path": "transform/scale", "time": 47.883, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 45", "path": "transform/scale", "time": 48.003, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 45", "path": "transform/scale", "time": 48.103, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 45", "path": "transform/opacity", "time": 47.883, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 45", "path": "transform/opacity", "time": 47.963, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 46", "text": "1 1", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 46", "path": "transform/scale", "time": 49.446, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 46", "path": "transform/scale", "time": 49.565999999999995, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 46", "path": "transform/scale", "time": 49.666, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 46", "path": "transform/opacity", "time": 49.446, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 46", "path": "transform/opacity", "time": 49.525999999999996, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 47", "text": "0 0", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 47", "path": "transform/scale", "time": 50.741, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 47", "path": "transform/scale", "time": 50.861, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 47", "path": "transform/scale", "time": 50.961, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 47", "path": "transform/opacity", "time": 50.741, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 47", "path": "transform/opacity", "time": 50.821, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 48", "text": "1 1...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 48", "path": "transform/scale", "time": 52.283, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 48", "path": "transform/scale", "time": 52.403, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 48", "path": "transform/scale", "time": 52.503, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 48", "path": "transform/opacity", "time": 52.283, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 48", "path": "transform/opacity", "time": 52.363, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 49", "text": "À L'INFINI.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 49", "path": "transform/scale", "time": 53.969, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 49", "path": "transform/scale", "time": 54.089, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 49", "path": "transform/scale", "time": 54.189, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 49", "path": "transform/opacity", "time": 53.969, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 49", "path": "transform/opacity", "time": 54.049, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 50", "text": "ALORS L'ORDI", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 50", "path": "transform/scale", "time": 54.946, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 50", "path": "transform/scale", "time": 55.065999999999995, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 50", "path": "transform/scale", "time": 55.166, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 50", "path": "transform/opacity", "time": 54.946, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 50", "path": "transform/opacity", "time": 55.025999999999996, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 51", "text": "COUPE :", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 51", "path": "transform/scale", "time": 55.668, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 51", "path": "transform/scale", "time": 55.788, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 51", "path": "transform/scale", "time": 55.888, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 51", "path": "transform/opacity", "time": 55.668, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 51", "path": "transform/opacity", "time": 55.748, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 52", "text": "IL GARDE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 52", "path": "transform/scale", "time": 56.601, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 52", "path": "transform/scale", "time": 56.721, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 52", "path": "transform/scale", "time": 56.821, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 52", "path": "transform/opacity", "time": 56.601, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 52", "path": "transform/opacity", "time": 56.681, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 53", "text": "53 CHIFFRES.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 53", "path": "transform/scale", "time": 57.062, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 53", "path": "transform/scale", "time": 57.181999999999995, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 53", "path": "transform/scale", "time": 57.282, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 53", "path": "transform/opacity", "time": 57.062, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 53", "path": "transform/opacity", "time": 57.141999999999996, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 54", "text": "PAS UN", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 54", "path": "transform/scale", "time": 58.796, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 54", "path": "transform/scale", "time": 58.916, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 54", "path": "transform/scale", "time": 59.016, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 54", "path": "transform/opacity", "time": 58.796, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 54", "path": "transform/opacity", "time": 58.876, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 55", "text": "DE PLUS.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 55", "path": "transform/scale", "time": 59.368, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 55", "path": "transform/scale", "time": 59.488, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 55", "path": "transform/scale", "time": 59.588, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 55", "path": "transform/opacity", "time": 59.368, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 55", "path": "transform/opacity", "time": 59.448, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 56", "text": "SON 0,1", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 56", "path": "transform/scale", "time": 60.383, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 56", "path": "transform/scale", "time": 60.503, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 56", "path": "transform/scale", "time": 60.603, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 56", "path": "transform/opacity", "time": 60.383, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 56", "path": "transform/opacity", "time": 60.463, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 57", "text": "VAUT DONC UN", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 57", "path": "transform/scale", "time": 61.416, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 57", "path": "transform/scale", "time": 61.535999999999994, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 57", "path": "transform/scale", "time": 61.635999999999996, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 57", "path": "transform/opacity", "time": 61.416, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 57", "path": "transform/opacity", "time": 61.495999999999995, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 58", "text": "TOUT PETIT", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 58", "path": "transform/scale", "time": 62.223, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 58", "path": "transform/scale", "time": 62.342999999999996, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 58", "path": "transform/scale", "time": 62.443, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 58", "path": "transform/opacity", "time": 62.223, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 58", "path": "transform/opacity", "time": 62.303, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 59", "text": "PEU PLUS.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 59", "path": "transform/scale", "time": 62.683, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 59", "path": "transform/scale", "time": 62.803, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 59", "path": "transform/scale", "time": 62.903, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 59", "path": "transform/opacity", "time": 62.683, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 59", "path": "transform/opacity", "time": 62.763, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 60", "text": "ADDITIONNE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 60", "path": "transform/scale", "time": 63.515, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 60", "path": "transform/scale", "time": 63.635, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 60", "path": "transform/scale", "time": 63.735, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 60", "path": "transform/opacity", "time": 63.515, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 60", "path": "transform/opacity", "time": 63.595, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 61", "text": "LES DEUX", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 61", "path": "transform/scale", "time": 64.149, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 61", "path": "transform/scale", "time": 64.269, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 61", "path": "transform/scale", "time": 64.369, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 61", "path": "transform/opacity", "time": 64.149, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 61", "path": "transform/opacity", "time": 64.229, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 62", "text": "PETITS", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 62", "path": "transform/scale", "time": 64.42, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 62", "path": "transform/scale", "time": 64.54, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 62", "path": "transform/scale", "time": 64.64, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 62", "path": "transform/opacity", "time": 64.42, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 62", "path": "transform/opacity", "time": 64.5, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 63", "text": "RESTES...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 63", "path": "transform/scale", "time": 64.702, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 63", "path": "transform/scale", "time": 64.822, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 63", "path": "transform/scale", "time": 64.922, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 63", "path": "transform/opacity", "time": 64.702, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 63", "path": "transform/opacity", "time": 64.782, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 64", "text": "ET L'ERREUR", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 64", "path": "transform/scale", "time": 65.315, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 64", "path": "transform/scale", "time": 65.435, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 64", "path": "transform/scale", "time": 65.535, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 64", "path": "transform/opacity", "time": 65.315, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 64", "path": "transform/opacity", "time": 65.395, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 65", "text": "SE VOIT,", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 65", "path": "transform/scale", "time": 66.293, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 65", "path": "transform/scale", "time": 66.41300000000001, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 65", "path": "transform/scale", "time": 66.513, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 65", "path": "transform/opacity", "time": 66.293, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 65", "path": "transform/opacity", "time": 66.373, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 66", "text": "TOUT AU BOUT", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 66", "path": "transform/scale", "time": 67.142, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 66", "path": "transform/scale", "time": 67.262, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 66", "path": "transform/scale", "time": 67.362, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 66", "path": "transform/opacity", "time": 67.142, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 66", "path": "transform/opacity", "time": 67.222, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 67", "text": "LE FAMEUX...", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 67", "path": "transform/scale", "time": 68.634, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 67", "path": "transform/scale", "time": 68.754, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 67", "path": "transform/scale", "time": 68.854, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 67", "path": "transform/opacity", "time": 68.634, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 67", "path": "transform/opacity", "time": 68.714, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 68", "text": "QUATRE.", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 68", "path": "transform/scale", "time": 69.454, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 68", "path": "transform/scale", "time": 69.574, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 68", "path": "transform/scale", "time": 69.67399999999999, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 68", "path": "transform/opacity", "time": 69.454, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 68", "path": "transform/opacity", "time": 69.53399999999999, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 69", "text": "PAS DE SOUCI", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 69", "path": "transform/scale", "time": 70.899, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 69", "path": "transform/scale", "time": 71.019, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 69", "path": "transform/scale", "time": 71.119, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 69", "path": "transform/opacity", "time": 70.899, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 69", "path": "transform/opacity", "time": 70.979, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 70", "text": "JE PAIE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 70", "path": "transform/scale", "time": 71.762, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 70", "path": "transform/scale", "time": 71.882, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 70", "path": "transform/scale", "time": 71.982, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 70", "path": "transform/opacity", "time": 71.762, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 70", "path": "transform/opacity", "time": 71.842, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 71", "text": "LE QUATRE !", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 71", "path": "transform/scale", "time": 72.136, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 71", "path": "transform/scale", "time": 72.256, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 71", "path": "transform/scale", "time": 72.356, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 71", "path": "transform/opacity", "time": 72.136, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 71", "path": "transform/opacity", "time": 72.216, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 72", "text": "AVEC... UNE", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F2EDE4", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 72", "path": "transform/scale", "time": 72.934, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 72", "path": "transform/scale", "time": 73.054, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 72", "path": "transform/scale", "time": 73.154, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 72", "path": "transform/opacity", "time": 72.934, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 72", "path": "transform/opacity", "time": 73.014, "timeBase": "comp", "value": 100}}
+{"command": "layer.newText", "params": {"name": "Sous-titre 73", "text": "MIETTE ?!", "position": [135, 340], "font": "Press Start 2P", "style": "Regular", "size": 16, "fill": "#F4C542", "applyFill": true, "justify": "center", "leading": 24}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 73", "path": "transform/scale", "time": 73.747, "timeBase": "comp", "value": [86, 86, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 73", "path": "transform/scale", "time": 73.867, "timeBase": "comp", "value": [107, 107, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 73", "path": "transform/scale", "time": 73.967, "timeBase": "comp", "value": [100, 100, 100]}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 73", "path": "transform/opacity", "time": 73.747, "timeBase": "comp", "value": 0}}
+{"command": "prop.addKey", "params": {"layer": "Sous-titre 73", "path": "transform/opacity", "time": 73.827, "timeBase": "comp", "value": 100}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "file.import", "params": {"paths": ["C:\\Users\\HP\\Documents\\yehz\\Art-yehz\\pixel-04-binaire3d\\voix/mix.wav"]}}
+{"command": "layer.addItem", "params": {"item": "mix.wav", "time": 0.0}}
+{"command": "layer.select", "params": {"layers": ["mix.wav"]}}
+{"command": "keys.audioToKeyframes", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "comp.open", "params": {"comp": "PIXEL - sortie 1080x1920"}}
+{"command": "time.set", "params": {"time": 1.2}}

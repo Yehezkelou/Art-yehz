@@ -1,0 +1,393 @@
+# pixel-04-binaire3d : « 0,1 + 0,2 » en 3D (refonte de pixel-03-binaire demandée par @yehz le 22/10/2026)
+# Dialogue ElevenLabs v3 (narrateur, Tim, marchand) + bruitages et musique maison : .montage/voix.py, .montage/sons.py.
+# Scène 2D + 7 séquences 3D (outils/rendu3d) composées par .montage/composer.py, posées par .montage/poser_scene.py.
+# Sous-titres générés depuis .montage/minutage.py (calés sur les mots du dialogue) : ne pas éditer à la main.
+format = "pixel"
+titre = "0,1 + 0,2 ?"
+duree = 76.9
+voix = "voix/mix.wav"
+
+[[repliques]]
+texte = "0,1"
+debut = 0.02
+fin = 1.837
+
+[[repliques]]
+texte = "+ 0,2..."
+debut = 1.837
+fin = 3.867
+
+[[repliques]]
+texte = "FACILE !"
+debut = 3.867
+fin = 4.807
+chute = true
+
+[[repliques]]
+texte = "0,3 !"
+debut = 4.807
+fin = 6.71
+
+[[repliques]]
+texte = "0,3..."
+debut = 6.71
+fin = 8.738
+
+[[repliques]]
+texte = "0 0 0 0..."
+debut = 8.738
+fin = 11.488
+
+[[repliques]]
+texte = "QUATRE ?!"
+debut = 12.712
+fin = 13.471
+chute = true
+
+[[repliques]]
+texte = "QUATRE ?!"
+debut = 13.471
+fin = 14.331
+chute = true
+
+[[repliques]]
+texte = "TIM VÉRIFIE"
+debut = 15.316
+fin = 15.832
+
+[[repliques]]
+texte = "SUR SON ORDI"
+debut = 15.832
+fin = 16.612
+
+[[repliques]]
+texte = "PAREIL."
+debut = 16.612
+fin = 17.632
+chute = true
+
+[[repliques]]
+texte = "C'EST UN"
+debut = 18.125
+fin = 18.725
+
+[[repliques]]
+texte = "TRICHEUR !"
+debut = 18.725
+fin = 20.303
+chute = true
+
+[[repliques]]
+texte = "MOI ?"
+debut = 20.303
+fin = 21.104
+
+[[repliques]]
+texte = "JAMAIS"
+debut = 21.104
+fin = 21.391
+
+[[repliques]]
+texte = "DE LA VIE !"
+debut = 21.391
+fin = 22.369
+chute = true
+
+[[repliques]]
+texte = "NON."
+debut = 22.369
+fin = 23.064
+chute = true
+
+[[repliques]]
+texte = "PERSONNE"
+debut = 23.064
+fin = 23.747
+
+[[repliques]]
+texte = "NE TRICHE."
+debut = 23.747
+fin = 24.803
+
+[[repliques]]
+texte = "JE VAIS TE"
+debut = 25.354
+fin = 25.689
+
+[[repliques]]
+texte = "DIRE"
+debut = 25.689
+fin = 25.969
+
+[[repliques]]
+texte = "POURQUOI."
+debut = 25.969
+fin = 26.945
+chute = true
+
+[[repliques]]
+texte = "PRESQUE TOUS"
+debut = 26.945
+fin = 27.528
+
+[[repliques]]
+texte = "LES LANGAGES"
+debut = 27.528
+fin = 28.305
+
+[[repliques]]
+texte = "DONNENT ÇA."
+debut = 28.305
+fin = 29.396
+
+[[repliques]]
+texte = "NOUS, ON"
+debut = 29.396
+fin = 29.777
+
+[[repliques]]
+texte = "COMPTE EN"
+debut = 29.777
+fin = 30.21
+
+[[repliques]]
+texte = "BASE 10."
+debut = 30.21
+fin = 31.464
+chute = true
+
+[[repliques]]
+texte = "CERTAINS"
+debut = 31.464
+fin = 31.76
+
+[[repliques]]
+texte = "NOMBRES NE"
+debut = 31.76
+fin = 32.301
+
+[[repliques]]
+texte = "TOMBENT"
+debut = 32.301
+fin = 32.665
+
+[[repliques]]
+texte = "JAMAIS JUSTE"
+debut = 32.665
+fin = 33.893
+
+[[repliques]]
+texte = "UN TIERS,"
+debut = 33.893
+fin = 34.683
+
+[[repliques]]
+texte = "C'EST 0,3"
+debut = 34.683
+fin = 37.277
+
+[[repliques]]
+texte = "3, 3..."
+debut = 37.277
+fin = 38.337
+
+[[repliques]]
+texte = "À L'INFINI."
+debut = 39.052
+fin = 40.368
+chute = true
+
+[[repliques]]
+texte = "L'ORDI, LUI,"
+debut = 40.368
+fin = 41.377
+
+[[repliques]]
+texte = "COMPTE EN"
+debut = 41.377
+fin = 41.835
+
+[[repliques]]
+texte = "BASE 2 :"
+debut = 41.835
+fin = 42.918
+chute = true
+
+[[repliques]]
+texte = "QUE DES 0"
+debut = 42.918
+fin = 43.679
+
+[[repliques]]
+texte = "ET DES 1."
+debut = 43.679
+fin = 44.626
+
+[[repliques]]
+texte = "EN BASE 2,"
+debut = 44.626
+fin = 45.598
+
+[[repliques]]
+texte = "C'EST 0,1"
+debut = 45.598
+fin = 46.783
+
+[[repliques]]
+texte = "QUI COINCE :"
+debut = 46.783
+fin = 47.883
+chute = true
+
+[[repliques]]
+texte = "0 0 0"
+debut = 47.883
+fin = 49.446
+
+[[repliques]]
+texte = "1 1"
+debut = 49.446
+fin = 50.741
+
+[[repliques]]
+texte = "0 0"
+debut = 50.741
+fin = 52.283
+
+[[repliques]]
+texte = "1 1..."
+debut = 52.283
+fin = 53.969
+
+[[repliques]]
+texte = "À L'INFINI."
+debut = 53.969
+fin = 54.946
+chute = true
+
+[[repliques]]
+texte = "ALORS L'ORDI"
+debut = 54.946
+fin = 55.668
+
+[[repliques]]
+texte = "COUPE :"
+debut = 55.668
+fin = 56.601
+chute = true
+
+[[repliques]]
+texte = "IL GARDE"
+debut = 56.601
+fin = 57.062
+
+[[repliques]]
+texte = "53 CHIFFRES."
+debut = 57.062
+fin = 58.796
+chute = true
+
+[[repliques]]
+texte = "PAS UN"
+debut = 58.796
+fin = 59.368
+
+[[repliques]]
+texte = "DE PLUS."
+debut = 59.368
+fin = 60.383
+
+[[repliques]]
+texte = "SON 0,1"
+debut = 60.383
+fin = 61.416
+
+[[repliques]]
+texte = "VAUT DONC UN"
+debut = 61.416
+fin = 62.223
+
+[[repliques]]
+texte = "TOUT PETIT"
+debut = 62.223
+fin = 62.683
+
+[[repliques]]
+texte = "PEU PLUS."
+debut = 62.683
+fin = 63.515
+chute = true
+
+[[repliques]]
+texte = "ADDITIONNE"
+debut = 63.515
+fin = 64.149
+
+[[repliques]]
+texte = "LES DEUX"
+debut = 64.149
+fin = 64.42
+
+[[repliques]]
+texte = "PETITS"
+debut = 64.42
+fin = 64.702
+
+[[repliques]]
+texte = "RESTES..."
+debut = 64.702
+fin = 65.315
+
+[[repliques]]
+texte = "ET L'ERREUR"
+debut = 65.315
+fin = 66.293
+
+[[repliques]]
+texte = "SE VOIT,"
+debut = 66.293
+fin = 67.142
+
+[[repliques]]
+texte = "TOUT AU BOUT"
+debut = 67.142
+fin = 67.949
+chute = true
+
+[[repliques]]
+texte = "LE FAMEUX..."
+debut = 68.634
+fin = 69.454
+
+[[repliques]]
+texte = "QUATRE."
+debut = 69.454
+fin = 70.899
+chute = true
+
+[[repliques]]
+texte = "PAS DE SOUCI"
+debut = 70.899
+fin = 71.762
+
+[[repliques]]
+texte = "JE PAIE"
+debut = 71.762
+fin = 72.136
+
+[[repliques]]
+texte = "LE QUATRE !"
+debut = 72.136
+fin = 72.934
+chute = true
+
+[[repliques]]
+texte = "AVEC... UNE"
+debut = 72.934
+fin = 73.747
+
+[[repliques]]
+texte = "MIETTE ?!"
+debut = 73.747
+fin = 74.567
+chute = true
