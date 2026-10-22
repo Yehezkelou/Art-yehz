@@ -4,6 +4,8 @@ logiciel/
 *.mp4
 *.mov
 *.wav
+# Exception : voix de synthèse maison (VoiceStudio / OmniVoice, test J2), pas de voix d'autrui
+!vulga-01-gps/voix/*.wav
 plans/*.pdf
 # Fichiers automatiques
 EffectCraft Auto-Save/
