@@ -5,6 +5,7 @@ Chaîne vidéo pixel art de @yehz (YouTube, TikTok, Instagram). Tout se passe da
 - **Décisions validées** : `plans/decisions.md` (priment sur le plan et sur GEMINI.md).
 - **Plan** : `plans/EffectCraft_Usine_2.3_Plan.docx` (texte brut : `plans/plan-2.3.txt`), généré par `plans/plan-v2.3.js`.
 - **Idées d'épisodes** : `plans/idees-episodes.md` (15 idées réécrites, auteurs cités, non validées : chaque idée passe par l'étape script de sa recette).
+- **Vidéos finies** : `rendu/` (une copie de chaque `.mp4`, faite par `monter.py --rendu` en plus du Bureau ; ignoré par git).
 - **Bible** : `bible.md` ; palette `bible/palette/ico-pixel-32.{gpl,hex}` ; journal des gênes `ce-qui-m-a-gene.md`.
 - **Outils** : `outils/` (monter.py, rapides.py, verifier_licences.py, pilote_agy.py, rendu3d.py) ; tests : `python3 -I -m unittest discover -s outils/tests`.
 - **Logiciels** : `logiciel/` (suite ArtCraft + VoiceStudio, dépôts séparés, hors git). Copie de production d'EffectCraft : `~/dev/vid/effectcraft` (ne rien y modifier).

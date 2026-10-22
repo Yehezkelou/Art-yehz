@@ -3,7 +3,7 @@
 
     python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml            # projet + 3 aperçus
     python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml --ecraser  # refait le projet (copie de sauvegarde avant)
-    python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml --rendu    # rend le .mp4 (+ copie sur le Bureau)
+    python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml --rendu    # rend le .mp4 (+ copies dans rendu/ et sur le Bureau)
 
 Le projet est construit en headless par effectcraft-cli à partir de ~/videos/modeles/<format>.ecproj :
 textes, sous-titres minutés (pop de la bible), voix + bouche (sketch), durée, marqueurs + presets,
@@ -19,6 +19,7 @@ CLI = chemins.effectcraft_cli()          # surcharge : ICO_EFFECTCRAFT
 MODELES = chemins.dans_racine("modeles")  # racine = outils/.. (surcharge : ICO_VIDEOS)
 PRESETS = chemins.presets_effectcraft()  # comme EffectCraft : EC_PRESETS_DIR, sinon ~/Documents/EffectCraft/Presets
 BUREAU = chemins.bureau()                # None : copie sur le Bureau sautée
+RENDU = chemins.dans_racine("rendu")      # toutes les vidéos finies (ignoré par git : *.mp4)
 
 # Ce que chaque modèle contient (noms de comps/calques et minutages du modèle d'origine)
 FORMATS = {
@@ -325,7 +326,10 @@ def main():
         t0 = time.time()
         cli("render", "--project", proj, "--comp", M, "--out", out, "--format", "h264",
             "--bitrate", "12000", "--audio", "auto")
-        msg = {"rendu": out, "secondes": round(time.time() - t0)}
+        msg = {"video": out, "secondes": round(time.time() - t0)}
+        os.makedirs(RENDU, exist_ok=True)
+        shutil.copy2(out, os.path.join(RENDU, slug + ".mp4"))
+        msg["rendu"] = os.path.join(RENDU, slug + ".mp4")
         if BUREAU and os.path.isdir(BUREAU) and "--sans-bureau" not in sys.argv:
             shutil.copy2(out, os.path.join(BUREAU, slug + ".mp4"))
             msg["bureau"] = os.path.join(BUREAU, slug + ".mp4")

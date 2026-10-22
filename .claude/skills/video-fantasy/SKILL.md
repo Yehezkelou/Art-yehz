@@ -44,7 +44,7 @@ description: Monte un épisode de la série d'aventure fantasy ico-vid (16:9, 60
    demander : valider, ou quoi changer.
 7. **Rendu** une fois validé : `monter.py … --rendu` en arrière-plan (Bash `run_in_background`),
    prévenir de la durée (~0,25 s/image sans preset, ~1 s/image en fantasy). Donner le chemin du
-   `.mp4` et la copie sur le Bureau.
+   `.mp4`, sa copie dans `rendu/` et celle du Bureau.
 8. **Journal** : ajouter à `ce-qui-m-a-gene.md` toute gêne rencontrée (une ligne, avec le slug).
 
 ## Mise en scène
