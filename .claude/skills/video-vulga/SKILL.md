@@ -23,6 +23,8 @@ description: Monte une vidéo de vulgarisation ico-vid (9:16, 45–90 s : vie, i
 2. **Écrire le script** à partir de l'idée (règles du format ci-dessus) et le **présenter** :
    tableau `# · qui parle · réplique · à l'écran · durée estimée` + les textes du modèle + durée totale.
    La colonne « à l'écran » dit, pour chaque réplique, quel élément apparaît, quand et où (ou « — »).
+   Ajouter le **budget de fabrication** : nouveaux assets à dessiner (et ceux repris de `assets/`),
+   presets lents éventuels, temps de rendu estimé.
    **Attendre la validation avant de monter quoi que ce soit.** Corriger autant de fois que demandé.
 3. **Dossier** : `<slug>/` (slug = `<format>-NN-mot`, NN = numéro suivant d'après `ls` à la racine).
    Si le dossier existe déjà, demander avant d'écrire dedans.
@@ -55,8 +57,33 @@ ico-vid ; analyse : `agents/rapports/claude/2026-10-22-motion-design-opus.md`.
   de la bible (24 ou 12 i/s), pas de verre dépoli, de fondu en transparence, de vrai logo ni de
   fausse interface d'application.
 
+## Validations et relectures
+
+Méthode tirée de l'analyse d'OpenMontage (décision D16 : idées seulement, rien d'installé ni de
+copié) ; détail : `agents/rapports/claude/2026-10-22-openmontage.md`.
+
+- **Trace écrite** : chaque étape présentée à l'utilisateur (script, aperçus, rendu) ajoute une
+  ligne à `<slug>/validations.md` : `| date | étape | statut | ce qui est montré |`. On s'arrête
+  là ; à sa réponse, statut `validé` ou `à refaire` avec ses mots résumés. Pas de `--rendu` tant que
+  script et aperçus ne sont pas `validé`.
+- **Relecture classée** (verificateur, portes Gemini, relecture des aperçus) : `bloquant` (faux,
+  cassé, hors bible ou hors licence : correctif exact obligatoire, sinon c'est une `piste`),
+  `à améliorer`, `détail`, `piste`. Un bloquant trouvé → chercher les autres du même genre.
+  **2 tours de relecture au plus**, puis on livre avec les remarques restantes écrites.
+- **Ne jamais livrer moins sans le dire** : si un élément promis par la colonne « à l'écran » ne
+  peut pas être fait, s'arrêter et proposer 2 options (changer la ligne du script ou fabriquer
+  l'élément) ; jamais de remplacement silencieux par du texte seul ou un cadre vide (journal n° 26).
+- **Vidéo de référence** (« dans le style de ») : la regarder avec `watch`, en tirer 4–5 lignes
+  (structure, rythme, accroche, ressort), puis proposer **2 ou 3 concepts différents** entre eux
+  et de la référence. Une idée reprise, jamais la forme ; la référence reste dans `references/`.
+- **Est-ce un diaporama ?** Sur les aperçus : se ressemblent-ils tous ? un moment de plus de 3 s
+  où rien ne bouge (hors silence voulu) ? plus de la moitié de l'écran en texte là où une image
+  suffirait ? Deux « oui » → le dire avec une retouche proposée.
+
 ## Garde-fous
 
+- **Accord avant de ralentir** : demander avant d'ajouter un `preset = …` lent (≈ 1 s/image au
+  rendu) ou de lancer un rendu estimé à plus de 10 min ; annoncer la durée prévue.
 - Jamais d'écrasement sans `--ecraser`, et jamais `--ecraser` sur un projet que l'utilisateur a
   retouché dans l'app : dans ce cas, faire les retouches sur le projet ouvert (outils MCP
   `effectcraft-app`, un seul groupe d'annulation) ou sur une copie.

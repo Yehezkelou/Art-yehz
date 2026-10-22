@@ -15,5 +15,6 @@
 | D13 | Boutique streamers d'abord | Non retenue : boutique comme au plan 2.2 | 21/10/2026 |
 | D14 | Logiciels au mois 1 | FilmCraft seul en semaine 1 ; décors dans Aseprite ; les autres quand une vidéo en a besoin | 21/10/2026 |
 | D15 | Guide OPUS (motion design) | Méthode reprise dans les recettes `video-*` (section « Mise en scène ») ; Hyperframes et video-use non installés ; 4 animations pixel (compteur, mot derrière le perso, jauge/courbe en escaliers, cadre d'interface rétro) codées seulement si le cadre « schéma » reste vide sur la prochaine vulga (journal n° 26) | 22/10/2026 |
+| D16 | OpenMontage (guide @bencodezero) | Décliné : rien installé, rien cloné, aucune ligne copiée (AGPL-3.0, images IA contraires à la bible et à D3, installe Hyperframes refusé en D15) ; 7 idées de méthode reprises, réécrites, dans les recettes `video-*` (budget de fabrication à l'étape script, section « Validations et relectures », accord avant un preset lent ou un rendu > 10 min) ; analyses : `agents/rapports/claude/2026-10-22-openmontage.md` et `agents/rapports/gemini/2026-10-22-1616-essaim.md` | 22/10/2026 |
 
 D5 à D7 : recommandations du plan, pas encore confirmées explicitement.
