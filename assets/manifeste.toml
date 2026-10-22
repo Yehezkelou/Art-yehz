@@ -200,3 +200,153 @@ url      = ""
 date     = 2026-10-22
 vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
 credit   = ""
+
+[[asset]]
+fichier  = "polices/ico5x7.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "polices/ico5x7-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/binaire.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/atelier.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/boutique.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/circuit.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/classe.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/ecrans.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-ciseaux.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-fleche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-infini.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-loupe.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-question.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-tampon.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""
+
+[[asset]]
+fichier  = "decors/binaire/objet-tarte.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (script Python) à la demande de @yehz, pixel-03-binaire
+credit   = ""

@@ -1,0 +1,13 @@
+Zéro virgule un, plus zéro virgule deux… égale zéro virgule trois, zéro, zéro, zéro… quatre ?!
+Tim vérifie sur son ordi… pareil.
+Le marchand triche ? Non.
+Je vais te dire pourquoi.
+Presque tous les langages donnent ce résultat.
+Nous, on compte en base dix.
+Et certains nombres ne tombent jamais juste : un tiers, c'est zéro virgule trois, trois, trois… à l'infini.
+L'ordi, lui, compte en base deux : que des zéros et des uns.
+Et en base deux, c'est zéro virgule un qui ne tombe jamais juste : zéro zéro zéro un un, zéro zéro un un… à l'infini.
+Alors l'ordi coupe : il garde cinquante-trois chiffres.
+Son zéro virgule un vaut donc un tout petit peu plus.
+Il additionne les deux petits restes… et l'erreur se voit, tout au bout.
+Le fameux quatre. Et Tim sait comment le payer.

@@ -24,3 +24,5 @@ references/*
 /skills/
 # Séquences d'images composées par les scripts d'épisode (refaites par .montage/composer.py)
 */.montage/scene/
+# Voix ElevenLabs (voix de la bibliothèque, pas les nôtres) : restent sur la machine
+*.mp3
