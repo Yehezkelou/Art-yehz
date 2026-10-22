@@ -1,18 +1,18 @@
-# Vulgarisation 01 — Le GPS et Einstein (validé le 2026-10-20)
+# Vulgarisation 01 — Le GPS et Einstein (validé le 2026-10-20, corrigé après porte script Gemini, validé par @yehz le 2026-10-22)
 format = "vulga"
 slug = "vulga-01-gps"
-question = "Sans Einstein, pas de GPS ?"
-points = ["Des horloges dans l'espace", "4 signaux = ta position", "Einstein corrige l'heure"]
-points_temps = [20.4, 31.3, 34.1]
-fleche_temps = 48.5
-conclusion = "à 5 m près"
-recap = "Sans Einstein, le GPS\ndérive de 10 km/jour."
+question = "Un GPS sans Einstein ?"
+points = ["31 horloges en orbite", "4 signaux = ta position", "Là-haut, le temps file"]
+points_temps = [15.5, 29.0, 32.0]
+fleche_temps = 46.0
+conclusion = "réglées au sol !"
+recap = "Sans Einstein, le GPS\ndérive de 11 km/jour."
 sources = "Sources : gps.gov · Ashby (2003)"
 
 [[repliques]]
-texte = "Ton GPS te trouve à 5 mètres près."
+texte = "Sans Einstein, ton GPS est perdu."
 [[repliques]]
-texte = "Et il doit ça à Einstein."
+texte = "Il se tromperait de 11 km par jour !"
 [[repliques]]
 texte = "Imagine un orage au loin."
 [[repliques]]
@@ -36,14 +36,20 @@ texte = "Avec 4 satellites, il te situe."
 [[repliques]]
 texte = "Mais là-haut, le temps triche."
 [[repliques]]
-texte = "Sa vitesse : −7µs chaque jour."
+texte = "Sa vitesse : −7 µs chaque jour."
 [[repliques]]
-texte = "Moins de gravité, +45µs par jour."
+texte = "Moins de gravité : +45 µs par jour."
 [[repliques]]
-texte = "Bilan : 38µs d'avance par jour."
+texte = "Bilan : +38 µs d'avance par jour."
 [[repliques]]
-texte = "Sans correction : 10 km par jour !"
+texte = "À la vitesse de la lumière : 11 km !"
 [[repliques]]
-texte = "On les règle donc avant le départ."
+texte = "On ralentit donc l'horloge au sol."
 [[repliques]]
-texte = "Merci, Albert."
+texte = "Pour te trouver… à 5 mètres près."
+chute = true
+
+[[effets]]
+calque = "Zone schema"
+rapide = "secousse"
+temps = [3.0, 32.0, 43.0]
