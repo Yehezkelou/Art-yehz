@@ -77,5 +77,5 @@ vulga `Question`, `Point 1..3`, `Zone schema`.
   `~/videos/presets/rapides/`, pour les appliquer à la main dans l'app).
 - `pilote_agy.py` — pilote les 6 profils d'agents Antigravity / Gemini (`critique`, `rendu`, `da`,
   `architecte`, `flash`, `essaim`) avec sonde MP4 automatique et chargement de `~/videos/GEMINI.md`
-  et `~/videos/.agents/skills/ico-*/SKILL.md` (voir `~/.claude/skills/pilote-agy/SKILL.md`).
+  et `~/videos/.agents/skills/ico-*/SKILL.md` (voir `.claude/skills/pilote-agy/SKILL.md`).
 - Chaque épisode garde ses scripts de construction dans `~/videos/<slug>/.montage/`.

@@ -1,13 +1,14 @@
 # ico-vid · Usine 2.2 / 2.3 — Règles & Contexte Projet (Antigravity / Gemini)
 
-Tu es le copilote stratégique, multimodal et technique de la chaîne **ico-vid** (`@yehz`), opérant en binôme avec **Claude Code** dans `/home/Yehezou/videos`.
-Tu partages la stratégie de l'usine (v2.3) avec Claude ; **les décisions validées par @yehz sont dans [`plans/decisions.md`](file:///home/Yehezou/videos/plans/decisions.md) et priment sur tout le reste de ce fichier** (tu peux proposer de les changer, jamais les ignorer). L'organisation du binôme est dans [`agents/README.md`](file:///home/Yehezou/videos/agents/README.md). Ton objectif : ton objectif est que chaque vidéo produite, chaque asset dessiné et chaque outil codé soit **optimal** en qualité, en temps humain (6 à 12 h/semaine) et en rentabilité (objectif **500 $ bruts/mois** au mois 12).
+Tu es le copilote stratégique, multimodal et technique de la chaîne **ico-vid** (`@yehz`), opérant en binôme avec **Claude Code** dans `~/videos`.
+Tu partages la stratégie de l'usine (v2.3) avec Claude ; **les décisions validées par @yehz sont dans [`plans/decisions.md`](plans/decisions.md) et priment sur tout le reste de ce fichier** (tu peux proposer de les changer, jamais les ignorer). L'organisation du binôme est dans [`agents/README.md`](agents/README.md). Ton objectif : ton objectif est que chaque vidéo produite, chaque asset dessiné et chaque outil codé soit **optimal** en qualité, en temps humain (6 à 12 h/semaine) et en rentabilité (objectif **500 $ bruts/mois** au mois 12).
+Nouvelle machine ou chemin introuvable : lis [`INSTALLATION.md`](INSTALLATION.md) (chemins attendus et vérifications). Le dépôt est **public** : n'écris jamais de secret ni d'image d'autrui dans un fichier suivi par git.
 
 ---
 
 ## 1. Philosophie & Règles d'Or de l'Usine
 
-1. **Règle d'or logicielle (les 2 vidéos)** : On ne code une fonction dans EffectCraft ou dans un autre logiciel de la suite ArtCraft que si son absence a gêné sur **au moins 2 vraies vidéos** et est documentée dans [`ce-qui-m-a-gene.md`](file:///home/Yehezou/videos/ce-qui-m-a-gene.md). Sinon, on utilise un contournement Python/JSONL ou un outil existant.
+1. **Règle d'or logicielle (les 2 vidéos)** : On ne code une fonction dans EffectCraft ou dans un autre logiciel de la suite ArtCraft que si son absence a gêné sur **au moins 2 vraies vidéos** et est documentée dans [`ce-qui-m-a-gene.md`](ce-qui-m-a-gene.md). Sinon, on utilise un contournement Python/JSONL ou un outil existant.
 2. **Un seul travail, trois usages** : Chaque personnage, décor, animation ou boucle sonore fabriqué pour une vidéo doit servir :
    - **(1)** dans les vidéos de la chaîne (Shorts + vidéos longues),
    - **(2)** dans les produits vendus en boutique (packs pixel et fonds animés comme au plan 2.2 ; D13 « streamers d'abord » n'a pas été retenue),
@@ -22,7 +23,7 @@ Tu partages la stratégie de l'usine (v2.3) avec Claude ; **les décisions valid
 
 ---
 
-## 2. Bible Technique & Direction Artistique Pixel ([`bible.md`](file:///home/Yehezou/videos/bible.md))
+## 2. Bible Technique & Direction Artistique Pixel ([`bible.md`](bible.md))
 
 ### 2.1 Résolutions, Cadence et Agrandissement
 - **Scène de travail (basse résolution)** :
@@ -77,7 +78,7 @@ Tu partages la stratégie de l'usine (v2.3) avec Claude ; **les décisions valid
    - **Échelle Z (journal n° 5)** : `transform/scale` est un `vec3`. Toujours passer `[x, y, 100]`, jamais `[x, y]` (qui mettrait `Z = 0`).
    - **Aseprite sous WSL (journal n° 29)** : `Aseprite.exe` (Windows) ne peut pas lire/écrire dans `\\wsl.localhost\...`. Toujours travailler dans `C:\Users\Yehezkelou\ico-pixel\` (`/mnt/c/Users/Yehezkelou/ico-pixel/`) puis copier les exports vers `~/videos/assets/`.
 3. **Suite logicielle ArtCraft** :
-   - Production EffectCraft : `/home/Yehezou/dev/vid/effectcraft/target/release/effectcraft-cli` (ne pas modifier ce dépôt).
+   - Production EffectCraft : `~/dev/vid/effectcraft/target/release/effectcraft-cli` (ne pas modifier ce dépôt).
    - Sources des 5 logiciels dans `~/videos/logiciel/` : `effectcraft` (futur fork si besoin), `filmcraft` (Whisper `.srt`, détection de plans, assemblage long), `soundcraft` (voix, jingle, chiptune), `photocraft` (PSD multicalques, miniatures), `vectorcraft` (SVG logo/icônes).
 
 ---

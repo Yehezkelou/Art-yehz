@@ -8,6 +8,13 @@ Chaîne vidéo pixel art de @yehz (YouTube, TikTok, Instagram). Tout se passe da
 - **Outils** : `outils/` (monter.py, rapides.py, verifier_licences.py, pilote_agy.py) ; tests : `python3 -I -m unittest discover -s outils/tests`.
 - **Logiciels** : `logiciel/` (suite ArtCraft + VoiceStudio, dépôts séparés, hors git). Copie de production d'EffectCraft : `~/dev/vid/effectcraft` (ne rien y modifier).
 
+## Machine et dépôt
+- Le dépôt est **public** (synchronisation entre machines) : jamais de secret, de jeton, de voix ou d'image d'autrui dans un commit ; `references/` est ignoré par git.
+- Nouvelle machine ou chemin introuvable : suivre `INSTALLATION.md` (chemins attendus, vérifications, premier message).
+- Skills Claude du projet : `.claude/skills/` (`video-*`, `pilote-agy`) ; sous-agents : `.claude/agents/`.
+- Gemini : `agy` lancé depuis `~/videos` ; le mode `--ecrire` est autorisé par @yehz pour déléguer du code, des prototypes d'assets ou un essaim ; `--video` injecte la sonde audio (Gemini invente sinon des voix sur les vidéos). Le consulter aux portes clés.
+- Plan : nouvelle version = copie de `plans/plan-vX.Y.js`, `npm install docx` dans un dossier temporaire et `NODE_PATH` dessus ; livrer le .docx dans `plans/` et sur le Bureau Windows ; on garde toutes les versions.
+
 ## Rôle de la session principale : orchestrateur
 La session principale orchestre tous les agents Claude (`.claude/agents/`) et pilote les agents Gemini (`outils/pilote_agy.py`). Organisation, cycle mission → rapport → vérification → intégration et règles : `agents/README.md`. L'orchestrateur seul fait les commits.
 

@@ -15,3 +15,6 @@ a-trier/*
 !a-trier/README.md
 regards/
 *.log
+# Références d'autres artistes : jamais publiées (droits d'auteur) ; copiées à la main d'une machine à l'autre
+references/*
+!references/README.md
