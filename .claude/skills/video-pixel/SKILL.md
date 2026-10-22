@@ -88,6 +88,13 @@ copié) ; détail : `agents/rapports/claude/2026-10-22-openmontage.md`.
 - **Vidéo de référence** (« dans le style de ») : la regarder avec `watch`, en tirer 4–5 lignes
   (structure, rythme, accroche, ressort), puis proposer **2 ou 3 concepts différents** entre eux
   et de la référence. Une idée reprise, jamais la forme ; la référence reste dans `references/`.
+- **Jeu vocal d'une référence** (le ton, pas la voix) : relever dans la vidéo de référence, sur la
+  machine (`watch` en local + mesures ffmpeg sur l'audio) : débit (mots/s, à partir des sous-titres
+  horodatés), longueur des pauses, où l'énergie monte (chute, révélation), registre (conteur, copain,
+  présentateur), procédés (questions au spectateur, répétitions, chuchoté avant la chute). En tirer une
+  **fiche de jeu** de 4–5 lignes, appliquée avec nos voix : balises d'émotion ElevenLabs v3, ponctuation
+  (… pour les pauses), découpage des répliques, `speed`/tempo, et Voice Design pour créer une voix neuve
+  qui a ce caractère. Jamais de clone ni d'échantillon de la voix d'autrui.
 - **Est-ce un diaporama ?** Sur les aperçus : se ressemblent-ils tous ? un moment de plus de 3 s
   où rien ne bouge (hors silence voulu) ? plus de la moitié de l'écran en texte là où une image
   suffirait ? Deux « oui » → le dire avec une retouche proposée.
