@@ -25,6 +25,10 @@ description: Monte un épisode de la série d'aventure fantasy ico-vid (16:9, 60
    La colonne « à l'écran » dit, pour chaque réplique, quel élément apparaît, quand et où (ou « — »).
    Ajouter le **budget de fabrication** : nouveaux assets à dessiner (et ceux repris de `assets/`),
    presets lents éventuels, temps de rendu estimé.
+   Partir d'une **fiche d'entrées** : format, idée en une phrase, durée, 3–4 moments forts avec leur
+   instant, ce qui est fourni ou non (voix, sprites) ; ce qui manque prend la valeur par défaut du
+   format, annoncée à l'utilisateur. Les `temps` des `[[effets]]` sont ensuite recopiés tels quels
+   des instants validés.
    **Attendre la validation avant de monter quoi que ce soit.** Corriger autant de fois que demandé.
 3. **Dossier** : `<slug>/` (slug = `<format>-NN-mot`, NN = numéro suivant d'après `ls` à la racine).
    Si le dossier existe déjà, demander avant d'écrire dedans.
@@ -34,7 +38,9 @@ description: Monte un épisode de la série d'aventure fantasy ico-vid (16:9, 60
    sous-titre coupé en deux), puis relancer avec `--ecraser` *tant que le projet n'a pas été ouvert
    ni retouché par l'utilisateur*. Toute « ERREUR D'EXPRESSION » doit être corrigée avant d'aller plus loin.
 6. **Montrer les 3 aperçus** (`apercu-1..3.png`, les lire avec Read) avec une phrase chacun ; vérifier
-   au passage que chaque élément n'est visible que pendant son moment (rien qui traîne avant ou après), et
+   au passage que chaque élément n'est visible que pendant son moment (rien qui traîne avant ou après),
+   que la dernière image renvoie à la première, et regarder pour chaque moment fort une image juste
+   avant et juste après (`effectcraft-cli render-frame --time …`) avant tout rendu complet ; puis
    demander : valider, ou quoi changer.
 7. **Rendu** une fois validé : `monter.py … --rendu` en arrière-plan (Bash `run_in_background`),
    prévenir de la durée (~0,25 s/image sans preset, ~1 s/image en fantasy). Donner le chemin du
@@ -51,6 +57,9 @@ ico-vid ; analyse : `agents/rapports/claude/2026-10-22-motion-design-opus.md`.
 - **Chaque demande d'effet en 5 éléments** : quoi (le calque), quand (`temps` ou marqueur), où
   (zone sûre de la bible), style (toujours celui de la bible : palette, polices, pas de flou ni de
   semi-transparence), mouvement (`rapide = …`). Un élément sans l'un des 5 n'est pas prêt.
+  Chaque élément en valeurs (secondes, pixels, couleur de la palette par son nom), jamais en adjectifs.
+- **Un son = un marqueur = un effet** : son et image suivent la même chronologie ; chaque
+  bruitage a son marqueur et l'effet qui va avec, au même instant.
 - **3 ou 4 moments forts au plus** par vidéo (effets en plus du modèle) : au-delà, rien ne ressort.
 - **3 allers-retours de retouche au plus** sur les aperçus ; au-delà, revenir au script.
 - La bible prime sur le guide : rebonds et secousses restent permis (l'humour en vit), cadences
