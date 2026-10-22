@@ -12,14 +12,13 @@ signature à la fin. Rien n'est écrasé sans --ecraser. Format du fichier : voi
 import json, math, os, re, shutil, subprocess, sys, time, tomllib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import chemins  # noqa: E402
 import rapides  # noqa: E402
 
-HOME = os.path.expanduser("~")
-EXE = ".exe" if os.name == "nt" else ""  # Windows natif : binaires Rust en .exe
-CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli" + EXE)
-MODELES = os.path.join(HOME, "videos/modeles")
-PRESETS = os.path.join(HOME, "Documents/EffectCraft/Presets")
-BUREAU = os.path.join(HOME, "OneDrive", "Desktop") if os.name == "nt" else "/mnt/c/Users/Yehezkelou/OneDrive/Desktop"
+CLI = chemins.effectcraft_cli()          # surcharge : ICO_EFFECTCRAFT
+MODELES = chemins.dans_racine("modeles")  # racine = outils/.. (surcharge : ICO_VIDEOS)
+PRESETS = chemins.presets_effectcraft()  # comme EffectCraft : EC_PRESETS_DIR, sinon ~/Documents/EffectCraft/Presets
+BUREAU = chemins.bureau()                # None : copie sur le Bureau sautée
 
 # Ce que chaque modèle contient (noms de comps/calques et minutages du modèle d'origine)
 FORMATS = {
@@ -327,7 +326,7 @@ def main():
         cli("render", "--project", proj, "--comp", M, "--out", out, "--format", "h264",
             "--bitrate", "12000", "--audio", "auto")
         msg = {"rendu": out, "secondes": round(time.time() - t0)}
-        if os.path.isdir(BUREAU) and "--sans-bureau" not in sys.argv:
+        if BUREAU and os.path.isdir(BUREAU) and "--sans-bureau" not in sys.argv:
             shutil.copy2(out, os.path.join(BUREAU, slug + ".mp4"))
             msg["bureau"] = os.path.join(BUREAU, slug + ".mp4")
         print(json.dumps(msg, ensure_ascii=False, indent=1))

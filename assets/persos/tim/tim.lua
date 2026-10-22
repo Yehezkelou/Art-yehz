@@ -2,7 +2,8 @@
 -- 4 calques : vetements / peau / cheveux / contour, 2 actions etiquetees)
 -- lance par Claude : Aseprite.exe -b --script tim.lua
 
-local SORTIE = "C:\\Users\\Yehezkelou\\ico-pixel\\persos\\tim\\tim.aseprite"
+-- sortie sous Windows, hors WSL (Aseprite.exe ne lit pas \wsl.localhost) : %USERPROFILE%\ico-pixel\...
+local SORTIE = app.fs.joinPath(os.getenv("USERPROFILE") or os.getenv("HOME"), "ico-pixel", "persos", "tim", "tim.aseprite")
 
 -- palette ico-pixel-32 (index 0 = transparent, puis 8 rampes de 4)
 local RAMPES = {
@@ -133,6 +134,7 @@ for _, e in ipairs(ETIQUETTES) do
   t.aniDir = AniDir.FORWARD
 end
 
+app.fs.makeAllDirectories(app.fs.filePath(SORTIE))
 spr:saveAs(SORTIE)
 print("tim.aseprite : " .. #spr.layers .. " calques, " .. #spr.frames .. " images, "
       .. #spr.tags .. " etiquettes, palette de " .. #spr.palettes[1] .. " couleurs")

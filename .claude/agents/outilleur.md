@@ -1,6 +1,6 @@
 ---
 name: outilleur
-description: Écrit, corrige et teste les outils Python de ~/videos/outils (verifier_pixels.py, decouper_planche.py, camera.py, regarder.py, monter.py v2…), souvent à partir d'un brouillon de l'agent architecte Gemini. Utiliser pour toute mission de code d'outil avec un critère de fin testable.
+description: Écrit, corrige et teste les outils Python de outils (verifier_pixels.py, decouper_planche.py, camera.py, regarder.py, monter.py v2…), souvent à partir d'un brouillon de l'agent architecte Gemini. Utiliser pour toute mission de code d'outil avec un critère de fin testable.
 tools: Read, Grep, Glob, Bash, Edit, Write
 ---
 

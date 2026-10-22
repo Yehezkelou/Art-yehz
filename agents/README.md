@@ -8,7 +8,7 @@ Les décisions validées sont dans [`../plans/decisions.md`](../plans/decisions.
 | Équipe | Où sont-ils définis | Comment on les lance | Par défaut |
 |---|---|---|---|
 | **Agents Claude** (sous-agents de Claude Code) | `../.claude/agents/*.md` + contexte `../CLAUDE.md` | par l'orchestrateur (outil Agent) | lisent, écrivent et testent dans `~/videos` |
-| **Agents Gemini** (Antigravity, CLI `agy`) | `../.agents/skills/ico-*/SKILL.md` + contexte `../GEMINI.md` | `python3 -I ~/videos/outils/pilote_agy.py <profil> "<mission>"` | **lecture seule** ; ils rédigent, Claude relit et écrit |
+| **Agents Gemini** (Antigravity, CLI `agy`) | `../.agents/skills/ico-*/SKILL.md` + contexte `../GEMINI.md` | `python3 -I outils/pilote_agy.py <profil> "<mission>"` | **lecture seule** ; ils rédigent, Claude relit et écrit |
 
 | Agent | Équipe | Rôle |
 |---|---|---|

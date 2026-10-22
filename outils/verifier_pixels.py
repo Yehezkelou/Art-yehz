@@ -18,10 +18,10 @@ scène = pixel ÷ N), couleurs hors palette avec leur nombre de pixels. Code 0 v
 import argparse, os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import chemins  # noqa: E402
 import png  # noqa: E402
 
-HOME = os.path.expanduser("~")
-PALETTE = os.path.join(HOME, "videos/bible/palette/ico-pixel-32.hex")
+PALETTE = chemins.dans_racine("bible", "palette", "ico-pixel-32.hex")  # surcharge de la racine : ICO_VIDEOS
 TRANSPARENT = (0, 0, 0, 0)
 
 

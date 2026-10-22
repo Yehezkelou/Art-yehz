@@ -11,12 +11,14 @@ Usage :
 """
 import argparse, json, os, re, shutil, subprocess, sys, time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import chemins  # noqa: E402
+
 HOME = os.path.expanduser("~")
-VIDEOS_DIR = os.path.join(HOME, "videos")
-EXE = ".exe" if os.name == "nt" else ""  # Windows natif : binaires Rust en .exe
-AGY_BIN = shutil.which("agy") or os.path.join(HOME, ".local/bin/agy")
-EC_CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli" + EXE)
-FC_CLI = os.path.join(VIDEOS_DIR, "logiciel/filmcraft/target/release/filmcraft-cli" + EXE)
+VIDEOS_DIR = chemins.racine()  # outils/.. (surcharge : ICO_VIDEOS)
+AGY_BIN = shutil.which("agy") or os.path.join(HOME, ".local", "bin", "agy")
+EC_CLI = chemins.effectcraft_cli()
+FC_CLI = os.path.join(VIDEOS_DIR, "logiciel", "filmcraft", "target", "release", "filmcraft-cli" + chemins.EXE)
 
 AGENTS = {
     "critique": {
@@ -193,9 +195,10 @@ def main():
 
     header_parts = [
         f"[PROFIL AGENT : {args.agent.upper()} · SKILL À ACTIVER : {cfg['skill']}]",
-        f"Lis et applique les règles de ~/videos/.agents/skills/{cfg['skill']}/SKILL.md ainsi que ~/videos/GEMINI.md.",
-        "Les décisions validées par @yehz (~/videos/plans/decisions.md) priment sur tout ; l'organisation du binôme est "
-        "dans ~/videos/agents/README.md. Donne une preuve (chemin:ligne, commande + sortie) pour chaque fait affirmé.",
+        f"Dossier de l'usine (racine, dossier courant) : {VIDEOS_DIR}",
+        f"Lis et applique les règles de .agents/skills/{cfg['skill']}/SKILL.md ainsi que GEMINI.md.",
+        "Les décisions validées par @yehz (plans/decisions.md) priment sur tout ; l'organisation du binôme est "
+        "dans agents/README.md. Donne une preuve (chemin:ligne, commande + sortie) pour chaque fait affirmé.",
     ]
     if args.agent == "essaim":
         header_parts.append(
@@ -231,7 +234,7 @@ def main():
         sys.exit(r.returncode)
 
     # Par défaut, chaque réponse est archivée dans agents/rapports/gemini/
-    sortie = args.sortie or os.path.join(VIDEOS_DIR, "agents/rapports/gemini",
+    sortie = args.sortie or os.path.join(VIDEOS_DIR, "agents", "rapports", "gemini",
                                          time.strftime("%Y-%m-%d-%H%M") + f"-{args.agent}.md")
     if sortie:
         out_path = os.path.abspath(os.path.expanduser(sortie))

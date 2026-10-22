@@ -14,5 +14,6 @@
 | D12 | Tim au mois 6, ambiances en test | Non retenue : Tim et Ambiances au mois 2 (plan 2.2) | 21/10/2026 |
 | D13 | Boutique streamers d'abord | Non retenue : boutique comme au plan 2.2 | 21/10/2026 |
 | D14 | Logiciels au mois 1 | FilmCraft seul en semaine 1 ; décors dans Aseprite ; les autres quand une vidéo en a besoin | 21/10/2026 |
+| D15 | Guide OPUS (motion design) | Méthode reprise dans les recettes `video-*` (section « Mise en scène ») ; Hyperframes et video-use non installés ; 4 animations pixel (compteur, mot derrière le perso, jauge/courbe en escaliers, cadre d'interface rétro) codées seulement si le cadre « schéma » reste vide sur la prochaine vulga (journal n° 26) | 22/10/2026 |
 
 D5 à D7 : recommandations du plan, pas encore confirmées explicitement.

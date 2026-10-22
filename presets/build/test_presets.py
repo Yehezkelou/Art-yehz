@@ -1,5 +1,7 @@
-import json, sys
-D = "/home/Yehezou/videos/presets/"
+import json, os, sys
+# presets/ du dépôt (presets/build/..), chemin absolu ; surcharge de la racine : ICO_VIDEOS
+D = os.path.join(os.path.abspath(os.environ.get("ICO_VIDEOS")
+                                 or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")), "presets", "")
 S = []
 c = lambda cmd, **p: S.append({"command": cmd, "params": p})
 c("file.newProject")

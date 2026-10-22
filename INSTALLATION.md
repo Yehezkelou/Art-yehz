@@ -173,7 +173,7 @@ La configuration WSL ci-dessus reste valable et n'est pas supprimée. Sous Windo
 
 | Quoi | Chemin Windows | Remarque |
 |---|---|---|
-| Ce dépôt | `C:\Users\<toi>\videos` | |
+| Ce dépôt | `C:\Users\<toi>\videos` | si ce nom est pris (Windows ignore la casse : `videos` = dossier **Vidéos**), le clone peut être ailleurs : les outils trouvent la racine seuls (`outils/chemins.py`) et les skills utilisent des chemins relatifs. PC « HP » : `C:\Users\HP\Documents\yehz\Art-yehz` |
 | EffectCraft de production | `C:\Users\<toi>\dev\vid\effectcraft\target\release\effectcraft-cli.exe` | `monter.py` et `pilote_agy.py` ajoutent `.exe` tout seuls sous Windows |
 | Logiciels Craft + VoiceStudio | `C:\Users\<toi>\videos\logiciel\<nom>` | |
 | Moteur de voix / modèles | `C:\Users\<toi>\.local\src\omnivoice.cpp` et `C:\Users\<toi>\.local\share\omnivoice\models` | même convention que sous WSL |

@@ -12,8 +12,10 @@ Proposé par l'agent architecte (Gemini), relu et resserré par Claude.
 """
 import argparse, json, os, sys, tomllib
 
-HOME = os.path.expanduser("~")
-RACINE = os.path.join(HOME, "videos/assets")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import chemins  # noqa: E402
+
+RACINE = chemins.dans_racine("assets")  # outils/../assets (surcharge : ICO_VIDEOS)
 LICENCES = {"propriétaire", "CC0", "CC-BY-4.0", "CC-BY-3.0", "itch-commercial", "OFL-1.1"}
 
 

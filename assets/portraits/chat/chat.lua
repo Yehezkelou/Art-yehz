@@ -5,7 +5,8 @@
 -- le dessin, la pose et la rampe sont les notres.
 --   Aseprite.exe -b --script chat.lua
 
-local SORTIE = "C:\\Users\\Yehezkelou\\ico-pixel\\portraits\\chat\\chat.aseprite"
+-- sortie sous Windows, hors WSL (Aseprite.exe ne lit pas \wsl.localhost) : %USERPROFILE%\ico-pixel\...
+local SORTIE = app.fs.joinPath(os.getenv("USERPROFILE") or os.getenv("HOME"), "ico-pixel", "portraits", "chat", "chat.aseprite")
 local L = 96
 math.randomseed(11)
 
@@ -316,6 +317,7 @@ for _, nom in ipairs(NOMS) do
   spr:newCel(calque[nom], 1, img, Point(0, 0))
 end
 
+app.fs.makeAllDirectories(app.fs.filePath(SORTIE))
 spr:saveAs(SORTIE)
 print("chat.aseprite : " .. L .. "x" .. L .. ", " .. #spr.layers .. " calques, palette de "
       .. #spr.palettes[1] .. " couleurs")

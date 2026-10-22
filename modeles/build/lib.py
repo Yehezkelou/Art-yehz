@@ -1,7 +1,10 @@
 """Petite bibliothèque pour générer les scripts de construction des modèles (.jsonl)."""
-import json
+import json, os
 
-BIBLE = "/home/Yehezou/videos/bible/bible.ecproj"
+# Racine du dépôt = modeles/build/../.. (surcharge : ICO_VIDEOS) ; chemins absolus pour EffectCraft
+RACINE = os.path.abspath(os.environ.get("ICO_VIDEOS")
+                         or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+BIBLE = os.path.join(RACINE, "bible", "bible.ecproj")
 
 
 class B:
@@ -124,7 +127,7 @@ class B:
         self.c("layer.setSwitch", layers=["#1"], switch="lock", value=True)
 
     def save(self, stem, name, description):
-        self.c("file.saveAs", path=f"/home/Yehezou/videos/modeles/{stem}.ecproj")
+        self.c("file.saveAs", path=os.path.join(RACINE, "modeles", f"{stem}.ecproj"))
         self.c("templates.saveAs", name=name, description=description, category="ico-vid")
 
 

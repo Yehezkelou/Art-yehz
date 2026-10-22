@@ -10,7 +10,7 @@ description: >-
 # Recette : Piloter Antigravity / Gemini (`pilote_agy.py`)
 
 L'utilisateur a configuré et autorisé à 100 % la collaboration entre **Claude Code** et **Antigravity (`agy`)** dans `~/videos`.
-`agy` dispose désormais de son contexte projet automatique (`~/videos/GEMINI.md`) et de **4 compétences d'agents spécialisés** (`~/videos/.agents/skills/ico-*/SKILL.md`), pilotables en une seule commande via `~/videos/outils/pilote_agy.py`.
+`agy` dispose désormais de son contexte projet automatique (`GEMINI.md`) et de **4 compétences d'agents spécialisés** (`.agents/skills/ico-*/SKILL.md`), pilotables en une seule commande via `outils/pilote_agy.py`.
 
 ## 1. Les 6 Profils d'Agents Prêts à l'Emploi
 
@@ -27,21 +27,21 @@ L'utilisateur a configuré et autorisé à 100 % la collaboration entre **Claude
 
 ```bash
 # 1. Porte Script (lundi) : critiquer un épisode avant enregistrement de la voix
-python3 -I ~/videos/outils/pilote_agy.py critique \
+python3 -I outils/pilote_agy.py critique \
   "Audite vulga-01-gps/episode.toml et propose un gag court de Tim qui renvoie vers cet épisode."
 
 # 2. Porte Rendu : contrôler une vidéo rendue (la sonde audio est injectée automatiquement)
-python3 -I ~/videos/outils/pilote_agy.py rendu \
+python3 -I outils/pilote_agy.py rendu \
   "Vérifie sketch-01/sketch-01-cloud.mp4 et ses aperçus selon la checklist § 11.2." \
-  --video ~/videos/sketch-01/sketch-01-cloud.mp4 \
-  --sortie ~/videos/sketch-01/rapport-gemini.md
+  --video sketch-01/sketch-01-cloud.mp4 \
+  --sortie sketch-01/rapport-gemini.md
 
 # 3. Déléguer la création ou le test d'un outil Python à l'agent Architecte
-python3 -I ~/videos/outils/pilote_agy.py architecte \
-  "Écris et teste ~/videos/outils/verifier_pixels.py selon le § 6.6 du plan." --ecrire
+python3 -I outils/pilote_agy.py architecte \
+  "Écris et teste outils/verifier_pixels.py selon le § 6.6 du plan." --ecrire
 
 # 4. Direction Artistique : vérifier une planche de sprites ou générer une action Lua Aseprite
-python3 -I ~/videos/outils/pilote_agy.py da \
+python3 -I outils/pilote_agy.py da \
   "Vérifie assets/persos/tim/tim-planche.png et ajoute l'action saut dans tim.lua." --ecrire
 ```
 

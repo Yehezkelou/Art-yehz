@@ -20,3 +20,5 @@ regards/
 # Références d'autres artistes : jamais publiées (droits d'auteur) ; copiées à la main d'une machine à l'autre
 references/*
 !references/README.md
+# Skills tiers clonés (dépôts git à part) ; la version utilisée est copiée dans .claude/skills/
+/skills/

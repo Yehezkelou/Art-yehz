@@ -36,7 +36,7 @@ Pour chaque idée ou fichier `episode.toml` (v1 ou v2), vérifie systématiqueme
    - Identifie la cause exacte de chaque chute de plus de 5 points (plan statique > 3 s, explication abstraite sans schéma pixel, transition trop lente) et propose une règle concrète à ajouter aux recettes.
 2. **Rentabilité & « 1 travail = 3 usages » (Objectif 500 $/mois)** :
    - Chaque nouvel asset du script peut-il être décliné immédiatement en **pack streamer** (emote animée, alerte Twitch, écran Starting Soon/BRB) ou **pack itch.io/Ko-fi** ?
-   - Si un asset ne sert qu'une seule fois pendant 2 secondes, propose de le remplacer par un asset existant de `~/videos/assets/`.
+   - Si un asset ne sert qu'une seule fois pendant 2 secondes, propose de le remplacer par un asset existant de `assets/`.
 
 ## 3. Format de Réponse Attendu
 

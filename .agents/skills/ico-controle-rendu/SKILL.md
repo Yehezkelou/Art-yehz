@@ -34,7 +34,7 @@ Tu es le responsable du **Contrôle Qualité (Porte Rendu)** de l'usine **ico-vi
 5. **Audio (via mesures `son.json` / `ffprobe` + `.srt`)** :
    - Volume de la voix constant (cible `≈ -16 LUFS`), musique au moins `15 dB` sous la voix, pas d'écrêtage (`peak < -1 dBFS`).
    - Sous-titres synchronisés avec `transcription.srt`.
-6. **Licences (`verifier_licences.py`)** : Tous les fichiers utilisés sont déclarés dans `~/videos/assets/manifeste.toml` avec crédits CC-BY prêts pour la description.
+6. **Licences (`verifier_licences.py`)** : Tous les fichiers utilisés sont déclarés dans `assets/manifeste.toml` avec crédits CC-BY prêts pour la description.
 7. **Miniature & Titre** :
    - Miniature `1280×720` : personnage agrandi `×8` net, émotion claire, **≤ 3 mots**, rien dans le coin bas-droit (timecode), **parfaitement lisible réduite à 10 % (`128×72`)**.
    - Titre **≤ 60 caractères**.

@@ -1,16 +1,16 @@
 # Outils de montage ico-vid (étape 5)
 
 `monter.py` construit un épisode complet à partir d'un **fichier d'épisode** (`episode.toml`) et du
-modèle du format (`~/videos/modeles/`). Il tourne en headless (pas besoin d'ouvrir l'app) et ne
+modèle du format (`modeles/`). Il tourne en headless (pas besoin d'ouvrir l'app) et ne
 modifie jamais le modèle.
 
 ```bash
-python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml             # projet + 3 aperçus PNG
-python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml --ecraser    # refaire (copie de sauvegarde)
-python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml --rendu      # .mp4 + copie sur le Bureau
+python3 -I outils/monter.py <slug>/episode.toml             # projet + 3 aperçus PNG
+python3 -I outils/monter.py <slug>/episode.toml --ecraser    # refaire (copie de sauvegarde)
+python3 -I outils/monter.py <slug>/episode.toml --rendu      # .mp4 + copie sur le Bureau
 ```
 
-Sortie : `~/videos/<slug>/<slug>.ecproj`, `apercu-1..3.png`, puis `<slug>.mp4`. Le script affiche
+Sortie : `<slug>/<slug>.ecproj`, `apercu-1..3.png`, puis `<slug>.mp4`. Le script affiche
 un résumé JSON avec des **alertes** à lire : durée hors bible, réplique trop longue (coupée en
 plusieurs sous-titres), erreur d'expression dans n'importe quelle comp.
 
@@ -74,8 +74,8 @@ vulga `Question`, `Point 1..3`, `Zone schema`.
 ## Fichiers
 
 - `monter.py` — l'outil ; `rapides.py` — les mouvements rapides (aussi en scripts `.jsonl` dans
-  `~/videos/presets/rapides/`, pour les appliquer à la main dans l'app).
+  `presets/rapides/`, pour les appliquer à la main dans l'app).
 - `pilote_agy.py` — pilote les 6 profils d'agents Antigravity / Gemini (`critique`, `rendu`, `da`,
-  `architecte`, `flash`, `essaim`) avec sonde MP4 automatique et chargement de `~/videos/GEMINI.md`
-  et `~/videos/.agents/skills/ico-*/SKILL.md` (voir `.claude/skills/pilote-agy/SKILL.md`).
-- Chaque épisode garde ses scripts de construction dans `~/videos/<slug>/.montage/`.
+  `architecte`, `flash`, `essaim`) avec sonde MP4 automatique et chargement de `GEMINI.md`
+  et `.agents/skills/ico-*/SKILL.md` (voir `.claude/skills/pilote-agy/SKILL.md`).
+- Chaque épisode garde ses scripts de construction dans `<slug>/.montage/`.

@@ -17,24 +17,42 @@ description: Monte un sketch d'humour adulte ico-vid (vertical 9:16, 15–45 s) 
 
 ## Méthode (toujours dans cet ordre)
 
-1. **Lire** `~/videos/bible.md` (formats, zones sûres, sous-titres, structure) et
-   `~/videos/outils/README.md` (format du fichier d'épisode). Ne pas toucher au code d'EffectCraft.
+1. **Lire** `bible.md` (formats, zones sûres, sous-titres, structure) et
+   `outils/README.md` (format du fichier d'épisode). Ne pas toucher au code d'EffectCraft.
 2. **Écrire le script** à partir de l'idée (règles du format ci-dessus) et le **présenter** :
-   tableau `# · qui parle · réplique · durée estimée` + les textes du modèle + durée totale.
+   tableau `# · qui parle · réplique · à l'écran · durée estimée` + les textes du modèle + durée totale.
+   La colonne « à l'écran » dit, pour chaque réplique, quel élément apparaît, quand et où (ou « — »).
    **Attendre la validation avant de monter quoi que ce soit.** Corriger autant de fois que demandé.
-3. **Dossier** : `~/videos/<slug>/` (slug = `<format>-NN-mot`, NN = numéro suivant d'après `ls ~/videos`).
+3. **Dossier** : `<slug>/` (slug = `<format>-NN-mot`, NN = numéro suivant d'après `ls` à la racine).
    Si le dossier existe déjà, demander avant d'écrire dedans.
-4. **Écrire** `~/videos/<slug>/episode.toml`, puis lancer
-   `python3 -I ~/videos/outils/monter.py ~/videos/<slug>/episode.toml`.
+4. **Écrire** `<slug>/episode.toml`, puis lancer
+   `python3 -I outils/monter.py <slug>/episode.toml`.
 5. **Lire les alertes** du résumé JSON. Réplique trop longue → la raccourcir (ne pas laisser un
    sous-titre coupé en deux), puis relancer avec `--ecraser` *tant que le projet n'a pas été ouvert
    ni retouché par l'utilisateur*. Toute « ERREUR D'EXPRESSION » doit être corrigée avant d'aller plus loin.
-6. **Montrer les 3 aperçus** (`apercu-1..3.png`, les lire avec Read) avec une phrase chacun, et
+6. **Montrer les 3 aperçus** (`apercu-1..3.png`, les lire avec Read) avec une phrase chacun ; vérifier
+   au passage que chaque élément n'est visible que pendant son moment (rien qui traîne avant ou après), et
    demander : valider, ou quoi changer.
 7. **Rendu** une fois validé : `monter.py … --rendu` en arrière-plan (Bash `run_in_background`),
    prévenir de la durée (~0,25 s/image sans preset, ~1 s/image en fantasy). Donner le chemin du
    `.mp4` et la copie sur le Bureau.
-8. **Journal** : ajouter à `~/videos/ce-qui-m-a-gene.md` toute gêne rencontrée (une ligne, avec le slug).
+8. **Journal** : ajouter à `ce-qui-m-a-gene.md` toute gêne rencontrée (une ligne, avec le slug).
+
+## Mise en scène
+
+Méthode reprise du guide « motion design avec Claude » (@cassandre.rollet, 2026), réécrite pour
+ico-vid ; analyse : `agents/rapports/claude/2026-10-22-motion-design-opus.md`.
+
+- **Montrer au lieu de dire** : quand la voix donne un chiffre, une durée ou une preuve, prévoir
+  un élément visuel à ce moment-là (colonne « à l'écran ») plutôt que du texte seul.
+- **Chaque demande d'effet en 5 éléments** : quoi (le calque), quand (`temps` ou marqueur), où
+  (zone sûre de la bible), style (toujours celui de la bible : palette, polices, pas de flou ni de
+  semi-transparence), mouvement (`rapide = …`). Un élément sans l'un des 5 n'est pas prêt.
+- **3 ou 4 moments forts au plus** par vidéo (effets en plus du modèle) : au-delà, rien ne ressort.
+- **3 allers-retours de retouche au plus** sur les aperçus ; au-delà, revenir au script.
+- La bible prime sur le guide : rebonds et secousses restent permis (l'humour en vit), cadences
+  de la bible (24 ou 12 i/s), pas de verre dépoli, de fondu en transparence, de vrai logo ni de
+  fausse interface d'application.
 
 ## Garde-fous
 

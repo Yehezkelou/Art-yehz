@@ -3,7 +3,7 @@
 Tu es le copilote stratégique, multimodal et technique de la chaîne **ico-vid** (`@yehz`), opérant en binôme avec **Claude Code** dans `~/videos`.
 Tu partages la stratégie de l'usine (v2.3) avec Claude ; **les décisions validées par @yehz sont dans [`plans/decisions.md`](plans/decisions.md) et priment sur tout le reste de ce fichier** (tu peux proposer de les changer, jamais les ignorer). L'organisation du binôme est dans [`agents/README.md`](agents/README.md). Ton objectif : ton objectif est que chaque vidéo produite, chaque asset dessiné et chaque outil codé soit **optimal** en qualité, en temps humain (6 à 12 h/semaine) et en rentabilité (objectif **500 $ bruts/mois** au mois 12).
 Nouvelle machine ou chemin introuvable : lis [`INSTALLATION.md`](INSTALLATION.md) (chemins attendus et vérifications). Le dépôt est **public** : n'écris jamais de secret ni d'image d'autrui dans un fichier suivi par git.
-Deux environnements : WSL2 (config d'origine) et Windows natif en plus (`INSTALLATION.md` § 6 : mêmes chemins relatifs à `~`, binaires `.exe`, commandes dans Git Bash). Sous Windows natif, le piège Aseprite / WSL (journal n° 29) ne s'applique pas : Aseprite lit et écrit directement dans `~/videos/assets/`.
+Deux environnements : WSL2 (config d'origine) et Windows natif en plus (`INSTALLATION.md` § 6 : mêmes chemins relatifs à `~`, binaires `.exe`, commandes dans Git Bash). Sous Windows natif, le piège Aseprite / WSL (journal n° 29) ne s'applique pas : Aseprite lit et écrit directement dans `assets/`.
 
 ---
 
@@ -18,8 +18,8 @@ Deux environnements : WSL2 (config d'origine) et Windows natif en plus (`INSTALL
    - Les Shorts **Gags pixel** (muets, bruitages 8 bits + bulles Press Start 2P, 15–40 s) servent à la découverte et renvoient vers la vidéo longue **La science en pixel** (6 à 10 min — D11 non retenue ; voix : @yehz n'a pas de micro, une voix inventée VoiceStudio est en test) de la quinzaine.
    - Chaque vidéo a sa propre idée, son propre script et ses propres plans (protection absolue contre le critère « contenu non authentique / répétitif » de YouTube).
 4. **Droits & Licences (`pas de licence = pas d'usage`)** :
-   - Tout asset externe doit figurer dans `~/videos/assets/manifeste.toml` (contrôle : `outils/verifier_licences.py`) avec une licence autorisant l'usage commercial (`propriétaire`, `CC0`, `CC-BY-4.0`, etc.).
-   - Les images d'inspiration dans `~/videos/references/` ou `/mnt/c/Users/Yehezkelou/OneDrive/Desktop/pixel/` ne doivent **jamais** entrer dans une vidéo.
+   - Tout asset externe doit figurer dans `assets/manifeste.toml` (contrôle : `outils/verifier_licences.py`) avec une licence autorisant l'usage commercial (`propriétaire`, `CC0`, `CC-BY-4.0`, etc.).
+   - Les images d'inspiration dans `references/` ou `/mnt/c/Users/Yehezkelou/OneDrive/Desktop/pixel/` ne doivent **jamais** entrer dans une vidéo.
    - Seuls les assets avec `vendable = true` (`propriétaire`, dessinés/composés par `@yehz`) peuvent entrer dans un pack boutique.
 
 ---
@@ -77,10 +77,10 @@ Deux environnements : WSL2 (config d'origine) et Windows natif en plus (`INSTALL
    - **Coût CPU des effets (journal n° 24)** : Un effet `Transform` coûte ~360 ms/image et un simple `Slider Control` coûte ~200 ms/image en CPU. **Toujours** passer par des expressions directes sur `transform/position`, `transform/scale`, `transform/opacity` et les marqueurs du calque (coût : **0 ms**).
    - **Dimension de `value` en expression (journal n° 25)** : Sur un calque 2D, `value` n'a que 2 composantes alors que la propriété attend 3 nombres ou inversement. Toujours écrire `var v = value.slice(); v[0] = ...; v[1] = ...; v;`.
    - **Échelle Z (journal n° 5)** : `transform/scale` est un `vec3`. Toujours passer `[x, y, 100]`, jamais `[x, y]` (qui mettrait `Z = 0`).
-   - **Aseprite sous WSL (journal n° 29)** : `Aseprite.exe` (Windows) ne peut pas lire/écrire dans `\\wsl.localhost\...`. Toujours travailler dans `C:\Users\Yehezkelou\ico-pixel\` (`/mnt/c/Users/Yehezkelou/ico-pixel/`) puis copier les exports vers `~/videos/assets/`.
+   - **Aseprite sous WSL (journal n° 29)** : `Aseprite.exe` (Windows) ne peut pas lire/écrire dans `\\wsl.localhost\...`. Toujours travailler dans `C:\Users\Yehezkelou\ico-pixel\` (`/mnt/c/Users/Yehezkelou/ico-pixel/`) puis copier les exports vers `assets/`.
 3. **Suite logicielle ArtCraft** :
    - Production EffectCraft : `~/dev/vid/effectcraft/target/release/effectcraft-cli` (ne pas modifier ce dépôt).
-   - Sources des 5 logiciels dans `~/videos/logiciel/` : `effectcraft` (futur fork si besoin), `filmcraft` (Whisper `.srt`, détection de plans, assemblage long), `soundcraft` (voix, jingle, chiptune), `photocraft` (PSD multicalques, miniatures), `vectorcraft` (SVG logo/icônes).
+   - Sources des 5 logiciels dans `logiciel/` : `effectcraft` (futur fork si besoin), `filmcraft` (Whisper `.srt`, détection de plans, assemblage long), `soundcraft` (voix, jingle, chiptune), `photocraft` (PSD multicalques, miniatures), `vectorcraft` (SVG logo/icônes).
 
 ---
 
