@@ -1,0 +1,89 @@
+# Diorama « boutique du marchand » : placement des parties (écrit par boutique.py, ne pas retoucher à la main).
+# Repère en voxels : x gauche → droite, y vers le haut, z arrière → rue ; origine = coin (0, 0, 0) de la partie.
+# Chargement : outils.voxel.charger(fichier) → modèle nommé, maillage(…, { centre: "coin", occlusion: 2 }),
+# position = origine − centre. Voir controle.mjs.
+nom = "boutique"
+taille = [48, 53, 48]
+centre = [24, 5, 24]   # point du diorama posé à l'origine de la scène (sol du trottoir, milieu)
+occlusion = 2                 # vrais coins seulement (conseillé sur les dioramas)
+
+[[partie]]
+nom = "sol"
+fichier = "sol.vox"
+modele = "sol"
+origine = [0, 0, 0]
+
+[[partie]]
+nom = "batiment"
+fichier = "batiment.vox"
+modele = "batiment"
+origine = [4, 5, 4]
+
+[[partie]]
+nom = "toit"
+fichier = "batiment.vox"
+modele = "toit"
+origine = [4, 39, 4]
+
+[[partie]]
+nom = "etageres"
+fichier = "mobilier.vox"
+modele = "etageres"
+origine = [17, 11, 19]
+
+[[partie]]
+nom = "comptoir"
+fichier = "mobilier.vox"
+modele = "comptoir"
+origine = [20, 9, 21]
+
+[[partie]]
+nom = "lanterne"
+fichier = "mobilier.vox"
+modele = "lanterne"
+origine = [13, 12, 26]
+
+[[partie]]
+nom = "lampadaire"
+fichier = "mobilier.vox"
+modele = "lampadaire"
+origine = [40, 5, 33]
+
+[[partie]]
+nom = "tonneau"
+fichier = "mobilier.vox"
+modele = "tonneau"
+origine = [0, 5, 27]
+
+[[partie]]
+nom = "caisses"
+fichier = "mobilier.vox"
+modele = "caisses"
+origine = [0, 5, 21]
+
+[[partie]]
+nom = "plante"
+fichier = "mobilier.vox"
+modele = "plante"
+origine = [13, 5, 26]
+
+[[lumiere]]
+nom = "lanterne"
+position = [14.5, 14.5, 27.0]
+halo = { rayon = 3.6, couleurs = [19, 18], interieur = 2.4 }
+
+[[lumiere]]
+nom = "lampadaire"
+position = [41.5, 28, 32.5]
+halo = { rayon = 4.2, couleurs = [19, 18], interieur = 2.6 }
+
+# Cadrages conseillés (cible et distance en voxels, champ vertical 24°, image 270 × 480)
+[cadrage.large]
+cible = [0, 21, 0]
+distance = 250
+hauteur = 80
+
+[cadrage.rapproche]
+cible = [4, 14, 4]
+distance = 145
+hauteur = 26

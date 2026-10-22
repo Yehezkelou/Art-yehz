@@ -10,7 +10,7 @@
 //
 // Scène (module ESM) : export default function creer(THREE, outils, params) { … return { scene, camera, update(t) } }
 // (outils : voir outils.mjs ; t en secondes absolues ; tout doit être déterministe). Fichiers du dépôt lisibles par la
-// page sous /depot/ (.vox, .toml, .json, .png seulement : outils.voxel.charger, outils.texturePixel). Sans lumière dans la scène,
+// page sous /depot/ (.vox, .toml, .json, .png, et .mjs sous assets/3d/ : outils.voxel.charger, outils.texturePixel, clips des modèles). Sans lumière dans la scène,
 // une ambiance + un soleil sont ajoutés. Le fond --fond s'applique là où la scène n'a pas de scene.background.
 //
 // Chaque image : WebGLRenderer sans antialiasing, pixelRatio 1, puis couleur de palette la plus proche
@@ -203,6 +203,8 @@ const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", "
 // Fichiers du dépôt lisibles par les scènes (outils.voxel, outils.texturePixel) sous /depot/ : ces extensions seulement,
 // jamais dans references/.
 export const EXTENSIONS_DEPOT = new Set([".vox", ".toml", ".json", ".png"]);
+// Modules de clips des modèles (ex. assets/3d/persos/tim/tim.clips.mjs) : .mjs sous assets/3d/ seulement.
+export const DOSSIER_MJS_DEPOT = path.join("assets", "3d");
 
 function servir(racines) {
   // racines : { "/three/": dossier, "/scene/": dossier, "/depot/": dossier, "/": dossier } ; rien hors de ces dossiers ;
@@ -216,7 +218,9 @@ function servir(racines) {
       fichier = path.resolve(base, "." + path.sep + url.slice(pref.length));
       if (url === "/") fichier = path.join(base, "page.html");
       if (fichier !== base && !fichier.startsWith(base + path.sep)) fichier = null;
-      if (fichier && pref === "/depot/" && (!EXTENSIONS_DEPOT.has(path.extname(fichier).toLowerCase())
+      const mjsModele = fichier && path.extname(fichier).toLowerCase() === ".mjs"
+        && path.relative(base, fichier).startsWith(DOSSIER_MJS_DEPOT + path.sep);
+      if (fichier && pref === "/depot/" && ((!EXTENSIONS_DEPOT.has(path.extname(fichier).toLowerCase()) && !mjsModele)
         || path.relative(base, fichier).split(path.sep)[0].toLowerCase() === "references")) fichier = null;  // n'entre jamais dans une vidéo
     }
     if (!fichier || !fs.existsSync(fichier) || !fs.statSync(fichier).isFile()) {

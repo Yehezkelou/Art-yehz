@@ -360,3 +360,393 @@ url      = ""
 date     = 2026-10-22
 vendable = true                     # palette ico-pixel-32 en 256×1 pour MagicaVoxel (python3 -I outils/vox.py palette …)
 credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/apercu.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/couchant.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/couchant.toml"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/fond.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/mer.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/nuages-bas.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/nuages-hauts.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/ciels/couchant/soleil.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/apercu.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/batiment.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/boutique.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/boutique.scene.toml"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/controle.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/mobilier.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/decors/boutique/sol.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/grimoire/apercu.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/grimoire/controle.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/grimoire/grimoire.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/grimoire/grimoire.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/potion/apercu.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/potion/controle.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/potion/potion-particules.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/potion/potion.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/objets/potion/potion.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/marchand/apercu.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/marchand/controle.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/marchand/marchand.clips.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/marchand/marchand.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/marchand/marchand.rig.toml"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/marchand/marchand.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/apercu.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/controle.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/tim-sans-baton.rig.toml"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/tim.clips.mjs"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/tim.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/tim.rig.toml"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/persos/tim/tim.vox"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/textures/grimoire-plat.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""
+
+[[asset]]
+fichier  = "3d/textures/grimoire-plat.py"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # modélisé par Claude (script vox.py) à la demande de @yehz, D17
+credit   = ""

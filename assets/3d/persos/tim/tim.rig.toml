@@ -1,0 +1,80 @@
+# Rig de Tim avec son bâton (assets/3d/persos/tim/tim.py) : coordonnées en voxels, grille commune du perso.
+# Clips de base : idle, marche, saut, parle, coucou ; tim.clips.mjs ajoute colere et le clin d'œil.
+nom = "tim"
+echelle = 1
+sol = [5, 0, 4]          # milieu des pieds (origine du groupe)
+
+[parties.corps]
+fichier = "tim.vox"
+modele = "corps"
+origine = [2, 4, 1]
+pivot = [5, 4, 4]
+
+[parties.tete]
+fichier = "tim.vox"
+modele = "tete"
+origine = [0, 8, 0]
+pivot = [5, 8, 4]
+parent = "corps"
+
+[parties.bouche]
+fichier = "tim.vox"
+modele = "bouche"
+origine = [4, 8, 7]
+pivot = [5, 8, 7]
+parent = "tete"
+
+[parties.paupieres]
+fichier = "tim.vox"
+modele = "paupieres"
+origine = [1, 11, 6]
+pivot = [5, 12, 6]
+parent = "tete"
+
+[parties.sourcils]
+fichier = "tim.vox"
+modele = "sourcils"
+origine = [1, 12, 6]
+pivot = [5, 13, 6]
+parent = "tete"
+
+[parties.bras_d]
+fichier = "tim.vox"
+modele = "bras_d"
+origine = [0, 5, 3]
+pivot = [0, 8, 4]
+parent = "corps"
+
+[parties.jambe_d]
+fichier = "tim.vox"
+modele = "jambe_d"
+origine = [3, 0, 3]
+pivot = [4, 4, 4.5]
+parent = "corps"
+
+[parties.jambe_g]
+fichier = "tim.vox"
+modele = "jambe_g"
+origine = [5, 0, 3]
+pivot = [6, 4, 4.5]
+parent = "corps"
+
+[parties.bras_g]
+fichier = "tim.vox"
+modele = "bras_g_baton"
+origine = [8, 5, 3]
+pivot = [10, 8, 4]
+parent = "corps"
+role = "bras_baton"
+
+[parties.baton]
+fichier = "tim.vox"
+modele = "baton"
+origine = [10, 1, 3]
+pivot = [11, 5, 4]
+parent = "bras_g"
+
+[clips.balade]
+base = "marche"
+vitesse = 0.7
+amplitude = 0.7

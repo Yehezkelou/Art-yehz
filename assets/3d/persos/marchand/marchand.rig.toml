@@ -1,0 +1,88 @@
+# Rig du marchand (assets/3d/persos/marchand/marchand.py) : coordonnées en voxels, grille commune du perso.
+# Clips : idle, marche, saut, parle, coucou, non_de_la_tete (marchand.clips.mjs, à installer).
+nom = "marchand"
+echelle = 1
+sol = [9, 0, 4]          # sous le milieu de la robe (origine du groupe)
+
+[parties.corps]
+fichier = "marchand.vox"
+modele = "corps"
+origine = [4, 1, 0]
+pivot = [9, 1, 4]
+
+[parties.tete]
+fichier = "marchand.vox"
+modele = "tete"
+origine = [0, 8, 0]
+pivot = [9, 8, 4]
+parent = "corps"
+
+[parties.pointe]
+fichier = "marchand.vox"
+modele = "pointe"
+origine = [8, 13, -2]
+pivot = [9, 16, 3]
+parent = "tete"
+
+[parties.oreille_d]
+fichier = "marchand.vox"
+modele = "oreille_d"
+origine = [0, 11, 5]
+pivot = [4, 14, 6]
+parent = "tete"
+
+[parties.oreille_g]
+fichier = "marchand.vox"
+modele = "oreille_g"
+origine = [14, 11, 5]
+pivot = [14, 14, 6]
+parent = "tete"
+
+[parties.bouche]
+fichier = "marchand.vox"
+modele = "bouche"
+origine = [7, 8, 7]
+pivot = [9, 8, 7]
+parent = "tete"
+
+[parties.paupieres]
+fichier = "marchand.vox"
+modele = "paupieres"
+origine = [5, 11, 6]
+pivot = [9, 12, 6]
+parent = "tete"
+
+[parties.mi_clos]
+fichier = "marchand.vox"
+modele = "mi_clos"
+origine = [5, 12, 6]
+pivot = [9, 12, 6]
+parent = "tete"
+
+[parties.bras_d]
+fichier = "marchand.vox"
+modele = "bras_d"
+origine = [4, 5, 3]
+pivot = [4, 8, 4]
+parent = "corps"
+
+[parties.bras_g]
+fichier = "marchand.vox"
+modele = "bras_g"
+origine = [12, 5, 3]
+pivot = [14, 8, 4]
+parent = "corps"
+
+[parties.jambe_d]
+fichier = "marchand.vox"
+modele = "jambe_d"
+origine = [6, 0, 3]
+pivot = [7, 1, 5.5]
+parent = "corps"
+
+[parties.jambe_g]
+fichier = "marchand.vox"
+modele = "jambe_g"
+origine = [10, 0, 3]
+pivot = [11, 1, 5.5]
+parent = "corps"

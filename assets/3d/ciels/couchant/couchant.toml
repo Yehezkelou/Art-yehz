@@ -1,0 +1,38 @@
+# Ciel couchant ico-vid : cartes pixel en couches (écrit par couchant.py, ne pas retoucher à la main).
+# Composition : chaque carte, centrée en x, est décalée de round(-glissement × profondeur × angle) px
+# (angle d'orbite de la caméra en radians) puis posée sur les précédentes (alpha tout-ou-rien).
+# Le bord d'une carte de largeur L reste hors champ tant que |décalage| <= (L - 270) / 2.
+nom = "couchant"
+largeur = 270
+hauteur = 480
+glissement = 60
+
+[[couche]]
+nom = "fond"
+fichier = "fond.png"
+largeur = 270
+profondeur = 0.0
+
+[[couche]]
+nom = "soleil"
+fichier = "soleil.png"
+largeur = 360
+profondeur = 0.08
+
+[[couche]]
+nom = "nuages-hauts"
+fichier = "nuages-hauts.png"
+largeur = 360
+profondeur = 0.22
+
+[[couche]]
+nom = "nuages-bas"
+fichier = "nuages-bas.png"
+largeur = 360
+profondeur = 0.42
+
+[[couche]]
+nom = "mer"
+fichier = "mer.png"
+largeur = 360
+profondeur = 0.75
