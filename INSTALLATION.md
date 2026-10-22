@@ -5,7 +5,10 @@ Objectif : retrouver exactement l'usine de l'ancienne machine (mêmes chemins, m
 
 ## 0. Convention de chemins (ne pas changer)
 
-Tout tourne **dans WSL2**, pas sous Windows natif : Claude Code, `agy`, Python, cargo, les logiciels Craft, la voix.
+Deux environnements sont prévus sur le PC, l'un **en plus** de l'autre :
+- **WSL2** (§ 0 à 5) : la configuration d'origine, Claude Code, `agy`, Python, cargo, les logiciels Craft et la voix tournent dans Linux ;
+- **Windows natif** (§ 6) : les mêmes outils installés directement sous Windows.
+
 Ancienne machine : **Fedora Linux 44 (WSL)**. Garder Fedora évite toute surprise ; avec Ubuntu, remplacer `dnf` par `apt` et les paquets `-devel` par `-dev`.
 
 | Quoi | Chemin attendu | Pourquoi |
@@ -154,3 +157,96 @@ Les commandes `sudo` (paquets `dnf`, CUDA Toolkit) demandent ton mot de passe : 
 
 Gemini (`agy`) lit `GEMINI.md` tout seul dans `~/videos` ; ses 4 compétences sont dans `.agents/skills/`.
 Les skills Claude (`video-*`, `pilote-agy`) sont dans `.claude/skills/` : rien à copier dans `~/.claude/`.
+
+## 6. Windows natif (en plus de WSL)
+
+La configuration WSL ci-dessus reste valable et n'est pas supprimée. Sous Windows, on reprend **les mêmes chemins relatifs à `~`** (`~` = `C:\Users\<toi>`), donc les outils, skills et agents fonctionnent sans changement.
+
+### 6.0 Règles de cohabitation WSL / Windows
+
+- **Un clone par environnement** : WSL `~/videos` (= `/home/Yehezou/videos`) et Windows `C:\Users\<toi>\videos`. Ils se synchronisent **par git** (commit + push d'un côté, pull de l'autre), jamais par copie de fichiers.
+- Ne pas ouvrir le clone WSL depuis Windows (`\\wsl.localhost\…` : lent, et Aseprite ne le lit pas) ni le clone Windows depuis WSL (`/mnt/c/…` : très lent pour cargo et git).
+- Une seule session d'agents à la fois sur un même épisode. Avant de changer d'environnement : commit + push, puis pull de l'autre côté.
+- Les sources des logiciels (`logiciel/`) et leurs compilations sont propres à chaque environnement : un binaire Linux ne tourne pas sous Windows, et l'inverse non plus.
+
+### 6.1 Chemins sous Windows
+
+| Quoi | Chemin Windows | Remarque |
+|---|---|---|
+| Ce dépôt | `C:\Users\<toi>\videos` | |
+| EffectCraft de production | `C:\Users\<toi>\dev\vid\effectcraft\target\release\effectcraft-cli.exe` | `monter.py` et `pilote_agy.py` ajoutent `.exe` tout seuls sous Windows |
+| Logiciels Craft + VoiceStudio | `C:\Users\<toi>\videos\logiciel\<nom>` | |
+| Moteur de voix / modèles | `C:\Users\<toi>\.local\src\omnivoice.cpp` et `C:\Users\<toi>\.local\share\omnivoice\models` | même convention que sous WSL |
+| Modèles Whisper | là où FilmCraft les range sous Windows | téléchargés par FilmCraft |
+| Bureau | `C:\Users\<toi>\OneDrive\Desktop` | trouvé tout seul par `monter.py` sous Windows |
+| Presets EffectCraft | `C:\Users\<toi>\Documents\EffectCraft\Presets` | si OneDrive redirige « Documents », vérifier le vrai dossier |
+
+Seuls `modeles/build/lib.py`, `presets/build/test_presets.py` et les `.jsonl` de `bible/` et `modeles/build/` gardent `/home/Yehezou/videos` en dur. Ils ne servent qu'à reconstruire les modèles et la bible ; s'il faut les relancer sous Windows, une mission `outilleur` les adapte d'abord.
+
+### 6.2 Logiciels Windows (PowerShell en administrateur)
+
+```powershell
+winget install -e --id Git.Git                 # fournit aussi Git Bash, utilisé par Claude Code
+winget install -e --id Python.Python.3.14
+winget install -e --id Rustlang.Rustup
+winget install -e --id Microsoft.VisualStudio.2022.BuildTools --override "--quiet --wait --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended"
+winget install -e --id Kitware.CMake
+winget install -e --id OpenJS.NodeJS.LTS
+winget install -e --id Gyan.FFmpeg              # facultatif (sonde audio)
+winget install -e --id Nvidia.CUDA              # voix sur le GPU
+```
+
+Si un identifiant `winget` a changé, le retrouver avec `winget search <nom>`. Aseprite et Word s'installent comme d'habitude.
+
+Réglages une fois pour toutes :
+```powershell
+git config --global core.longpaths true          # chemins longs de cargo
+setx PYTHONUTF8 1                                # accents corrects dans les sorties des CLI (Python < 3.15)
+```
+
+Le dépôt contient un `.gitattributes` (`* -text`) : git ne touche pas aux fins de ligne, les `.jsonl`, `.ecproj`, `.lua` et `.sh` restent identiques sous Windows.
+
+### 6.3 Claude Code et `agy` sous Windows
+
+- Claude Code exécute ses commandes dans **Git Bash** : les commandes des skills (`python3 -I ~/videos/outils/…`) marchent telles quelles.
+- Vérifier `python3 --version` dans Git Bash. Si la commande ouvre le Microsoft Store ou n'existe pas : couper l'alias dans Paramètres › Applications › Paramètres avancés › Alias d'exécution d'application, puis créer le relais
+  `mkdir -p ~/bin && printf '#!/bin/sh\nexec py -3 "$@"\n' > ~/bin/python3 && chmod +x ~/bin/python3` (Git Bash met `~/bin` dans le PATH).
+- `agy` (Antigravity pour Windows) doit être dans le PATH : `pilote_agy.py --liste` affiche le binaire trouvé.
+- Lancer `claude` et `agy` depuis `C:\Users\<toi>\videos`.
+
+### 6.4 Cloner et compiler (dans Git Bash)
+
+Les commandes des § 2.2, 2.3 et 2.4 s'utilisent telles quelles dans Git Bash (mêmes chemins `~`, mêmes versions). Les binaires sortent en `.exe` dans `target/release/`. Les paquets `dnf` du § 2.1 ne servent pas sous Windows : les Build Tools Visual Studio et Rust suffisent.
+
+### 6.5 Voix sur le GPU sous Windows
+
+```bat
+:: Dans « x64 Native Tools Command Prompt for VS 2022 »
+git clone https://github.com/ServeurpersoCom/omnivoice.cpp.git %USERPROFILE%\.local\src\omnivoice.cpp
+cd /d %USERPROFILE%\.local\src\omnivoice.cpp && git checkout 886fc07
+buildcuda.cmd
+```
+Modèles : comme au § 2.5, dans `%USERPROFILE%\.local\share\omnivoice\models`. VoiceStudio : suivre son `README.md` pour Windows ; s'il ne prend pas Windows en charge, garder la voix sous WSL (§ 2.5).
+
+### 6.6 Aseprite sous Windows natif
+
+Le piège du journal n° 29 (Aseprite.exe ne lit pas `\\wsl.localhost\…`) **ne s'applique pas** : sous Windows natif, Aseprite lit et écrit directement dans `C:\Users\<toi>\videos\assets\`. Depuis Git Bash : `"/c/Program Files/Aseprite/Aseprite.exe" -b --script …`. Les `.lua` existants écrivent encore dans `C:\Users\Yehezkelou\ico-pixel\` (variable `SORTIE`) : à changer si le nom d'utilisateur Windows est différent.
+
+### 6.7 Vérifier sous Windows (Git Bash)
+
+Mêmes commandes qu'au § 4, avec `nvidia-smi` et des binaires en `.exe` :
+```bash
+cd ~/videos
+nvidia-smi
+python3 -I -m unittest discover -s outils/tests
+python3 -I outils/verifier_licences.py
+~/dev/vid/effectcraft/target/release/effectcraft-cli.exe --help
+python3 -I outils/pilote_agy.py --liste
+python3 -I outils/monter.py vulga-01-gps/episode.toml
+```
+
+### 6.8 Premier message à Claude Code sous Windows
+
+> On installe ico-vid sous Windows natif, en plus de WSL. Lis CLAUDE.md, INSTALLATION.md (surtout le § 6) et agents/README.md. Installe ce qui manque en suivant le § 6 (logiciels winget, clones aux bonnes versions, compilation des 5 Craft et d'EffectCraft de production, voix sur le GPU), puis lance les vérifications du § 6.7 et fais-moi le bilan. Ne modifie pas les fichiers du dépôt sans mon accord et ne touche pas à la configuration WSL.
+
+Les commandes `winget` en administrateur et `setx` sont à taper toi-même dans PowerShell ; Claude te les donne.

@@ -13,9 +13,10 @@ import argparse, json, os, re, shutil, subprocess, sys, time
 
 HOME = os.path.expanduser("~")
 VIDEOS_DIR = os.path.join(HOME, "videos")
+EXE = ".exe" if os.name == "nt" else ""  # Windows natif : binaires Rust en .exe
 AGY_BIN = shutil.which("agy") or os.path.join(HOME, ".local/bin/agy")
-EC_CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli")
-FC_CLI = os.path.join(VIDEOS_DIR, "logiciel/filmcraft/target/release/filmcraft-cli")
+EC_CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli" + EXE)
+FC_CLI = os.path.join(VIDEOS_DIR, "logiciel/filmcraft/target/release/filmcraft-cli" + EXE)
 
 AGENTS = {
     "critique": {

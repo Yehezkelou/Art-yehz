@@ -39,6 +39,7 @@ Pour une scène de largeur `W` (`270` en 9:16 ou `480` en 16:9) et une course ca
 
 ## 3. Flux Aseprite (WSL ↔ Windows, Journal n° 29)
 
+- **Windows natif** (`INSTALLATION.md` § 6) : Aseprite lit et écrit directement dans `~/videos/assets/` ; les étapes WSL ci-dessous ne concernent que WSL.
 - `Aseprite.exe` (`/mnt/c/Program Files/Aseprite/Aseprite.exe`) est une application Windows qui **ne peut ni lire ni écrire dans `\\wsl.localhost\...`**.
 - **Procédure obligatoire** :
   1. Écrire ou exécuter les scripts `.lua` et fichiers `.aseprite` dans `/mnt/c/Users/Yehezkelou/ico-pixel/` (`C:\Users\Yehezkelou\ico-pixel\`).

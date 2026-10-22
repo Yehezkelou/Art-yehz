@@ -11,6 +11,7 @@ Chaîne vidéo pixel art de @yehz (YouTube, TikTok, Instagram). Tout se passe da
 ## Machine et dépôt
 - Le dépôt est **public** (synchronisation entre machines) : jamais de secret, de jeton, de voix ou d'image d'autrui dans un commit ; `references/` est ignoré par git.
 - Nouvelle machine ou chemin introuvable : suivre `INSTALLATION.md` (chemins attendus, vérifications, premier message).
+- Deux environnements possibles : WSL2 (config d'origine, `INSTALLATION.md` § 0–5) et Windows natif en plus (§ 6, commandes dans Git Bash, binaires `.exe`). Un clone par environnement, synchronisé par git ; ne jamais supprimer la config de l'autre.
 - Skills Claude du projet : `.claude/skills/` (`video-*`, `pilote-agy`) ; sous-agents : `.claude/agents/`.
 - Gemini : `agy` lancé depuis `~/videos` ; le mode `--ecrire` est autorisé par @yehz pour déléguer du code, des prototypes d'assets ou un essaim ; `--video` injecte la sonde audio (Gemini invente sinon des voix sur les vidéos). Le consulter aux portes clés.
 - Plan : nouvelle version = copie de `plans/plan-vX.Y.js`, `npm install docx` dans un dossier temporaire et `NODE_PATH` dessus ; livrer le .docx dans `plans/` et sur le Bureau Windows ; on garde toutes les versions.

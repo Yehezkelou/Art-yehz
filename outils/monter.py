@@ -15,10 +15,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import rapides  # noqa: E402
 
 HOME = os.path.expanduser("~")
-CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli")
+EXE = ".exe" if os.name == "nt" else ""  # Windows natif : binaires Rust en .exe
+CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli" + EXE)
 MODELES = os.path.join(HOME, "videos/modeles")
 PRESETS = os.path.join(HOME, "Documents/EffectCraft/Presets")
-BUREAU = "/mnt/c/Users/Yehezkelou/OneDrive/Desktop"
+BUREAU = os.path.join(HOME, "OneDrive", "Desktop") if os.name == "nt" else "/mnt/c/Users/Yehezkelou/OneDrive/Desktop"
 
 # Ce que chaque modèle contient (noms de comps/calques et minutages du modèle d'origine)
 FORMATS = {
