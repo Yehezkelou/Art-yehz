@@ -15,6 +15,7 @@ HOME = os.path.expanduser("~")
 VIDEOS_DIR = os.path.join(HOME, "videos")
 AGY_BIN = shutil.which("agy") or os.path.join(HOME, ".local/bin/agy")
 EC_CLI = os.path.join(HOME, "dev/vid/effectcraft/target/release/effectcraft-cli")
+FC_CLI = os.path.join(VIDEOS_DIR, "logiciel/filmcraft/target/release/filmcraft-cli")
 
 AGENTS = {
     "critique": {
@@ -106,7 +107,25 @@ def probe_video(video_path):
             except Exception:
                 pass
 
-    # Fallback sans ffprobe : inspecter les atomes MP4 (début + fin du fichier car moov est souvent en fin)
+    # Sans ffprobe : fiche technique de FilmCraft (filmcraft-cli probe), qui lit vraiment le conteneur
+    if os.path.exists(FC_CLI):
+        r = subprocess.run([FC_CLI, "probe", abspath], capture_output=True, text=True)
+        if r.returncode == 0:
+            try:
+                data = json.loads(r.stdout)
+                v, audio = data.get("video") or {}, data.get("audio_streams") or []
+                fr = v.get("frame_rate") or {}
+                info.update(audio_present=bool(audio), pistes_audio=len(audio), codec_video=v.get("codec"),
+                            resolution=f"{v.get('width')}x{v.get('height')}",
+                            fps=f"{fr.get('num')}/{fr.get('den')}", duree_s=round(data.get("duration", 0) / 254016000000, 2),
+                            source_sonde="filmcraft-cli probe")
+                if not audio:
+                    info["AVERTISSEMENT_AUDIO"] = "AUCUNE PISTE AUDIO DANS CE FICHIER (VIDÉO 100% MUETTE). N'invente aucune voix ni son."
+                return info
+            except Exception:
+                pass
+
+    # Dernier recours : inspecter les atomes MP4 (début + fin du fichier car moov est souvent en fin)
     try:
         size = os.path.getsize(abspath)
         with open(abspath, "rb") as f:
