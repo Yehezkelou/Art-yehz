@@ -17,3 +17,8 @@
 
 ## Limites
 - Voix de synthèse propre : plus facile à transcrire qu'une vraie voix au micro. Le critère « < 10 % d'erreurs » reste à confirmer sur les 30 s complètes (texte-test.txt).
+
+## Test complet (voix 1 retenue par @yehz)
+- `voix-test-30s.wav` : texte-test.txt (73 mots) → 25,28 s ; 2159 s de calcul (36 min), 1,16 Go de mémoire ; crête −6,0 dBFS, RMS −21,4 dBFS, aucun silence ≥ 0,5 s.
+- Transcription FilmCraft whisper-base (fr) en 19 s : **4 erreurs sur 73 mots = 5,5 %** (critère < 10 % : **réussi**). Erreurs : « éclaire », « ton air » (tonnerre, 2), « retar » — homophones, à corriger à la relecture (étape 4b).
+- Reste du critère S1 : « le .srt exporté est lu par monter.py » → monter.py ne lit pas encore de .srt (prévu dans monter.py v2, semaine 3).
