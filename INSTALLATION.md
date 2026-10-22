@@ -37,6 +37,14 @@ for l in effectcraft filmcraft photocraft soundcraft vectorcraft; do
 done
 git clone https://github.com/debpalash/VoiceStudio.git
 
+# Versions de l'ancienne machine (22 oct. 2026, aucune modification locale) : on repart des mêmes
+git -C effectcraft checkout 9db7f3b2
+git -C filmcraft   checkout 70f0fc7a
+git -C photocraft  checkout b097800e
+git -C soundcraft  checkout 7b339fe
+git -C vectorcraft checkout bc1ae082
+git -C VoiceStudio checkout 28bf2c7a
+
 # EffectCraft de production : copie séparée, on n'y modifie rien
 mkdir -p ~/dev/vid && git clone https://github.com/storytold/effectcraft.git ~/dev/vid/effectcraft
 cd ~/dev/vid/effectcraft
@@ -66,7 +74,9 @@ python3 -I outils/monter.py vulga-01-gps/episode.toml    # projet + 3 aperçus (
 
 ## 5. Premier message à donner à Claude Code sur la nouvelle machine
 
-> On vient de migrer ico-vid sur une nouvelle machine. Lis CLAUDE.md, INSTALLATION.md et agents/README.md, lance les vérifications du § 4 et dis-moi ce qui manque. Ne modifie rien avant mon accord.
+> On vient de migrer ico-vid sur une nouvelle machine. Lis CLAUDE.md, INSTALLATION.md et agents/README.md. Installe ce qui manque en suivant les § 1 et 2 (clones, versions, compilation d'EffectCraft, VoiceStudio selon son README avec le GPU), puis lance les vérifications du § 4 et fais-moi le bilan. Ne modifie pas les fichiers du dépôt sans mon accord.
+
+Les commandes `sudo` (paquets `apt`) demandent ton mot de passe : Claude te les donne et tu les tapes toi-même avec `! sudo apt install …` dans la session.
 
 Gemini (`agy`) lit `GEMINI.md` tout seul dans `~/videos` ; ses 4 compétences sont dans `.agents/skills/`.
 Les skills Claude (`video-*`, `pilote-agy`) sont dans `.claude/skills/` : rien à copier dans `~/.claude/`.
