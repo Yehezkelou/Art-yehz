@@ -120,3 +120,83 @@ url      = ""
 date     = 2026-10-22
 vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-01-sort
 credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim-potion.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim-potion-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "persos/marchand/marchand.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "persos/marchand/marchand-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "objets/potion/potion.lua"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "objets/potion/potion-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "objets/potion/chiffres-planche.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""
+
+[[asset]]
+fichier  = "objets/potion/comptoir.png"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true                     # dessiné par Claude (Lua Aseprite) à la demande de @yehz, pixel-02-potion
+credit   = ""

@@ -1,0 +1,1 @@
+var c=null;for(var i=1;i<=app.project.numItems;i++){var it=app.project.item(i);if(it.name==="PIXEL 270x480"&&it.numLayers!==undefined)c=it;}for(var j=1;j<=c.numLayers;j++){var l=c.layer(j);writeLn(j+" "+l.name+" "+l.transform.position.value);}

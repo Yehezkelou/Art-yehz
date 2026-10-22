@@ -1,0 +1,28 @@
+# pixel-02-potion : « La potion » (concept 3B de la boîte à vidéos, script validé le 22/10/2026)
+# Idée reprise de « Pourquoi 0.1 + 0.2 = 0.30000000000000004 ? » (YouTube), forme réécrite.
+# Scène (Tim, marchand, comptoir, ticket, pièces, miette) : séquence PNG de .montage/composer.py,
+# posée dans la comp pixel par .montage/poser_scene.py après monter.py.
+format = "pixel"
+titre = "LA POTION"
+duree = 15
+
+[[repliques]]
+texte = "DEUX POTIONS !"
+debut = 0.6
+fin = 2.4
+
+[[repliques]]
+texte = "ÇA FAIT..."
+debut = 2.6
+fin = 4.4
+
+[[repliques]]
+texte = "..."
+debut = 7.0
+fin = 8.4
+
+[[repliques]]
+texte = "ET ÇA."
+debut = 10.6
+fin = 12.6
+chute = true
