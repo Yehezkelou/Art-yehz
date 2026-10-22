@@ -35,6 +35,7 @@ Les décisions validées sont dans [`../plans/decisions.md`](../plans/decisions.
 - **Rien ne sort de la machine** (publication, envoi, achat) sans l'accord de @yehz.
 - **Pas de secret** (mot de passe, clé, identifiant) dans une mission ni dans un rapport.
 - Les commits sont faits par l'orchestrateur, jamais par un agent.
+- **Mesures côté Claude, jugement côté Gemini** : en lecture seule, Gemini ne peut lancer aucune commande (ni Python ni sonde). On lui donne les mesures déjà faites (sorties d'outils, fiches, transcriptions) et on lui demande un avis, pas une mesure.
 
 ## Rangement
 

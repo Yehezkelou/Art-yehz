@@ -1,0 +1,14 @@
+# persos/tim/tim.toml — fiche du personnage (plan 2.3, § 7.1), mesurée sur tim-planche.png le 22/10/2026
+# Les durées exactes de chaque image viennent de tim.json (export Aseprite) ; ips = cadence de référence.
+nom     = "Tim"
+cellule = [32, 32]
+sol     = 28                 # ligne des pieds, identique dans les 8 cases actuelles
+regard  = "droite"
+
+[actions]                    # ligne de la planche, nombre d'images, i/s, boucle
+repos  = { ligne = 1, images = 4, ips = 4,  boucle = true }                 # 400/300/400/150 ms
+marche = { ligne = 2, images = 4, ips = 8,  boucle = true, avance = 16 }    # 4 × 120 ms (≈ 8 i/s) ; avance à mesurer
+# À dessiner (§ 7.1) :
+# saut  = { ligne = 3, images = 7, ips = 12, boucle = false }
+# parle = { ligne = 4, images = 3, ips = 12, boucle = true }
+# coup  = { ligne = 5, images = 3, ips = 12, boucle = false }

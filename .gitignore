@@ -14,3 +14,4 @@ __pycache__/
 a-trier/*
 !a-trier/README.md
 regards/
+*.log

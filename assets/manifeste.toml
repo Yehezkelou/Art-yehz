@@ -70,3 +70,13 @@ url      = ""
 date     = 2026-10-21
 vendable = false                    # étude de style d'après @tofupixels (references/) : jamais en pack
 credit   = ""
+
+[[asset]]
+fichier  = "persos/tim/tim.toml"
+source   = "dessin maison"
+auteur   = "@yehz"
+licence  = "propriétaire"
+url      = ""
+date     = 2026-10-22
+vendable = true
+credit   = ""
